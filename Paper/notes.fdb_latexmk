@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber notes"] 1700498685 "notes.bcf" "notes.bbl" "notes" 1700498688
-  "notes.bcf" 1700498688 107993 fbde42ffff5a11f4a28f038e3ae1e1bf "pdflatex"
+["biber notes"] 1700498685 "notes.bcf" "notes.bbl" "notes" 1700499960
+  "notes.bcf" 1700499960 107993 fbde42ffff5a11f4a28f038e3ae1e1bf "pdflatex"
   "thud.bib" 1700498679 2757 1e4e1fe52ed12bd82f2e073a85be14d3 ""
   (generated)
   "notes.bbl"
   "notes.blg"
-["pdflatex"] 1700498687 "notes.tex" "notes.pdf" "notes" 1700498688
+["pdflatex"] 1700499959 "notes.tex" "notes.pdf" "notes" 1700499960
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -138,12 +138,13 @@
   "images/airtag-precision-finding-2.jpg" 1700474628 54098 5b287043e5f0ab5924fd16503d9a543a ""
   "images/findmy.jpg" 1700168800 443231 e39864d286212de797e300f241c18d24 ""
   "images/findmysec.png" 1700169858 137403 84b3f6a7b26de792f75eb65fb7a5ded1 ""
-  "notes.aux" 1700498688 3802 86caa96783fef3f3bd65d06c5f114502 "pdflatex"
+  "images/process.png" 1700499779 297464 8cbcde6a17ccb098ab04976d0b0dffcf ""
+  "notes.aux" 1700499960 4011 772413553cb3a323dca909371cea1625 "pdflatex"
   "notes.bbl" 1700498686 12714 62d461dc85e71f8993b084004e52ec06 "biber notes"
-  "notes.out" 1700498688 898 327c8928374b60f5dcec2cb14df7d2eb "pdflatex"
-  "notes.run.xml" 1700498688 2306 98834386d197c57129649db4740ac82f "pdflatex"
-  "notes.tex" 1700498673 18467 55a2cbdb6d274bf262ca1871c96abbe7 ""
-  "notes.toc" 1700498688 671 fda8faa782a98227978eaf2edf63b449 "pdflatex"
+  "notes.out" 1700499960 898 327c8928374b60f5dcec2cb14df7d2eb "pdflatex"
+  "notes.run.xml" 1700499960 2306 98834386d197c57129649db4740ac82f "pdflatex"
+  "notes.tex" 1700499951 18748 a143f40a70d50cba32b6f747f9d0f0b0 ""
+  "notes.toc" 1700499960 671 fda8faa782a98227978eaf2edf63b449 "pdflatex"
   (generated)
   "notes.aux"
   "notes.bcf"

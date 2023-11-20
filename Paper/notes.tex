@@ -171,7 +171,15 @@ Let us first define a few terms in accordance with \cite{whocanfind}:
   sends it to Apple’s servers. We will see what are the contents of the report.
   \item \textit{Apple’s Servers}: Apple’s servers store the location reports submitted by finder devices. Only owner devices can fetch those reports and decrypt them locally.
 \end{itemize}
-An online device can simply report its location to the user via iCloud. Find My works offline by sending out short range Bluetooth signals from the missing device that can be detected by other Apple devices in use nearby. Those nearby devices then relay the detected location of the missing device to iCloud so users can locate it in the Find My app while protecting the privacy and security of all the users involved.
+An online device can simply report its location to the user via iCloud. Find My works offline by sending out short range Bluetooth signals from the missing device that can be detected by other Apple devices in use nearby. Those nearby devices then relay the detected location of the missing device to iCloud so users can locate it in the Find My app while protecting the privacy and security of all the users involved. An example of the previous workflow is represented in figure \ref{process}.
+
+\begin{figure}[]
+	\centering
+	\includegraphics[width=.5\textwidth]{images/process.png}
+	\caption{FindMy workflow (simplified).}
+	\label{process}
+\end{figure}
+
 \begin{figure}[]
 	\centering
 	\includegraphics[width=.9\textwidth]{images/findmysec.png}
