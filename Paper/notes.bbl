@@ -19,6 +19,19 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{ANSI}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://csrc.nist.gov/CSRC/media/Events/Key-Management-Workshop-2000/documents/x963_overview.pdf
+      \endverb
+      \verb{url}
+      \verb https://csrc.nist.gov/CSRC/media/Events/Key-Management-Workshop-2000/documents/x963_overview.pdf
+      \endverb
+    \endentry
     \entry{aps}{misc}{}
       \name{author}{1}{}{%
         {{hash=9f6290f4436e5a2351f12e03b6433c3c}{%
@@ -259,6 +272,33 @@
       \verb{url}
       \verb https://9to5mac.com/2021/06/07/ios-15-find-my-network-can-find-your-iphone-when-it-is-powered-off/
       \endverb
+    \endentry
+    \entry{ec}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=396bf3aa1a2c738c7864c19e04f3053f}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Victor\bibnamedelima S},
+           giveni={V\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{396bf3aa1a2c738c7864c19e04f3053f}
+      \strng{fullhash}{396bf3aa1a2c738c7864c19e04f3053f}
+      \strng{bibnamehash}{396bf3aa1a2c738c7864c19e04f3053f}
+      \strng{authorbibnamehash}{396bf3aa1a2c738c7864c19e04f3053f}
+      \strng{authornamehash}{396bf3aa1a2c738c7864c19e04f3053f}
+      \strng{authorfullhash}{396bf3aa1a2c738c7864c19e04f3053f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Conference on the theory and application of cryptographic techniques}
+      \field{title}{Use of elliptic curves in cryptography}
+      \field{year}{1985}
+      \field{pages}{417\bibrangedash 426}
+      \range{pages}{10}
     \endentry
     \entry{OBoyle_2021}{misc}{}
       \name{author}{1}{}{%
