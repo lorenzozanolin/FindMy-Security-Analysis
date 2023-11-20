@@ -190,7 +190,7 @@ An online device can simply report its location to the user via iCloud. Find My 
 We will now delve more in the used Cryptography protocols. FindMy utilises Elliptic Curves \cite{ec}; the process is the following:
 \begin{enumerate}
   \item Each owner device generates a private/public key pair
-  $(d_0, p_0)$ on the NIST $P-224$ curve and a $32$-byte symmetric key $SK_0$ that together form the master beacon key. Those keys are never sent out via BLE and are used to derive the rolling advertisement keys included in the BLE advertisements. Note that device tracking is hard since rolling keys can be deterministically derived if and only if one knows the initial input keys $(d0, p0)$ and $SK0$.
+  $(d_0, p_0)$ on the NIST $P-224$ curve and a $32$-byte symmetric key $SK_0$ that together form the master beacon key. Those keys are never sent out via BLE and are used to derive the rolling advertisement keys included in the BLE advertisements. Note that device tracking is hard since rolling keys can be deterministically derived if and only if one knows the initial input keys $(d_0, p_0)$ and $SK0$.
   \item Advertisement keys $(d_i,p_i)$ are iteratively calculated as follows using the ANSI X.963 key derivation function $KDF$ \cite{ANSI} with $SHA-256$ and a generator $G$ of the NIST P-224 curve:
   \begin{align}
     SK_i &= KDF(SK_{i-1},\ 'update',\ 32) \\
