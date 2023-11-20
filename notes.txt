@@ -1,0 +1,19 @@
+Funzionano con la tecnologia UWB: The name "ultra-wideband" comes from the ability to transmit info across a wide radio bandwidth, from 500MHz to several gigahertz. That gives it a short range !!!!! (quindi ottimo per trovare cose sulla corta distanza). Ultimately, it's a radio tech a lot like Wi-Fi and Bluetooth, but it doesn't use the 2.4GHz frequencies. That makes UWB compatible with other wireless technologies—there's no signal interference. It's also low power and provides data in real-time thanks to pulses sent every other nanosecond.
+
+Per questa tecnologia gli ostacoli (muri, ecc.) non sono un problema. Sia Bluetooth che Wifi non hanno la stessa precisione di UWB; inoltre nelle sue specifiche implementative ci sono anche delle estensioni di sicurezza, so it can do random number generation and cryptography.
+
+UWB's range isn't that much better than that of Bluetooth, around 30 feet (ca 9mt), but Apple's implementation means that if an AirTag is active around any Apple device with UWB built-in, the AirTag can still be tracked by the owner. (p.179)
+
+Problematica STALKING: se hai un iphone ti puoi accorgere se qualcuno ti stalkera e quindi disabilitare lo scambio di informazioni con i server apple, mentre se hai Android c'è un app che ti permette di localizzare l'airtag, ma poi per disabilitarlo devi staccargli la batteria.
+
+Scenario: Si potrebbe costruire un applicazione del supermercato che ti guida alla categoria dei prodotti selezionati.
+
+Da Apple Platform Security
+    Sicurezza nella UWB di dispositivi con U1: Ultra Wideband technology uses the same technology to randomize data found in other supported Apple devices:
+        • MAC address randomization: Apple platforms use a randomized media access control address (MAC address) when performing Wi-Fi scans when not associated with a Wi-Fi network. Note that Wi-Fi scans that happen while trying to connect to a preferred Wi-Fi network aren’t randomized. Because a device’s MAC address changes when disconnected from a Wi-Fi network, it can’t be used to persistently track a device by passive observers of Wi-Fi traffic, even when the device is connected to a cellular network.
+        • Wi-Fi frame sequence number randomization: Apple devices randomize the sequence numbers whenever a MAC address is changed to a new randomized address.
+
+    Sicurezza di FindMy: Find My can help users locate a missing device, even an offline Mac. An online device can simply report its location to the user via iCloud. Find My works offline by sending out short range Bluetooth signals from the missing device that can be detected by other Apple devices in use nearby. 
+    Those nearby devices then relay the detected location of the missing device to iCloud so users can locate it in the Find My app all while protecting the privacy and security of all the users involved. Find My even works with a Mac that is offline and asleep. (more on p.163-164)
+
+    
