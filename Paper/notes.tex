@@ -180,6 +180,8 @@ An online device can simply report its location to the user via iCloud. Find My 
 	\caption{FindMy workflow (simplified).}
 	\label{process}
 \end{figure}
+All finder devices regularly scan for FindMy advertisements.
+The finder creates and uploads an encrypted position report to Apple's servers whenever it receives a packet in the FindMy advertising format; finder devices are likely to use less energy and bandwidth because they gather reports over time and transfer them in batches on a regular basis. The evaluation done in \cite{whocanfind} discovered that the median time from generating to uploading a location report is 26 min and the delay can increase to several hours if the finder device is in a low power mode.
 
 We will now delve more in the used Cryptography protocols. 
 
