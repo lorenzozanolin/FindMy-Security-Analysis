@@ -161,7 +161,7 @@ This also means if the iPhone runs out of battery during the day, the owner stil
 
 As already written, AirTags can be tracked through the \textit{Items} tab and have all of the tracking features available to Apple devices like iPhones and iPads. There's a Lost Mode, and AirTags can also take advantage of the Find My network that allows them to be tracked by billions of iPhones, iPads, and Macs when they're out of range of the owner devices. The only way to stop an AirTag from being fully detectable is to remove the CR2032 coin battery (or when it fully discharges).
 
-\subsection{Security}
+\subsection{Security analysis}
 In this section we will analyze the security measures implemented in FindMy to increase the safety of the architecture. Let us add some more details in the process of localizing an object.
 Let us first define a few terms in accordance with \cite{whocanfind}:
 \begin{itemize}
@@ -187,7 +187,10 @@ An online device can simply report its location to the user via iCloud. Find My 
 	\label{findmy}
 \end{figure}
 
-We will now delve more in the used Cryptography protocols. FindMy utilises Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind} the process is the following:
+We will now delve more in the used Cryptography protocols. 
+
+\subsubsection{Advertisement keys}
+FindMy utilises Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind} the process to generate \textit{advertisement keys} is the following:
 \begin{enumerate}
   \item Each owner device generates a private/public key pair
   $(d_0, p_0)$ on the NIST $P-224$ curve and a $32$-byte symmetric key $SK_0$ that together form the master beacon key. Those keys are never sent out via BLE and are used to derive the rolling advertisement keys included in the BLE advertisements. Note that device tracking is hard since rolling keys can be deterministically derived if and only if one knows the initial input keys $(d_0, p_0)$ and $SK0$.
@@ -200,6 +203,9 @@ We will now delve more in the used Cryptography protocols. FindMy utilises Ellip
   \end{align}
   where Equation $(1)$ derives a new symmetric key from the last used symmetric key with 32 bytes length. Equation $(2)$ derives the so-called “anti-tracking” keys $u_i$ and $v_i$ from the new symmetric key with a length of $36$ bytes each. Finally, Eqs. $(3)$ and $(4)$ create the advertisement key pair via EC point multiplication using the anti-tracking keys and the master beacon key $d_0$.
 \end{enumerate}
+
+\subsubsection{Key synchronization}
+To download and decode location information, the advertisement keys must be accessed by all owner devices. In order to synchronize the master beacon keys, FindMy uses iCloud to encrypt a property list file in the Galois/Counter mode of the Advanced Encryption Standard (AES-GCM) \cite{gcm}. The file's decryption key is kept in the iCloud keychain underneath the label “Beacon Store”.
 
 \section{AirTag}\label{sec:at}
 
