@@ -149,6 +149,41 @@
       \field{pages}{175\bibrangedash 193}
       \range{pages}{19}
     \endentry
+    \entry{airguard}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=bb054e68faf50580039b177699243dc0}{%
+           family={Heinrich},
+           familyi={H\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=90351295ecf90189d53f21b1e22f0b22}{%
+           family={Bittner},
+           familyi={B\bibinitperiod},
+           given={Niklas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=104bd9cfb4266064b98e05af02615827}{%
+           family={Hollick},
+           familyi={H\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3487b4e894ecab7bc97fe3da938c1d88}
+      \strng{fullhash}{3487b4e894ecab7bc97fe3da938c1d88}
+      \strng{bibnamehash}{3487b4e894ecab7bc97fe3da938c1d88}
+      \strng{authorbibnamehash}{3487b4e894ecab7bc97fe3da938c1d88}
+      \strng{authornamehash}{3487b4e894ecab7bc97fe3da938c1d88}
+      \strng{authorfullhash}{3487b4e894ecab7bc97fe3da938c1d88}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 15th ACM Conference on Security and Privacy in Wireless and Mobile Networks}
+      \field{title}{AirGuard-protecting android users from stalking attacks by apple find my devices}
+      \field{year}{2022}
+      \true{nocite}
+      \field{pages}{26\bibrangedash 38}
+      \range{pages}{13}
+    \endentry
     \entry{whocanfind}{article}{}
       \name{author}{4}{}{%
         {{hash=bb054e68faf50580039b177699243dc0}{%

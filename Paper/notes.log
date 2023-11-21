@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  21 NOV 2023 11:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  21 NOV 2023 11:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -710,6 +710,9 @@ acking tech-nol-ogy, known
  []
 
 [4]
+
+LaTeX Warning: Reference `airguard' on page 5 undefined on input line 134.
+
 <images/findmy.jpg, id=114, 2055.68pt x 1329.96875pt>
 File: images/findmy.jpg Graphic file (type jpg)
 <use images/findmy.jpg>
@@ -721,7 +724,7 @@ File: images/airtag-precision-finding-2.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/airtag-precision-finding-2.jpg  used on input l
 ine 152.
 (pdftex.def)             Requested size: 207.0021pt x 203.63469pt.
- [5] [6 <./images/findmy.jpg>] [7 <./images/airtag-precision-finding-2.jpg>]
+[5] [6 <./images/findmy.jpg>] [7 <./images/airtag-precision-finding-2.jpg>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 177.
@@ -743,19 +746,22 @@ File: images/findmysec.png Graphic file (type png)
 Package pdftex.def Info: images/findmysec.png  used on input line 231.
 (pdftex.def)             Requested size: 172.5pt x 119.34024pt.
 
-Overfull \hbox (7.6041pt too wide) in paragraph at lines 240--240
+Overfull \hbox (7.6041pt too wide) in paragraph at lines 242--242
 []\OT1/cmr/m/n/10 en. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\OT1/cmtt/m/n/
 10 https : / / csrc . nist . gov / CSRC / media / Events / Key -[] Management -
 []
  []
 
 [10 <./images/packet.png> <./images/findmysec.png>]
-Overfull \hbox (4.80281pt too wide) in paragraph at lines 240--240
+Overfull \hbox (4.80281pt too wide) in paragraph at lines 242--242
 \OT1/cmtt/m/n/10 news / apple / 156605 -[] what -[] is -[] precision -[] findin
 g -[] on -[] apple -[] airtags -[]
  []
 
 [11] (./notes.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: BE61D4549F299B49929CA014DD4F1793;1509.
 Package logreq Info: Writing requests to 'notes.run.xml'.
@@ -763,10 +769,10 @@ Package logreq Info: Writing requests to 'notes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20982 strings out of 478268
- 364051 string characters out of 5846347
- 1069595 words of memory out of 5000000
- 38895 multiletter control sequences out of 15000+600000
+ 20987 strings out of 478268
+ 364197 string characters out of 5846347
+ 1070622 words of memory out of 5000000
+ 38899 multiletter control sequences out of 15000+600000
  480194 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,9n,77p,1516b,1822s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -789,10 +795,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texm
 f-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on notes.pdf (11 pages, 1061756 bytes).
+Output written on notes.pdf (11 pages, 1062540 bytes).
 PDF statistics:
- 319 PDF objects out of 1000 (max. 8388607)
- 259 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
+ 320 PDF objects out of 1000 (max. 8388607)
+ 260 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
