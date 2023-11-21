@@ -187,18 +187,18 @@ An online device can simply report its location to the user via iCloud. Find My 
 	\label{findmy}
 \end{figure}
 
-We will now delve more in the used Cryptography protocols. FindMy utilises Elliptic Curves \cite{ec}; the process is the following:
+We will now delve more in the used Cryptography protocols. FindMy utilises Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind} the process is the following:
 \begin{enumerate}
   \item Each owner device generates a private/public key pair
   $(d_0, p_0)$ on the NIST $P-224$ curve and a $32$-byte symmetric key $SK_0$ that together form the master beacon key. Those keys are never sent out via BLE and are used to derive the rolling advertisement keys included in the BLE advertisements. Note that device tracking is hard since rolling keys can be deterministically derived if and only if one knows the initial input keys $(d_0, p_0)$ and $SK0$.
-  \item Advertisement keys $(d_i,p_i)$ are iteratively calculated as follows using the ANSI X.963 key derivation function $KDF$ \cite{ANSI} with $SHA-256$ and a generator $G$ of the NIST P-224 curve:
+  \item Advertisement keys $(d_i,p_i)$ are iteratively calculated as follows using the ANSI X.963 key derivation function $KDF$ \cite{ANSI} with $SHA-256$ \cite{sha} and a generator $G$ of the NIST P-224 curve:
   \begin{align}
     SK_i &= KDF(SK_{i-1},\ 'update',\ 32) \\
     (u_i, v_i) &= KDF(SK_i,\ 'diversify',\ 72) \\
     d_i &= (d_0 * u_i) + v_i \\
     p_i &= d_i * G
   \end{align}
-
+  where Equation $(1)$ derives a new symmetric key from the last used symmetric key with 32 bytes length. Equation $(2)$ derives the so-called “anti-tracking” keys $u_i$ and $v_i$ from the new symmetric key with a length of $36$ bytes each. Finally, Eqs. $(3)$ and $(4)$ create the advertisement key pair via EC point multiplication using the anti-tracking keys and the master beacon key $d_0$.
 \end{enumerate}
 
 \section{AirTag}\label{sec:at}

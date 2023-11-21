@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  20 NOV 2023 19:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  21 NOV 2023 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -732,10 +732,10 @@ Package logreq Info: Writing requests to 'notes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19573 strings out of 478268
- 336332 string characters out of 5846347
- 1049454 words of memory out of 5000000
- 37512 multiletter control sequences out of 15000+600000
+ 19577 strings out of 478268
+ 336448 string characters out of 5846347
+ 1051489 words of memory out of 5000000
+ 37515 multiletter control sequences out of 15000+600000
  480194 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,9n,68p,1516b,1822s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -758,10 +758,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texm
 f-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on notes.pdf (10 pages, 1017540 bytes).
+Output written on notes.pdf (10 pages, 1018341 bytes).
 PDF statistics:
- 271 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
+ 275 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
  93 words of extra memory for PDF output out of 10000 (max. 10000000)
 

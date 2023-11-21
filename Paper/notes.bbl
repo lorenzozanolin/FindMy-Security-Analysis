@@ -117,6 +117,38 @@
       \field{title}{UWB communication systems: a comprehensive overview}
       \field{year}{2006}
     \endentry
+    \entry{sha}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=312359d3b416dc36d67dab0e5f171530}{%
+           family={Gilbert},
+           familyi={G\bibinitperiod},
+           given={Henri},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7da25e384d92b0fa0f537b06c34754fb}{%
+           family={Handschuh},
+           familyi={H\bibinitperiod},
+           given={Helena},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e648e42ce43c99b30d220d2aaeaaec79}
+      \strng{fullhash}{e648e42ce43c99b30d220d2aaeaaec79}
+      \strng{bibnamehash}{e648e42ce43c99b30d220d2aaeaaec79}
+      \strng{authorbibnamehash}{e648e42ce43c99b30d220d2aaeaaec79}
+      \strng{authornamehash}{e648e42ce43c99b30d220d2aaeaaec79}
+      \strng{authorfullhash}{e648e42ce43c99b30d220d2aaeaaec79}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International workshop on selected areas in cryptography}
+      \field{title}{Security analysis of SHA-256 and sisters}
+      \field{year}{2003}
+      \field{pages}{175\bibrangedash 193}
+      \range{pages}{19}
+    \endentry
     \entry{whocanfind}{article}{}
       \name{author}{4}{}{%
         {{hash=bb054e68faf50580039b177699243dc0}{%
