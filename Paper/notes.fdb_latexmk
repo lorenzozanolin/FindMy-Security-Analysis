@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber notes"] 1700558577 "notes.bcf" "notes.bbl" "notes" 1700558798
-  "notes.bcf" 1700558798 108367 3bc8c77a9995f5511bb5a464b61ab2fb "pdflatex"
-  "thud.bib" 1700558340 3393 3b1dee001ea6a7a32b71deaab9102425 ""
+["biber notes"] 1700560466 "notes.bcf" "notes.bbl" "notes" 1700560978
+  "notes.bcf" 1700560978 108512 304f1831d83c4c3a240dd46aa8f228ef "pdflatex"
+  "thud.bib" 1700559060 3663 b2462fa29a57ec06a11f383c60f359f0 ""
   (generated)
   "notes.bbl"
   "notes.blg"
-["pdflatex"] 1700558797 "notes.tex" "notes.pdf" "notes" 1700558798
+["pdflatex"] 1700560977 "notes.tex" "notes.pdf" "notes" 1700560978
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -103,6 +103,9 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/blx-dm.def" 1643926307 32455 8d3e554836db11aab80a8e11be62e1b1 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx" 1510525977 4578 2d37f6a8c72f47aacef79870545a713d ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/lbx/english.lbx" 1643926307 39965 48ce9ce3350aba9457f1020b1deba5cf ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption.sty" 1647548653 54291 b8e5c600d4aa37b48a740dd2a6c26163 ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty" 1647548653 71241 d2cd3a1c5acef9cb31f945b93c0bb6e3 ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/caption/subcaption.sty" 1645391520 11546 6c5257d230d8c5626812b45bc2f31212 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
@@ -142,13 +145,14 @@
   "images/airtag-precision-finding-2.jpg" 1700474628 54098 5b287043e5f0ab5924fd16503d9a543a ""
   "images/findmy.jpg" 1700168800 443231 e39864d286212de797e300f241c18d24 ""
   "images/findmysec.png" 1700169858 137403 84b3f6a7b26de792f75eb65fb7a5ded1 ""
+  "images/packet.png" 1700560122 57974 a9ed053669cbaa9d3141bc79b708c4e4 ""
   "images/process.png" 1700499779 297464 8cbcde6a17ccb098ab04976d0b0dffcf ""
-  "notes.aux" 1700558798 4591 2d0f787d11b661ef7d5917d10eee102d "pdflatex"
-  "notes.bbl" 1700558578 15589 643056a61119a15940176e5967cc8fc5 "biber notes"
-  "notes.out" 1700558798 1107 fee11781a1f14181b7d67b09ca31e175 "pdflatex"
-  "notes.run.xml" 1700558798 2306 98834386d197c57129649db4740ac82f "pdflatex"
-  "notes.tex" 1700558793 20290 7605b6346efacacc6533ee87ade6fa2a ""
-  "notes.toc" 1700558798 774 f3619e78e9c625919bdf41ecd5af494d "pdflatex"
+  "notes.aux" 1700560978 5457 49535f9ae83abc4087bf93ee61b65f05 "pdflatex"
+  "notes.bbl" 1700560467 16873 0cd7ce581fd271287f765cfe8ce8ce25 "biber notes"
+  "notes.out" 1700560978 1509 be61d4549f299b49929ca014dd4f1793 "pdflatex"
+  "notes.run.xml" 1700560978 2306 98834386d197c57129649db4740ac82f "pdflatex"
+  "notes.tex" 1700560975 22773 e69bddf99e8ddb488583202e09ecbd76 ""
+  "notes.toc" 1700560978 1043 54015c0f5afc57497e86352886707a95 "pdflatex"
   (generated)
   "notes.aux"
   "notes.bcf"

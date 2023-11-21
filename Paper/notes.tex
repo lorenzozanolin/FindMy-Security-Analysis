@@ -7,6 +7,7 @@
 \usepackage{amsmath}
 \usepackage{wasysym}
 \usepackage{amssymb}
+\usepackage{subcaption}
 \usepackage{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -180,13 +181,6 @@ An online device can simply report its location to the user via iCloud. Find My 
 	\label{process}
 \end{figure}
 
-\begin{figure}[]
-	\centering
-	\includegraphics[width=.9\textwidth]{images/findmysec.png}
-	\caption{Example of sent payload.}
-	\label{findmy}
-\end{figure}
-
 We will now delve more in the used Cryptography protocols. 
 
 \subsubsection{Advertisement keys}
@@ -206,6 +200,37 @@ FindMy utilises Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind} th
 
 \subsubsection{Key synchronization}
 To download and decode location information, the advertisement keys must be accessed by all owner devices. In order to synchronize the master beacon keys, FindMy uses iCloud to encrypt a property list file in the Galois/Counter mode of the Advanced Encryption Standard (AES-GCM) \cite{gcm}. The file's decryption key is kept in the iCloud keychain underneath the label “Beacon Store”.
+
+\subsubsection{Encryption}
+The BLE advertisements sent out by a lost device contain an EC public key $p_i$. A finder
+device that receives such an advertisement determines its current location and encrypts the location with $p_i$. OF employs the Elliptic Curve Integrated Encryption
+Scheme (ECIES), which performs an ephemeral Elliptic Curve Diffie-Hellmann (ECDH) key exchange to derive a shared secret used to encrypt the report. According to \cite{whocanfind}, the finder’s encryption algorithm works as follows:
+\begin{enumerate}
+  \item Generate a new ephemeral key $(d', p')$ on the NIST P-224 curve for a received FindMy lost advertisement.
+  \item Perform ECDH using the ephemeral private key $d'$ and the advertised public key $p_i$ to generate a shared secret.
+  \item Derive a symmetric key with ANSI X.963 $KDF$ on the shared secret with the advertised public key as entropy and SHA-256 as the hash function.
+  \item Use the first 16 bytes as the encryption key $e'$.
+  \item Use the last 16 bytes as an initialization vector $IV$.
+  \item Encrypt the location report under $e'$ and the $IV$ with AES-GCM. 
+\end{enumerate} 
+The ephemeral public key $p'$ and the authentication tag of AES-GCM are part of the uploaded message All location reports are identified by an $ID$ which is the SHA-256 hash of $p_i$, as we can see in figures \ref{comparison}.
+
+\subsubsection{Decryption}
+An owner device that retrieves encrypted location reports follows the inverse of the encryption procedure:
+\begin{enumerate}
+  \item The owner device selects the proper advertisement keys $(d_i, p_i)$ based on the hashed $p_i$ of the location report.
+  \item It performs the ECDH key exchange with the finder’s ephemeral public key $p'$ and the lost device’s private key $d_i$ to compute the symmetric key $e'$ and the $IV$.
+  \item Now, the owner can use $e'$ and $IV$ to decrypt the location report.
+\end{enumerate}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{images/packet.png}\hfill 
+	\includegraphics[width=0.5\textwidth]{images/findmysec.png}
+	\caption{(a) Binary format of a location report \quad (b) Example of sent payload.}
+	\label{comparison}
+\end{figure}
+
 
 \section{AirTag}\label{sec:at}
 

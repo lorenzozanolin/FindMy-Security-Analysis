@@ -8,4 +8,7 @@
 \contentsline {subsection}{\numberline {3.2}Functioning}{5}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Security analysis}{7}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Advertisement keys}{8}{subsubsection.3.3.1}%
-\contentsline {section}{\numberline {4}AirTag}{9}{section.4}%
+\contentsline {subsubsection}{\numberline {3.3.2}Key synchronization}{9}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Encryption}{9}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Decryption}{10}{subsubsection.3.3.4}%
+\contentsline {section}{\numberline {4}AirTag}{10}{section.4}%

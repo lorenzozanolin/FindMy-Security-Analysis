@@ -273,6 +273,38 @@
       \verb 10.1109/MCOM.2010.5394030
       \endverb
     \endentry
+    \entry{gcm}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=3134a4c00e74d30c6daf9c8a91acee41}{%
+           family={Käsper},
+           familyi={K\bibinitperiod},
+           given={Emilia},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d73f5269a295977070bf92d05cf9415e}{%
+           family={Schwabe},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{708d72199ec397294625b684a880638b}
+      \strng{fullhash}{708d72199ec397294625b684a880638b}
+      \strng{bibnamehash}{708d72199ec397294625b684a880638b}
+      \strng{authorbibnamehash}{708d72199ec397294625b684a880638b}
+      \strng{authornamehash}{708d72199ec397294625b684a880638b}
+      \strng{authorfullhash}{708d72199ec397294625b684a880638b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Workshop on Cryptographic Hardware and Embedded Systems}
+      \field{title}{Faster and timing-attack resistant AES-GCM}
+      \field{year}{2009}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+    \endentry
     \entry{Mayo_2021}{misc}{}
       \name{author}{1}{}{%
         {{hash=c778b58759960b3a1cf6a7fac7ff22a8}{%
