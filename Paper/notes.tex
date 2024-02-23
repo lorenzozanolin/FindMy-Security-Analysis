@@ -127,12 +127,12 @@ The app is organized into several sections, accessible by tapping the tabs at th
 
 There are several useful features within this app, as example:
 \begin{itemize}
-  \item \textit{Separation alerts}: designed to let you know if you leave an Apple device, a device attached to an AirTag, or a Find My-enabled third-party device behind.
-  \item \textit{Locating friends and sharing location}: implemented to locate friends and family members that have shared their location with you. You can view their location using the \textit{People} tab within the Find My app.
-  \item \textit{Locating devices without connection}: lets your lost devices be located even when not connected to WiFi or LTE by leveraging Bluetooth BLE and proximity to other nearby Apple devices. When your lost device is offline but close to another device, it's able to connect to that other device over Bluetooth and relay its location. We will come back on this\ldots
+  \item \textit{Separation alerts}: Designed to let you know if you leave an Apple device, a device attached to an AirTag, or a Find My-enabled third-party device behind.
+  \item \textit{Locating friends and sharing location}: Implemented to locate friends and family members that have shared their location with you. You can view their location using the \textit{People} tab within the Find My app.
+  \item \textit{Locating devices without connection}: Lets your lost devices be located even when not connected to WiFi or LTE by leveraging Bluetooth BLE and proximity to other nearby Apple devices. When your lost device is offline but close to another device, it's able to connect to that other device over Bluetooth and relay its location. We will come back on this\ldots
   % ovviamente se il bluetooth è off allora non è rilevabile, non basta avere il chip U1 alimentato
-  \item \textit{Anti-stalking measures}: designed to let you know if there's a Bluetooth item near you. You will receive a notification when an unknown item is found and moving with you, so you can make sure no one slips an AirTag or other Find My Bluetooth device into your things to track you. We will also come back on this following the studies done in \ref{airguard}.
-  \item \textit{Precision finding}: takes advantage of the U1 chip within AirTags and the iPhone 13, iPhone 12 and iPhone 11 models. Apple's U1 chip uses ultra-wide band techology to precisely locate and communicate with other U1-equipped devices, enabling AirTags and iPhone 13/12/11 models to work together.
+  \item \textit{Anti-stalking measures}: Designed to let you know if there's a Bluetooth item near you. You will receive a notification when an unknown item is found and moving with you, so you can make sure no one slips an AirTag or other Find My Bluetooth device into your things to track you. We will also come back on this following the studies done in \cite{airguard}.
+  \item \textit{Precision finding}: Takes advantage of the U1 chip within AirTags and the iPhone 13, iPhone 12 and iPhone 11 models. Apple's U1 chip uses ultra-wide band techology to precisely locate and communicate with other U1-equipped devices, enabling AirTags and iPhone 13/12/11 models to work together.
 \end{itemize}
 
 \begin{figure}[t]
@@ -185,7 +185,7 @@ The finder creates and uploads an encrypted position report to Apple's servers w
 
 We will now delve more in the used Cryptography protocols. 
 
-\subsubsection{Advertisement keys}
+\subsubsection{Advertisement keys}\label{keys}
 FindMy utilises Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind} the process to generate \textit{advertisement keys} is the following:
 \begin{enumerate}
   \item Each owner device generates a private/public key pair
@@ -236,10 +236,41 @@ An owner device that retrieves encrypted location reports follows the inverse of
 
 \section{AirTag}\label{sec:at}
 \subsection{Overview}
+An AirTag is a small tracking device developed and sold by Apple; it is intended to assist users in finding and monitoring objects that are easily misplaced or lost, such as wallets, bags, and keys. By connecting to compatible Apple devices (iPhones, iPads, and Macs) through Bluetooth, the AirTag enables users to locate the linked object and, subsequently, the AirTag itself using the Find My app. In order to help with lost item recovery, the gadget has capabilities including accurate location tracking, proximity notifications, and a Lost Mode. Its design prioritizes privacy and security, safeguarding user data through the use of encryption and anonymization. Support for the AirTag was introduced in iOS 14.5 and Apple lists as compatible all the devices that support iOS 14 and iPadOS.
 \subsection{Architecture}
+First of all we will analyze the architecture of this product; most of the presented stuff has been reverse engineered by Adam Catley in \cite{reverse}. We will cover both the hardware and the software aspects of this kind of devices.
 \subsubsection{Software analysis}
-\subsubsection{Hardware analysis}
+As for the software part, we can identify various states in which AirTag can be; we will now quickly present all of them.
+\begin{itemize}
+  \item \textit{Not registered}: When the AirTag is brand new, has been reset, or has been removed from the FindMy network. Waits to be connected to while advertising itself every 33ms.
+  \item \textit{Initialisation}: The AirTag is being registered to an Apple ID and a public/private key pair is generated and shared between the AirTag and the connected iOS device.
+  \item \textit{Connected}: The owner’s device is in range. No broadcasts occur.
+  \item \textit{Disconnected}: The owner’s device is out of range. Broadcasts identity every 2000ms.
+  \item \textit{Out of sync}: Happens when an AirTag reboots while separated from its owner’s device. Acts like Disconnected but absolute time is lost so events are relative to time since power-up. Identity resets to initial value.
+  \item \textit{Lost}: Occurs 3 days after Disconnected or Out of sync begin. Moves to Waiting for motion every 6 hours.
+  \item \textit{Waiting for motion}: Samples the accelerometer every 10 seconds until motion is detected.
+  \item \textit{Sound alert}: A command to play a noise is received from either a connected device or by detecting motion. Lasts a maximum of 20 seconds.
+  \item \textit{Precision finding}: Triggered by the owner’s device while in Connected. Is overridden by Sound alert.
+\end{itemize}
+As we will see in section \ref{hw}, the AirTag uses a NFC antenna to allow anyone who finds an AirTag to potentially identify the owner, even if they have an Android device. The tag can only be read when the AirTag is powered by a battery and it contains a URL to uniquely identify the AirTag, depending on its current state. There are some parameters that are attached to the URL, used to identify the device; we will briefly present them. Keep in mind that all of the following parameters are fixed for a single unit, even after power cycles, long runtime, resets and modes.
+\begin{itemize}
+  \item \textit{pid}: Product ID for AirTag.
+  \item \textit{b}: Something related to the battery.
+  \item \textit{pt}: UWB Precision Tracking version.
+  \item \textit{fv}: Firmware version.
+  \item \textit{dg}: Something related to diagnostic.
+  \item \textit{z}: Unknown.
+  \item \textit{bt}: Bluetooth address; will be present only when Unregistered.
+  \item \textit{st}: Serial number of the tag (the one printed on the device under the battery); will be present only when Unregistered.
+  \item \textit{bp}: Bluetooth protocol version; will be present only when Unregistered.
+\end{itemize}
+In the \textbf{Unregistered} state, the stored URL has the following format:
+\url{https://found.apple.com/airtag?pid=5500&b=00&pt=004c&fv=00100e10&dg=00&z=00&bt=A0B1C2D3E4F5&sr=ABCDEF123456&bp=0015}
+
+Once the device is \textbf{registered}, the parameters \textit{bt, sr, bp} will be removed and replaced with a single anonymous identifier \textit{pi}, which is the only parameter that changes at least every 15 minutes when the Bluetooth address and/or the advertising data changes. It is likely the current P-224 public key $p_i$ presented in \ref{keys} or the SHA-224 of it. 
+\subsubsection{Hardware analysis}\label{hw}
 \subsection{Security Analysis}
+\subsubsection{Anti-stalking measurements}
 \subsection{Future applications}
 
 %architettura
