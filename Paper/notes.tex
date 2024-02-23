@@ -268,7 +268,19 @@ In the \textbf{Unregistered} state, the stored URL has the following format:
 \url{https://found.apple.com/airtag?pid=5500&b=00&pt=004c&fv=00100e10&dg=00&z=00&bt=A0B1C2D3E4F5&sr=ABCDEF123456&bp=0015}
 
 Once the device is \textbf{registered}, the parameters \textit{bt, sr, bp} will be removed and replaced with a single anonymous identifier \textit{pi}, which is the only parameter that changes at least every 15 minutes when the Bluetooth address and/or the advertising data changes. It is likely the current P-224 public key $p_i$ presented in \ref{keys} or the SHA-224 of it. 
+
+
+The device operates on a schedule designed to optimize its functionality:
+At 4:00 am every day, it updates its BLE address and public key, ensuring secure communication channels.
+Advertisement data is refreshed every 15 minutes, guaranteeing that nearby devices receive the most current information.
+Should it become separated from its owner's device for three days, the device enters a lost mode, activating specific features to aid in recovery efforts.
+While in this lost mode and detecting movement, the device emits a noise every 6 hours to alert nearby individuals.
+To conserve energy while remaining responsive, the accelerometer is sampled every 10 seconds when waiting for movement.
+Upon detecting motion, the accelerometer sampling frequency increases to every 0.5 seconds for 20 seconds, providing detailed tracking data.
+When away from its owner's device, the device transmits BLE advertisement signals every 2 seconds, enhancing its detectability.
+Finally, in close proximity to its owner's device, the device establishes a BLE connection interval of 1 second, ensuring efficient communication and responsiveness.
 \subsubsection{Hardware analysis}\label{hw}
+As for the hardware part, an important aspect comes to the light: all of the used components, apart from Apple's U1 UWB chip, are off the shelf.
 \subsection{Security Analysis}
 \subsubsection{Anti-stalking measurements}
 \subsection{Future applications}
