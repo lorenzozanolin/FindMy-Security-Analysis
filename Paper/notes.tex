@@ -111,10 +111,10 @@ Another important aspect to consider is the resistance from Relay Attacks, which
 The implemented security measures, taken by Apple, are the following: MAC address randomization and frame sequence number randomization \cite{aps}.
 %approfondisci meglio guardando nel dettaglio il payload di un pacchetto
 
-\subsubsection*{MAC address randomization}
+\subsubsection{MAC address randomization}
 Apple platforms use a randomized media access control address (MAC address) when performing scans when not associated with another device. Because a device’s MAC address changes when disconnected from another device, it can’t be used to persistently track a device by passive observers of traffic.
 
-\subsubsection*{Frame sequence number randomization}
+\subsubsection{Frame sequence number randomization}
 Apple devices randomize the sequence numbers whenever a MAC address is changed to a new randomized address.
 
 \section{FindMy network}\label{sec:find}
@@ -294,20 +294,24 @@ If motion is detected, the speaker will loudly beep for up to 20 seconds after b
 
 \subsection{Security Analysis}
 Security-wise, there is a lack of basic security controls in this kind of devices; in fact, none of the data in the AirTag is protected from tampering or disclosure.
-\subsubsection{Side-channel attacks}
-The Nordic nRF52832 has the function Access Port Protection\cite{nordicsemi} that is used to disable access to the Debug Port through SWD and prevent reading out the internal memory. 
+\textbf{Side-channel attacks}:
+The Nordic nRF52832 has the function Access Port Protection\cite{nordicsemi} that is used to disable access to the Debug Port through SWD and prevent reading out the internal memory; however, according to \cite{side}, this mechanism is vulnerable to side channel attacks and can be bypassed through voltage glitching. Consequentially, it is possible to extract Bluetooth pairing keys to connect to the owner’s phone or run (on the AirTag) a custom firmware since Apple does not check the signature of it (the firmware).
+
+\textbf{Insecure Storage}: Unfortunately, the GD25LE32D 32Mbit NOR flash is not encrypted, as we can see in \cite{tweet}; also the nRF52832 does not have any secure storage functionality. In this case we don't know if this is a real vulnerability since we do not know whether the FindMy private key-pair is stored inside the AirTag.
+
+\textbf{Replay attacks}: The only way to identify an AirTag is to use its public key, which is transmitted via BLE advertising packets; this identification does not require authentication. These IDs can be recorded and replayed by any nearby BLE device to mimic the appearance of the real AirTag. Let's see an example: an attacker steals a personal item containing an AirTag and subsequently record the current public identity before removing the battery. At this point, the identity can be relayed to any BLE device in a decoy location to give the owner a false search area to recover their property.
 \subsubsection{Anti-stalking measurements}
-\subsection{Future applications}
+An important aspect that has emerged with the AirTags is the stalking problem. Stalking using AirTags refers to the potential misuse of Apple's AirTag tracking devices to monitor and track individuals without their consent; these small devices are designed to help users locate misplaced items. However, due to their small size and long battery life, AirTags could potentially be used for nefarious purposes, such as stalking. An individual could secretly place an AirTag on someone's belongings and then use the Find My app to monitor their movements in real-time. Since AirTags are designed to be difficult to detect, the victim may not realize they are being tracked for an extended period.
 
-%architettura
-%analisi sui costi dell'hardware
+Apple has implemented measures to prevent the misuse of AirTags, including alerts and notifications for when an unknown AirTag is detected near a user's device, as well as features like Precision Finding, which can help users locate unwanted AirTags. The first line of defense in the event that someone plants an AirTag on a victim belongings might be an alert to his iPhone indicating the presence of a foreign AirTag. Apple built the iPhone-AirTag connection to do this in two ways: either when you get to the place that your iPhone's machine learning intelligence has detected as home (or when you manually record it as home) or after the AirTag has stuck with you for a certain "continuous" period of time that Apple deems sufficient to be considered abnormal. This seems perfect, however if the victim has a non Apple device, such as an Android Phone this could be a problem. To prevent this problem, Google and Apple collaborated to develop Unknow Tracker Alerts, which is a feature that was announced during the Google I/O 2023 opening presentation.
+
+Additionally, AirTags are designed to emit sound if they have been separated from their owner for an extended period, potentially alerting the victim to the presence of the tracking device. More precisely, three days following separation is when sound alerts begin; even in that case, they only occur once motion is identified and only for a maximum of 20 seconds. After that, the AirTag remains silent for a maximum of 20 seconds every six hours while it waits for movements. The problem with this is that three days can be enough to study the victim's routine and after that period, it is likely to make noise for a maximum of 40 seconds a day during a normal commuting schedule. Movement is likely to coincide with a noisy environment while travelling or muffled by objects touching the white casing, meaning that the victim won't realize it. Fortunately, according to \cite{server}, the frequency and duration of sounds can be adjusted from Apple server side, meaning that Apple can increase both of them to avoid situations in which the victim is unable to ear the sounds.
+
+However, despite these safeguards, the potential for AirTags to be used for stalking remains a concern; in fact, a big problem is that the voice coil can be disconnected without disassembly. This means that the AirTag will function as normal without emitting sounds, thus an attacker can easily modify an AirTag and be unknowingly placed in someone’s possessions to track a target’s location without them being audibly notified of its presence.
+\subsection{Useful applications}
+
+
 %eventuali brevetti
-% https://www.safewise.com/apple-airtag-review/
-% https://arstechnica.com/gadgets/2021/05/airtag-review-a-neat-product-at-odds-with-apples-pro-privacy-messaging/
-
-% https://adamcatley.com/AirTag.html
-
-%parla dello stalking
 \printbibliography
 \nocite{*}
 

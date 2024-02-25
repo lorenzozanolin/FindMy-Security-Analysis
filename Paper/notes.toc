@@ -3,6 +3,8 @@
 \contentsline {section}{\numberline {2}UWB}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Overview}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Security analysis}{3}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}MAC address randomization}{4}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Frame sequence number randomization}{4}{subsubsection.2.2.2}%
 \contentsline {section}{\numberline {3}FindMy network}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Overview}{4}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Functioning}{5}{subsection.3.2}%
@@ -17,6 +19,5 @@
 \contentsline {subsubsection}{\numberline {4.2.1}Software analysis}{11}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Hardware analysis}{13}{subsubsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.3}Security Analysis}{14}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Side-channel attacks}{14}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Anti-stalking measurements}{14}{subsubsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.4}Future applications}{14}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.3.1}Anti-stalking measurements}{14}{subsubsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.4}Future applications}{15}{subsection.4.4}%
