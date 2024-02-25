@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber notes"] 1708860703 "notes.bcf" "notes.bbl" "notes" 1708862774
-  "notes.bcf" 1708862774 109162 e7acc3f305a4716e3c2b2afbb2aec0ba "pdflatex"
-  "thud.bib" 1708860455 5038 5de5a876e39a650b3184fa37fd9eca6d ""
+["biber notes"] 1708877652 "notes.bcf" "notes.bbl" "notes" 1708879289
+  "notes.bcf" 1708879289 109270 4097882536216cd3423bf22bf61a9385 "pdflatex"
+  "thud.bib" 1708877556 5238 d985e5af25d5351bde750301f0090d4c ""
   (generated)
   "notes.bbl"
   "notes.blg"
-["pdflatex"] 1708862773 "notes.tex" "notes.pdf" "notes" 1708862774
+["pdflatex"] 1708879287 "notes.tex" "notes.pdf" "notes" 1708879289
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -148,12 +148,13 @@
   "images/packet.png" 1700560122 57974 a9ed053669cbaa9d3141bc79b708c4e4 ""
   "images/pcb.png" 1708703511 749914 89d0a95a1546f439058cd99a63782641 ""
   "images/process.png" 1700499779 297464 8cbcde6a17ccb098ab04976d0b0dffcf ""
-  "notes.aux" 1708862774 7784 2af5ccb0d9fde5b7c0c1a51789986bcb "pdflatex"
-  "notes.bbl" 1708860704 23970 dbd476b8f1862f9359d78082a8bc2218 "biber notes"
-  "notes.out" 1708862774 2991 3420151f50ecadad4a870ff364845dbb "pdflatex"
-  "notes.run.xml" 1708862774 2306 98834386d197c57129649db4740ac82f "pdflatex"
-  "notes.tex" 1708862663 36188 9f4f4f8301c38dc8fb1e3041779c8a1c ""
-  "notes.toc" 1708862774 1870 12aff37c1c28c0ce914bf128a2b84800 "pdflatex"
+  "images/remote.jpg" 1708877842 909051 58bfa84c6dc33ad5e282d9c73d140e5a ""
+  "notes.aux" 1708879289 8390 abbb7edbcae6c7c5412fafb85a49431a "pdflatex"
+  "notes.bbl" 1708877653 25114 de51ba715602fbf568f59c1013394ff4 "biber notes"
+  "notes.out" 1708879289 3163 20017c2ce1bbe19add62b1a30a519abf "pdflatex"
+  "notes.run.xml" 1708879289 2306 98834386d197c57129649db4740ac82f "pdflatex"
+  "notes.tex" 1708879283 37332 77fbdf2e178dc843b65986b8ec065f1b ""
+  "notes.toc" 1708879289 2008 0558a825874f279078417905726bde64 "pdflatex"
   (generated)
   "notes.aux"
   "notes.bcf"

@@ -2,22 +2,24 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
 \contentsline {section}{\numberline {2}UWB}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Overview}{2}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Security analysis}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Security analysis}{4}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}MAC address randomization}{4}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Frame sequence number randomization}{4}{subsubsection.2.2.2}%
-\contentsline {section}{\numberline {3}FindMy network}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Overview}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Functioning}{5}{subsection.3.2}%
+\contentsline {section}{\numberline {3}FindMy network}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Overview}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Functioning}{6}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Security analysis}{7}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Advertisement keys}{8}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1}Advertisement keys}{9}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Key synchronization}{9}{subsubsection.3.3.2}%
 \contentsline {subsubsection}{\numberline {3.3.3}Encryption}{9}{subsubsection.3.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.4}Decryption}{10}{subsubsection.3.3.4}%
-\contentsline {section}{\numberline {4}AirTag}{10}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Overview}{10}{subsection.4.1}%
+\contentsline {section}{\numberline {4}AirTag}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Overview}{11}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Architecture}{11}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Software analysis}{11}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Hardware analysis}{13}{subsubsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.3}Security Analysis}{14}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Security Analysis}{13}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}Anti-stalking measurements}{14}{subsubsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.4}Useful applications}{15}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Mods}{16}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Conclusion}{16}{section.5}%

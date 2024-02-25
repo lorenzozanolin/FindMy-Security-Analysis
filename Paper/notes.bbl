@@ -78,6 +78,7 @@
       \strng{authorbibnamehash}{04bf7516395430b67677c79becd911c1}
       \strng{authornamehash}{04bf7516395430b67677c79becd911c1}
       \strng{authorfullhash}{04bf7516395430b67677c79becd911c1}
+      \field{extraname}{1}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -88,6 +89,35 @@
       \endverb
       \verb{url}
       \verb https://adamcatley.com/AirTag.html#pcb-overview
+      \endverb
+    \endentry
+    \entry{telecomando}{online}{}
+      \name{author}{1}{}{%
+        {{hash=04bf7516395430b67677c79becd911c1}{%
+           family={Catley},
+           familyi={C\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{04bf7516395430b67677c79becd911c1}
+      \strng{fullhash}{04bf7516395430b67677c79becd911c1}
+      \strng{bibnamehash}{04bf7516395430b67677c79becd911c1}
+      \strng{authorbibnamehash}{04bf7516395430b67677c79becd911c1}
+      \strng{authornamehash}{04bf7516395430b67677c79becd911c1}
+      \strng{authorfullhash}{04bf7516395430b67677c79becd911c1}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Tweet by Adam Catley}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://twitter.com/adamcatley/status/1393171134489808896
+      \endverb
+      \verb{url}
+      \verb https://twitter.com/adamcatley/status/1393171134489808896
       \endverb
     \endentry
     \entry{Clover_2022}{article}{}

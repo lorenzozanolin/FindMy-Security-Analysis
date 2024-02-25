@@ -51,7 +51,7 @@
 \usepackage{biblatex}
 \addbibresource{thud.bib}
 
-\title{Small project - notes}
+\title{AirTag and FindMy - Deep analysis}
 \author{Zanolin Lorenzo}
 
 \begin{document}
@@ -79,7 +79,7 @@
 \section{Introduction}
 In the rapidly evolving landscape of technological advancements, Apple's AirTags have emerged as a noteworthy innovation, offering a seamless solution to tracking and locating personal belongings. This paper delves into the architecture and security of AirTags, with a particular emphasis on the Ultra-Wideband (UWB) technology that underlies their functionality. Moreover, as AirTags operate within the framework of the FindMy network, this exploration extends to a thorough analysis of the security measures embedded in both the device and the overarching network; by unraveling the synergy between AirTags, UWB, and FindMy security, this paper aims to contribute insights into the robustness of the technological ecosystem that facilitates precise location tracking while addressing potential concerns surrounding privacy and data security.
 
-In Section \ref{sec:uwb} we will explain some basics of UWB technology, continuing in Section \ref{sec:find} delving into the FindMy network analysis. Next we will deeply analyze the AirTag concept in \ref{sec:at}, concluding with some future uses.
+We will go over the fundamentals of UWB technology in Section \ref{sec:uwb} and examine its benefits from a security standpoint. In Section \ref{sec:find}, we will delve deeper into the examination of the FindMy network. We will begin with providing a general overview of the architecture, go on to a functioning example, and end with a security analysis of the whole thing. Lastly, we will conduct a thorough examination of the AirTag concept in Chapter \ref{sec:at}, concentrating on the architecture (first examining the software component, then the hardware component), and then moving on to the security analysis of this technology.
 
 \section{UWB}\label{sec:uwb}
 \subsection{Overview}
@@ -285,9 +285,9 @@ As for the antennas, there are three of them inside the AirTag: one for BLE (Blu
 The outer plastic shell, which serves as a diaphragm, is adhered to the voice coil. When the coil is energized, the fixed magnet causes it to move back and forth, creating sound and serving as the speaker.
 Whether the voice coil is connected or not, the AirTag functions in the same way.
 If motion is detected, the speaker will loudly beep for up to 20 seconds after being apart from its owner's device for three days. After that, it will be silent for the following six hours before watching for movement once more.
-\begin{figure}[]
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=1.1\textwidth]{images/pcb.png}
+	\includegraphics[width=\textwidth]{images/pcb.png}
 	\caption{PCB overview.}
 	\label{img:pcb}
 \end{figure}
@@ -318,11 +318,19 @@ Some useful applications can be the following:
   \item People with Dementia Tracking: People with Alzheimer's or another form of dementia can lose their ability to recognize familiar places, so it's not uncommon for them to wander off and get lost and confused; in this case we can use AirTags to be sure about where they are.
 \end{itemize}
 
+\subsection{Mods}
+After some Internet researchs, the author discovered that the AirTag has been modified in certain ways. For instance, in \cite{telecomando} A. Catley has attached the AirTag to a remote controller and is powering the AirTag components using the host's battery. This could be very useful in situations in which the remote controller gets lost in the house; thanks to Precision Finding, the owner can find it easily. Figure \ref{img:controller} shows the final result.
+Now, imagination knows no bounds, and there are always innovative ways to utilize AirTags.
+\begin{figure}[]
+	\centering
+	\includegraphics[width=\textwidth]{images/remote.jpg}
+	\caption{AirTag inside a remote control.}
+	\label{img:controller}
+\end{figure}
 
+\section{Conclusion}
+todo
 
-
-
-%eventuali brevetti
 \printbibliography
 \nocite{*}
 
