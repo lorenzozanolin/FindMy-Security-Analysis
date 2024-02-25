@@ -2364,22 +2364,24 @@
     <bcf:citekey order="14">gcm</bcf:citekey>
     <bcf:citekey order="15">whocanfind</bcf:citekey>
     <bcf:citekey order="16">reverse</bcf:citekey>
+    <bcf:citekey order="17">nordicsemi</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
-    <bcf:citekey order="17">di2006uwb</bcf:citekey>
-    <bcf:citekey order="18">aps</bcf:citekey>
-    <bcf:citekey order="19">5394030</bcf:citekey>
-    <bcf:citekey order="20">airguard</bcf:citekey>
-    <bcf:citekey order="21">Mayo_2021</bcf:citekey>
-    <bcf:citekey order="22">Itani_2021</bcf:citekey>
-    <bcf:citekey order="23">Clover_2022</bcf:citekey>
-    <bcf:citekey order="24">OBoyle_2021</bcf:citekey>
-    <bcf:citekey order="25">whocanfind</bcf:citekey>
-    <bcf:citekey order="26">gadget</bcf:citekey>
-    <bcf:citekey order="27">ec</bcf:citekey>
-    <bcf:citekey order="28">ANSI</bcf:citekey>
-    <bcf:citekey order="29">sha</bcf:citekey>
-    <bcf:citekey order="30">gcm</bcf:citekey>
-    <bcf:citekey order="31">reverse</bcf:citekey>
+    <bcf:citekey order="18">di2006uwb</bcf:citekey>
+    <bcf:citekey order="19">aps</bcf:citekey>
+    <bcf:citekey order="20">5394030</bcf:citekey>
+    <bcf:citekey order="21">airguard</bcf:citekey>
+    <bcf:citekey order="22">Mayo_2021</bcf:citekey>
+    <bcf:citekey order="23">Itani_2021</bcf:citekey>
+    <bcf:citekey order="24">Clover_2022</bcf:citekey>
+    <bcf:citekey order="25">OBoyle_2021</bcf:citekey>
+    <bcf:citekey order="26">whocanfind</bcf:citekey>
+    <bcf:citekey order="27">gadget</bcf:citekey>
+    <bcf:citekey order="28">ec</bcf:citekey>
+    <bcf:citekey order="29">ANSI</bcf:citekey>
+    <bcf:citekey order="30">sha</bcf:citekey>
+    <bcf:citekey order="31">gcm</bcf:citekey>
+    <bcf:citekey order="32">reverse</bcf:citekey>
+    <bcf:citekey order="33">nordicsemi</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

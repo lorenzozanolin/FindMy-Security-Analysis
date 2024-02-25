@@ -293,6 +293,9 @@ If motion is detected, the speaker will loudly beep for up to 20 seconds after b
 \end{figure}
 
 \subsection{Security Analysis}
+Security-wise, there is a lack of basic security controls in this kind of devices; in fact, none of the data in the AirTag is protected from tampering or disclosure.
+\subsubsection{Side-channel attacks}
+The Nordic nRF52832 has the function Access Port Protection\cite{nordicsemi} that is used to disable access to the Debug Port through SWD and prevent reading out the internal memory. 
 \subsubsection{Anti-stalking measurements}
 \subsection{Future applications}
 

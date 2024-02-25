@@ -1,15 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'notes.blg'
-[54] biber-darwin:340> INFO - === Fri Feb 23, 2024, 16:01:06
-[65] Biber.pm:418> INFO - Reading 'notes.bcf'
-[134] Biber.pm:969> INFO - Using all citekeys in bib section 0
-[146] Biber.pm:4383> INFO - Processing section 0
-[154] Biber.pm:4574> INFO - Looking for bibtex file 'thud.bib' for section 0
-[155] bibtex.pm:1713> INFO - LaTeX decoding ...
-[166] bibtex.pm:1518> INFO - Found BibTeX data source 'thud.bib'
-[231] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[231] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[231] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[231] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[245] bbl.pm:654> INFO - Writing 'notes.bbl' with encoding 'UTF-8'
-[250] bbl.pm:757> INFO - Output to notes.bbl
+[55] biber-darwin:340> INFO - === Sun Feb 25, 2024, 11:45:54
+[67] Biber.pm:418> INFO - Reading 'notes.bcf'
+[139] Biber.pm:969> INFO - Using all citekeys in bib section 0
+[150] Biber.pm:4383> INFO - Processing section 0
+[159] Biber.pm:4574> INFO - Looking for bibtex file 'thud.bib' for section 0
+[160] bibtex.pm:1713> INFO - LaTeX decoding ...
+[172] bibtex.pm:1518> INFO - Found BibTeX data source 'thud.bib'
+[242] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[242] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[242] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[242] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[255] bbl.pm:654> INFO - Writing 'notes.bbl' with encoding 'UTF-8'
+[261] bbl.pm:757> INFO - Output to notes.bbl
+[261] Biber.pm:130> WARN - legacy year field 's.d.' in entry 'nordicsemi' is not an integer - this will probably not sort properly.
+[261] Biber.pm:132> INFO - WARNINGS: 1

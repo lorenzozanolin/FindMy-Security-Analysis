@@ -491,6 +491,33 @@
       \verb https://mfi.apple.com/
       \endverb
     \endentry
+    \entry{nordicsemi}{online}{}
+      \name{author}{1}{}{%
+        {{hash=352a7dc6b3bb9969e19f0d298749f3cc}{%
+           family={Semiconductor},
+           familyi={S\bibinitperiod},
+           given={Nordic},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{352a7dc6b3bb9969e19f0d298749f3cc}
+      \strng{fullhash}{352a7dc6b3bb9969e19f0d298749f3cc}
+      \strng{bibnamehash}{352a7dc6b3bb9969e19f0d298749f3cc}
+      \strng{authorbibnamehash}{352a7dc6b3bb9969e19f0d298749f3cc}
+      \strng{authornamehash}{352a7dc6b3bb9969e19f0d298749f3cc}
+      \strng{authorfullhash}{352a7dc6b3bb9969e19f0d298749f3cc}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Nordic Semiconductor Infocenter}}
+      \field{year}{s.d.}
+      \verb{urlraw}
+      \verb https://infocenter.nordicsemi.com/index.jsp?topic=%2Fps_nrf52833%2Fdif.html&anchor=concept_udr_mns_1s
+      \endverb
+      \verb{url}
+      \verb https://infocenter.nordicsemi.com/index.jsp?topic=%2Fps_nrf52833%2Fdif.html&anchor=concept_udr_mns_1s
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
