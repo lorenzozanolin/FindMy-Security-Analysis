@@ -271,7 +271,7 @@ Once the device is \textbf{registered}, the parameters \textit{bt, sr, bp} will 
 
 
 The device operates on a schedule designed to optimize its functionality:
-At 4:00 am every day, it updates its BLE address and public key, ensuring secure communication channels.
+at 4:00 am every day, it updates its BLE address and public key, ensuring secure communication channels.
 Advertisement data is refreshed every 15 minutes, guaranteeing that nearby devices receive the most current information.
 Should it become separated from its owner's device for three days, the device enters a lost mode, activating specific features to aid in recovery efforts.
 While in this lost mode and detecting movement, the device emits a noise every 6 hours to alert nearby individuals.
@@ -292,7 +292,7 @@ If motion is detected, the speaker will loudly beep for up to 20 seconds after b
 	\label{img:pcb}
 \end{figure}
 
-\subsection{Security Analysis}
+\subsection{Security Analysis}\label{sec}
 Security-wise, there is a lack of basic security controls in this kind of devices; in fact, none of the data in the AirTag is protected from tampering or disclosure.
 \textbf{Side-channel attacks}:
 The Nordic nRF52832 has the function Access Port Protection\cite{nordicsemi} that is used to disable access to the Debug Port through SWD and prevent reading out the internal memory; however, according to \cite{side}, this mechanism is vulnerable to side channel attacks and can be bypassed through voltage glitching. Consequentially, it is possible to extract Bluetooth pairing keys to connect to the owner’s phone or run (on the AirTag) a custom firmware since Apple does not check the signature of it (the firmware).
@@ -329,7 +329,10 @@ Now, imagination knows no bounds, and there are always innovative ways to utiliz
 \end{figure}
 
 \section{Conclusion}
-todo
+In conclusione, nella sezione 1 è stata data una overview generale delle tematiche che il paper avrebbe indagato. Nella sezione 2 è stata presentata la tecnologia UWB in cui, dopo una overview generale, è stata fatta un'analisi della sicurezza concentrandosi nello specifico sulle tecniche adottate da Apple nell'utilizzo di questa tecnologia. 
+Continuando, nella sezione 3 si è passati ad approfondire la rete FindMy; si è iniziato con una overview generale, in cui sono state descritte le features offerte da questo servizio, e successivamente è stato descritto un esempio di funzionamento. Di seguito, è stata fatta una dettagliata analisi alla sicurezza
+
+Successivamente  possiamo affermare che questi dispositivi offrono un'ottima funzionalità per il basso costo a cui è possibile acquistarli ma sono ancora troppo poco sicuri; una miglioria potrebbe essere introdurre un sistema di autenticazione nella fase in cui vengono scambiate le chiavi pubbliche, per evitare attacchi replay come descritto in \ref{sec}.
 
 \printbibliography
 \nocite{*}
