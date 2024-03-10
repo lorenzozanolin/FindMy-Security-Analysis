@@ -53,7 +53,7 @@
 
 \title{AirTag and FindMy - Deep analysis}
 \author{Zanolin Lorenzo}
-
+\date{February, 2024}
 \begin{document}
 
 \maketitle
@@ -73,10 +73,10 @@
 % AirTag possibili utilizzi futuri
 
 \begin{abstract}
-  The main goal of this project is to dig into how Apple AirTags work, including their setup, security measures, and uses; since everything is tied to the FindMy network, we will also look into the security methods used in this network. The idea is to get a clear picture of how Apple AirTags are put together, how secure they are, and the different ways they're used in the FindMy network.
+  The main goal of this project is to dig into how Apple AirTags work, including their setup, security measures, and uses; since everything is tied to the FindMy network and the UWB technology, we will also look into the security methods used in this network and the basic principle of the Ultra-Wideband. The idea is to get a clear picture of how Apple AirTags are put together, how secure they are, and the different ways they're used in the FindMy network.
 \end{abstract}
 
-\section{Introduction}
+\section{Introduction}\label{sec:intro}
 In the rapidly evolving landscape of technological advancements, Apple's AirTags have emerged as a noteworthy innovation, offering a seamless solution to tracking and locating personal belongings. This paper delves into the architecture and security of AirTags, with a particular emphasis on the Ultra-Wideband (UWB) technology that underlies their functionality. Moreover, as AirTags operate within the framework of the FindMy network, this exploration extends to a thorough analysis of the security measures embedded in both the device and the overarching network; by unraveling the synergy between AirTags, UWB, and FindMy security, this paper aims to contribute insights into the robustness of the technological ecosystem that facilitates precise location tracking while addressing potential concerns surrounding privacy and data security.
 
 We will go over the fundamentals of UWB technology in Section \ref{sec:uwb} and examine its benefits from a security standpoint. In Section \ref{sec:find}, we will delve deeper into the examination of the FindMy network. We will begin with providing a general overview of the architecture, go on to a functioning example, and end with a security analysis of the whole thing. Lastly, we will conduct a thorough examination of the AirTag concept in Chapter \ref{sec:at}, concentrating on the architecture (first examining the software component, then the hardware component), and then moving on to the security analysis of this technology.
@@ -329,10 +329,12 @@ Now, imagination knows no bounds, and there are always innovative ways to utiliz
 \end{figure}
 
 \section{Conclusion}
-In conclusione, nella sezione 1 è stata data una overview generale delle tematiche che il paper avrebbe indagato. Nella sezione 2 è stata presentata la tecnologia UWB in cui, dopo una overview generale, è stata fatta un'analisi della sicurezza concentrandosi nello specifico sulle tecniche adottate da Apple nell'utilizzo di questa tecnologia. 
-Continuando, nella sezione 3 si è passati ad approfondire la rete FindMy; si è iniziato con una overview generale, in cui sono state descritte le features offerte da questo servizio, e successivamente è stato descritto un esempio di funzionamento. Di seguito, è stata fatta una dettagliata analisi alla sicurezza
+In conclusion, the paper provided a comprehensive exploration of various technological aspects. Section\ref{sec:intro} offered a broad overview of the themes to be addressed, setting the stage for deeper investigation. Section \ref{sec:uwb} delved into Ultra-Wideband (UWB) technology, offering not only a general introduction but also a detailed analysis of its security implications, particularly in the context of Apple's implementation.
 
-Successivamente  possiamo affermare che questi dispositivi offrono un'ottima funzionalità per il basso costo a cui è possibile acquistarli ma sono ancora troppo poco sicuri; una miglioria potrebbe essere introdurre un sistema di autenticazione nella fase in cui vengono scambiate le chiavi pubbliche, per evitare attacchi replay come descritto in \ref{sec}.
+Progressing to Section \ref{sec:find}, the focus shifted to the FindMy network. Here, the discussion began with a holistic overview, elucidating the array of features this service provides, followed by a practical example to illustrate its operation. Subsequently, an intricate examination of FindMy's security measures was conducted, shedding light on the intricacies of its encryption protocols.
+
+Section \ref{sec:at} centered on AirTag, starting with a comprehensive overview before dissecting its architectural components, encompassing both software and hardware aspects. This was followed by an in-depth security analysis, uncovering vulnerabilities inherent in these devices that could potentially be exploited by malicious entities. Despite their cost-effectiveness and utility, it was evident that improvements in security measures, such as the introduction of authentication protocols during key exchange, were necessary to fortify their defenses against replay attacks, as discussed in \ref{sec}.
+Lastly, the paper briefly report practical applications of these technologies, including an example where modifications were applied to adapt them to alternative contexts. 
 
 \printbibliography
 \nocite{*}
