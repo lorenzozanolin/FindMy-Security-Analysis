@@ -1,0 +1,3 @@
+App che ti permette di disabilitare temporaneamente funzioni airtag (hardware switch, tipo spegnere la batteria)
+
+Magari un'interfaccia che ti configura l'airtag per tracciare persone con demenza senile
