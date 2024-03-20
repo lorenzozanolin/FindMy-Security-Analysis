@@ -94,26 +94,28 @@ Because of its wide spectrum utilization, UWB can coexist peacefully with other 
 According to \cite{aps}, Apple-designed U1 chip uses UWB technology for spatial awareness, allowing iPhone 11, iPhone 11 Pro and iPhone 11 Pro Max or later iPhone models to precisely locate other U1-equipped Apple devices.
 When two U1 devices come close to eachother, the two start measuring their exact distance. The ranging is accomplished through Time of Flight (ToF), which is the time it takes for a pulse to get from point A to point B. According to IEEE 802.15.4a \cite{5394030}, UWB can determine the relative position of other devices in the line of sight even up to 200 meters.
 
-A difference w.r.t. Bluetooth Low Energy (BLE) is that with BLE you can’t really measure location or distance. What you can do is to detect if a device like a smartphone is within a range of another device. UWB, in comparison, provides a much higher accuracy (up to a few centimeters). In contrast to BLE, the distance it measures is not based on the signal strength, but the time it takes the signal to travel from point A (smartphone) to point B (UWB tag). The following table represent the principal differences between the two technologies:
+A difference w.r.t. Bluetooth Low Energy (BLE) is that with BLE you can’t really measure location or distance. What you can do is to detect if a device like a smartphone is within a range of another device. UWB, in comparison, provides a much higher accuracy (up to a few centimeters). In contrast to BLE, the distance it measures is not based on the signal strength, but the time it takes the signal to travel from point A (smartphone) to point B (UWB tag). The following table represent the principal differences between the two technologies, data is taken from \cite{encstore}:
 
 \begin{table}[h]
   \begin{tabular}{l|l|l|}
   \cline{2-3}
   {}                               & {\textbf{UWB}}                & { \textbf{Bluetooth (BLE Beacons)}} \\ \hline
   \multicolumn{1}{|l|}{{  \textbf{Battery}}}  & {  Low consumption}             & {  Low consumption}                  \\ \hline
-  \multicolumn{1}{|l|}{{  \textbf{Range}}}    & {  up to 200 meters (656 feet)} & {  up to 70 meters (230 feet)}       \\ \hline
-  \multicolumn{1}{|l|}{{  \textbf{Accuracy}}} & {  10 centimeters (3.9 inches)} & {  up to a meter}                    \\ \hline
-  \multicolumn{1}{|l|}{{  \textbf{Cost}}}     & {  Low}                         & {  Low}                              \\ \hline
+  \multicolumn{1}{|l|}{{  \textbf{Data Rate}}}  & { 1 Gbps }             & { 2 Mbps }                  \\ \hline
+  \multicolumn{1}{|l|}{{  \textbf{Range}}}    & {  up to 200 meters} & {  up to 100 meters}       \\ \hline
+  \multicolumn{1}{|l|}{{  \textbf{Accuracy}}} & {  10 centimeters} & {  up to a meter}                    \\ \hline
+  \multicolumn{1}{|l|}{{  \textbf{Cost}}}     & {  Low}                         & {Depend on the context }                              \\ \hline
   \end{tabular}
   \end{table}
 
 \subsection{Security analysis}
 The fact that UWB pulses are resistant to the multipath effect\footnote{Multipath interference occurs when a signal from a transmitter arrives at a receiver via two or more routes; typically there is a direct path plus a number of indirect paths caused by reflections} is one of its key characteristics. This occurs when radio waves are reflected or refracted by artificial or natural objects near to the primary signal channel, causing the signal to reach the receiver via many paths. Positioning accuracy is improved by immunity to the multipath effect, particularly when compared to other technologies that are more vulnerable. Moreover, UWB's resilience to jamming and narrowband fading makes it a particularly reliable technology choice, even when several UWB systems are being used at once.
 
-Another important aspect to consider is the resistance from Relay Attacks, which is a vulnerability of the majority of signals-based architectures. Within this attacks, the goal is to trick a car into thinking the key and owner are close by using two people with hacking devices. The first relays signals from the car to the second thief, who transmits the signal to the house. The key responds, allowing entry into the car. The relay attack intercepts and amplifies wireless signals used to unlock the door and start the car, despite the key's distance. With UWB that would not be possible due to its working scheme: to ensure the car doesn't have to make assumptions, rapid measurements are utilized to establish distance very precisely. Any attempt to relay attack or intercept the UWB signal will merely cause the answering device's acknowledgement signals to arrive later, indicating to the UWB-based lock and ignition that the responding device is actually farther away rather than closer. The car's presumption is replaced with assurance when using UWB, which greatly increases the security of the passive keyless entry system.
+Another important aspect to consider is the resistance from Relay Attacks, which is a vulnerability of the majority of signals-based architectures. Within these attacks, the goal is to trick a car into thinking the key and owner are close by using two people with hacking devices \cite{renesas}. The first relays signals from the car to the second thief, who transmits the signal to the house. The key responds, allowing entry into the car. The relay attack intercepts and amplifies wireless signals used to unlock the door and start the car, despite the key's distance. With UWB that would not be possible due to its working scheme: to ensure the car doesn't have to make assumptions, rapid measurements are utilized to establish distance very precisely. Any attempt to relay attack or intercept the UWB signal will merely cause the answering device's acknowledgement signals to arrive later, indicating to the UWB-based lock and ignition that the responding device is actually farther away rather than closer. The car's presumption is replaced with assurance when using UWB, which greatly increases the security of the passive keyless entry system.
 
 The implemented security measures, taken by Apple, are the following: MAC address randomization and frame sequence number randomization \cite{aps}.
-%approfondisci meglio guardando nel dettaglio il payload di un pacchetto
+
+%%---------------------- FINO A QUI OK
 
 \subsubsection{MAC address randomization}
 Apple platforms use a randomized media access control address (MAC address) when performing scans when not associated with another device. Because a device’s MAC address changes when disconnected from another device, it can’t be used to persistently track a device by passive observers of traffic.

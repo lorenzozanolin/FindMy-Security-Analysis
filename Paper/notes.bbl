@@ -240,6 +240,32 @@
       \field{title}{UWB communication systems: a comprehensive overview}
       \field{year}{2006}
     \endentry
+    \entry{encstore}{online}{}
+      \name{author}{1}{}{%
+        {{hash=74acac2bdfdc6eff09c910b18f043e4f}{%
+           family={Encstore},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{74acac2bdfdc6eff09c910b18f043e4f}
+      \strng{fullhash}{74acac2bdfdc6eff09c910b18f043e4f}
+      \strng{bibnamehash}{74acac2bdfdc6eff09c910b18f043e4f}
+      \strng{authorbibnamehash}{74acac2bdfdc6eff09c910b18f043e4f}
+      \strng{authornamehash}{74acac2bdfdc6eff09c910b18f043e4f}
+      \strng{authorfullhash}{74acac2bdfdc6eff09c910b18f043e4f}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{BLE vs UWB: What Are the Differences}
+      \field{year}{s.d.}
+      \verb{urlraw}
+      \verb https://www.encstore.com/blog/5524-ble-vs-uwb-what-are-the-differences
+      \endverb
+      \verb{url}
+      \verb https://www.encstore.com/blog/5524-ble-vs-uwb-what-are-the-differences
+      \endverb
+      \warn{\item Entry 'encstore' (thud.bib): Invalid format 'Data di accesso' of date field 'urldate' - ignoring}
+    \endentry
     \entry{sha}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=312359d3b416dc36d67dab0e5f171530}{%
@@ -608,6 +634,32 @@
       \verb{url}
       \verb https://www.pocket-lint.com/phones/news/apple/156605-what-is-precision-finding-on-apple-airtags-and-how-does-it-work/
       \endverb
+    \endentry
+    \entry{renesas}{online}{}
+      \name{author}{1}{}{%
+        {{hash=678b770f0219a53253f027ba8d7cf415}{%
+           family={Renesas},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{678b770f0219a53253f027ba8d7cf415}
+      \strng{fullhash}{678b770f0219a53253f027ba8d7cf415}
+      \strng{bibnamehash}{678b770f0219a53253f027ba8d7cf415}
+      \strng{authorbibnamehash}{678b770f0219a53253f027ba8d7cf415}
+      \strng{authornamehash}{678b770f0219a53253f027ba8d7cf415}
+      \strng{authorfullhash}{678b770f0219a53253f027ba8d7cf415}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Defend Your Vehicle Against Relay Attack: Defense Technology Against Latest Automotive Theft}
+      \field{year}{s.d.}
+      \verb{urlraw}
+      \verb https://www.renesas.com/us/en/document/whp/defend-your-vehicle-against-relay-attack-defense-technology-against-latest-automotive-theft
+      \endverb
+      \verb{url}
+      \verb https://www.renesas.com/us/en/document/whp/defend-your-vehicle-against-relay-attack-defense-technology-against-latest-automotive-theft
+      \endverb
+      \warn{\item Entry 'renesas' (thud.bib): Invalid format 'Data di accesso' of date field 'urldate' - ignoring}
     \endentry
     \entry{gadget}{misc}{}
       \name{author}{1}{}{%
