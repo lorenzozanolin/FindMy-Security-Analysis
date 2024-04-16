@@ -104,18 +104,21 @@ Because of its wide spectrum utilization, UWB can coexist peacefully with other 
 According to \cite{aps}, Apple-designed U1 chip uses UWB technology for spatial awareness, allowing iPhone 11, iPhone 11 Pro and iPhone 11 Pro Max or later iPhone models to precisely locate other U1-equipped Apple devices.
 When two U1 devices come close to eachother, the two start measuring their exact distance. The ranging is accomplished through Time of Flight (ToF), which is the time it takes for a pulse to get from point A to point B. According to IEEE 802.15.4a \cite{5394030}, UWB can determine the relative position of other devices in the line of sight even up to 200 meters.
 
-A difference w.r.t. Bluetooth Low Energy (BLE) is that with BLE you can’t really measure location or distance. What you can do is to detect if a device like a smartphone is within a range of another device. UWB, in comparison, provides a much higher accuracy (up to a few centimeters). In contrast to BLE, the distance it measures is not based on the signal strength, but the time it takes the signal to travel from point A (smartphone) to point B (UWB tag). The following table represent the principal differences between the two technologies, data is taken from \cite{encstore}:
-
-\begin{table}[h]
-  \begin{tabular}{l|l|l|}
-  \cline{2-3}
-  {}                               & {\textbf{UWB}}                & { \textbf{Bluetooth (BLE Beacons)}} \\ \hline
-  \multicolumn{1}{|l|}{{  \textbf{Battery}}}  & {  Low consumption}             & {  Low consumption}                  \\ \hline
-  \multicolumn{1}{|l|}{{  \textbf{Data Rate}}}  & { 1 Gbps }             & { 2 Mbps }                  \\ \hline
-  \multicolumn{1}{|l|}{{  \textbf{Range}}}    & {  up to 200 meters} & {  up to 100 meters}       \\ \hline
-  \multicolumn{1}{|l|}{{  \textbf{Accuracy}}} & {  10 centimeters} & {  up to a meter}                    \\ \hline
-  \multicolumn{1}{|l|}{{  \textbf{Cost}}}     & {  Low}                         & {Depend on the context }                              \\ \hline
-  \end{tabular}
+A difference w.r.t. Bluetooth Low Energy (BLE) is that with BLE you can’t really measure location or distance. What you can do is to detect if a device like a smartphone is within a range of another device. UWB, in comparison, provides a much higher accuracy (up to a few centimeters). In contrast to BLE, the distance it measures is not based on the signal strength, but the time it takes the signal to travel from point A (smartphone) to point B (UWB tag). Table \ref{tableu} represent the principal differences between the two technologies, data is taken from \cite{encstore}:
+\begin{table}[h] 
+\caption{BLE-UWB comparison.}
+  \centering
+  
+    \begin{tabular}{l|l|l|}
+      \cline{2-3}
+      {}                               & {\textbf{UWB}}                & { \textbf{Bluetooth (BLE Beacons)}} \\ \hline
+      \multicolumn{1}{|l|}{{  \textbf{Battery}}}  & {  Low consumption}             & {  Low consumption}                  \\ \hline
+      \multicolumn{1}{|l|}{{  \textbf{Data Rate}}}  & { 1 Gbps }             & { 2 Mbps }                  \\ \hline
+      \multicolumn{1}{|l|}{{  \textbf{Range}}}    & {  up to 200 meters} & {  up to 100 meters}       \\ \hline
+      \multicolumn{1}{|l|}{{  \textbf{Accuracy}}} & {  10 centimeters} & {  up to a meter}                    \\ \hline
+      \multicolumn{1}{|l|}{{  \textbf{Cost}}}     & {  Low}                         & {Depend on the context }                              \\ \hline
+    \end{tabular}
+    \label{tableu}
   \end{table}
 
 \subsection{Security analysis}
@@ -124,8 +127,6 @@ The fact that UWB pulses are resistant to the multipath effect\footnote{Multipat
 Another important aspect to consider is the resistance from Relay Attacks, which is a vulnerability of the majority of signals-based architectures. Within these attacks, the goal is to trick a car into thinking the key and owner are close by using two people with hacking devices \cite{renesas}. The first relays signals from the car to the second thief, who transmits the signal to the house. The key responds, allowing entry into the car. The relay attack intercepts and amplifies wireless signals used to unlock the door and start the car, despite the key's distance. With UWB that would not be possible due to its working scheme: to ensure the car doesn't have to make assumptions, rapid measurements are utilized to establish distance very precisely. Any attempt to relay attack or intercept the UWB signal will merely cause the answering device's acknowledgement signals to arrive later, indicating to the UWB-based lock and ignition that the responding device is actually farther away rather than closer. The car's presumption is replaced with assurance when using UWB, which greatly increases the security of the passive keyless entry system.
 
 The implemented security measures, taken by Apple, are the following: MAC address randomization and frame sequence number randomization \cite{aps}.
-
-%%---------------------- FINO A QUI OK
 
 \subsubsection{MAC address randomization}
 Apple platforms use a randomized media access control address (MAC address) when performing scans when not associated with another device. Because a device’s MAC address changes when disconnected from another device, it can’t be used to persistently track a device by passive observers of traffic.
@@ -253,10 +254,11 @@ An owner device that retrieves encrypted location reports follows the inverse of
 
 
 \section{AirTag}\label{sec:at}
+An AirTag is a small tracking device developed and sold by Apple; it is intended to assist users in finding and monitoring objects that are easily misplaced or lost, such as wallets, bags, and keys.
 \subsection{Overview}
-An AirTag is a small tracking device developed and sold by Apple; it is intended to assist users in finding and monitoring objects that are easily misplaced or lost, such as wallets, bags, and keys. By connecting to compatible Apple devices (iPhones, iPads, and Macs) through Bluetooth, the AirTag enables users to locate the linked object and, subsequently, the AirTag itself using the Find My app. In order to help with lost item recovery, the gadget has capabilities including accurate location tracking, proximity notifications, and a Lost Mode. Its design prioritizes privacy and security, safeguarding user data through the use of encryption and anonymization. Support for the AirTag was introduced in iOS 14.5 and Apple lists as compatible all the devices that support iOS 14 and iPadOS.
+ By connecting to compatible Apple devices (iPhones, iPads, and Macs) through Bluetooth, the AirTag enables users to locate the linked object and, subsequently, the AirTag itself using the Find My app. In order to help with lost item recovery, the gadget has capabilities including accurate location tracking, proximity notifications and a Lost Mode. Its design prioritizes privacy and security, safeguarding user data through the use of encryption and anonymization. Support for the AirTag was introduced in iOS 14.5 and Apple lists as compatible all the devices that support iOS 14 and iPadOS.
 \subsection{Architecture}
-First of all we will analyze the architecture of this product; most of the presented stuff has been reverse engineered by Adam Catley in \cite{reverse}. We will cover both the hardware and the software aspects of this kind of devices.
+First of all we will analyze the architecture of this product; informations have been reverse engineered by Adam Catley in \cite{reverse}. We will cover both the hardware and the software aspects of this kind of devices.
 \subsubsection{Software analysis}
 As for the software part, we can identify various states in which AirTag can be; we will now quickly present all of them.
 \begin{itemize}
@@ -299,33 +301,34 @@ When away from its owner's device, the device transmits BLE advertisement signal
 Finally, in close proximity to its owner's device, the device establishes a BLE connection interval of 1 second, ensuring efficient communication and responsiveness.
 \subsubsection{Hardware analysis}\label{hw}
 As for the hardware part, an important aspect comes to the light: all of the used components, apart from Apple's U1 UWB chip, are off the shelf, as we can see in Figure \ref{img:pcb}.
-As for the antennas, there are three of them inside the AirTag: one for BLE (Bluetooth Low Energy) that works at 2.4GHz, one for NFC at 13.56MHz and finally the UWB one at 6.5-8GHz.
+Each AirTag has three antennas: one for BLE that works at 2.4 GHz, one for NFC at 13.56 MHz and finally the UWB one at 6.5-8 GHz.
 The outer plastic shell, which serves as a diaphragm, is adhered to the voice coil. When the coil is energized, the fixed magnet causes it to move back and forth, creating sound and serving as the speaker.
 Whether the voice coil is connected or not, the AirTag functions in the same way.
 If motion is detected, the speaker will loudly beep for up to 20 seconds after being apart from its owner's device for three days. After that, it will be silent for the following six hours before watching for movement once more.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{images/pcb.png}
-	\caption{PCB overview.}
+	\caption{PCB overview (image from \cite{reverse}). }
 	\label{img:pcb}
 \end{figure}
 
 \subsection{Security Analysis}\label{sec}
 Security-wise, there is a lack of basic security controls in this kind of devices; in fact, none of the data in the AirTag is protected from tampering or disclosure.
-\textbf{Side-channel attacks}:
+\subsubsection{Vulnerabilities}
+\paragraph{Side-channel attacks}
 The Nordic nRF52832 has the function Access Port Protection\cite{nordicsemi} that is used to disable access to the Debug Port through SWD and prevent reading out the internal memory; however, according to \cite{side}, this mechanism is vulnerable to side channel attacks and can be bypassed through voltage glitching. Consequentially, it is possible to extract Bluetooth pairing keys to connect to the owner’s phone or run (on the AirTag) a custom firmware since Apple does not check the signature of it (the firmware).
 
-\textbf{Insecure Storage}: Unfortunately, the GD25LE32D 32Mbit NOR flash is not encrypted, as we can see in \cite{tweet}; also the nRF52832 does not have any secure storage functionality. In this case we don't know if this is a real vulnerability since we do not know whether the FindMy private key-pair is stored inside the AirTag.
+\paragraph{Insecure Storage}The GD25LE32D 32Mbit NOR flash is not encrypted, as we can see in \cite{tweet}; also the nRF52832 does not have any secure storage functionality. In this case we don't know if this is a real vulnerability since we do not know whether the FindMy private key-pair is stored inside the AirTag.
 
-\textbf{Replay attacks}: The only way to identify an AirTag is to use its public key, which is transmitted via BLE advertising packets; this identification does not require authentication. These IDs can be recorded and replayed by any nearby BLE device to mimic the appearance of the real AirTag. Let's see an example: an attacker steals a personal item containing an AirTag and subsequently record the current public identity before removing the battery. At this point, the identity can be relayed to any BLE device in a decoy location to give the owner a false search area to recover their property.
+\paragraph{Replay attacks}The only way to identify an AirTag is to use its public key, which is transmitted via BLE advertising packets; this identification does not require authentication. These IDs can be recorded and replayed by any nearby BLE device to mimic the appearance of the real AirTag. Let's see an example: an attacker steals a personal item containing an AirTag and subsequently record the current public identity before removing the battery. At this point, the identity can be relayed to any BLE device in a decoy location to give the owner a false search area to recover their property.
 \subsubsection{Anti-stalking measurements}
 An important aspect that has emerged with the AirTags is the stalking problem. Stalking using AirTags refers to the potential misuse of Apple's AirTag tracking devices to monitor and track individuals without their consent; these small devices are designed to help users locate misplaced items. However, due to their small size and long battery life, AirTags could potentially be used for nefarious purposes, such as stalking. An individual could secretly place an AirTag on someone's belongings and then use the Find My app to monitor their movements in real-time. Since AirTags are designed to be difficult to detect, the victim may not realize they are being tracked for an extended period.
 
 Apple has implemented measures to prevent the misuse of AirTags, including alerts and notifications for when an unknown AirTag is detected near a user's device, as well as features like Precision Finding, which can help users locate unwanted AirTags. The first line of defense in the event that someone plants an AirTag on a victim belongings might be an alert to his iPhone indicating the presence of a foreign AirTag. Apple built the iPhone-AirTag connection to do this in two ways: either when you get to the place that your iPhone's machine learning intelligence has detected as home (or when you manually record it as home) or after the AirTag has stuck with you for a certain "continuous" period of time that Apple deems sufficient to be considered abnormal. This seems perfect, however if the victim has a non Apple device, such as an Android Phone this could be a problem. To prevent this problem, Google and Apple collaborated to develop Unknow Tracker Alerts, which is a feature that was announced during the Google I/O 2023 opening presentation.
 
-Additionally, AirTags are designed to emit sound if they have been separated from their owner for an extended period, potentially alerting the victim to the presence of the tracking device. More precisely, three days following separation is when sound alerts begin; even in that case, they only occur once motion is identified and only for a maximum of 20 seconds. After that, the AirTag remains silent for a maximum of 20 seconds every six hours while it waits for movements. The problem with this is that three days can be enough to study the victim's routine and after that period, it is likely to make noise for a maximum of 40 seconds a day during a normal commuting schedule. Movement is likely to coincide with a noisy environment while travelling or muffled by objects touching the white casing, meaning that the victim won't realize it. Fortunately, according to \cite{server}, the frequency and duration of sounds can be adjusted from Apple server side, meaning that Apple can increase both of them to avoid situations in which the victim is unable to ear the sounds.
+Additionally, AirTags are designed to emit sound if they have been separated from their owner for an extended period, potentially alerting the victim to the presence of the tracking device. More precisely, three days following separation is when sound alerts begin; even in that case, they only occur once motion is identified and only for a maximum of 20 seconds. After that, the AirTag remains silent for a maximum of 20 seconds every six hours while it waits for movements. The problem with this is that three days can be enough to study the victim's routine and after that period, it is likely to make noise for a maximum of 40 seconds a day during a normal commuting schedule. Movement is likely to coincide with a noisy environment while travelling or muffled by objects touching the white casing, meaning that the victim won't realize it. According to \cite{server}, the frequency and duration of sounds can be adjusted from Apple server side, meaning that Apple can increase both of them to avoid situations in which the victim is unable to ear the sounds.
 
-However, despite these safeguards, the potential for AirTags to be used for stalking remains a concern; in fact, a big problem is that the voice coil can be disconnected without disassembly. This means that the AirTag will function as normal without emitting sounds, thus an attacker can easily modify an AirTag and be unknowingly placed in someone’s possessions to track a target’s location without them being audibly notified of its presence.
+However, despite these safeguards, the potential for AirTags to be used for stalking remains a concern; in fact, a problem is that the voice coil can be disconnected without disassembly. This means that the AirTag will function as normal without emitting sounds, thus an attacker can easily modify an AirTag and be unknowingly placed in someone’s possessions to track a target’s location without them being audibly notified of its presence.
 \subsection{Useful applications}
 Some useful applications can be the following:
 \begin{itemize}
@@ -342,16 +345,16 @@ Now, imagination knows no bounds, and there are always innovative ways to utiliz
 \begin{figure}[]
 	\centering
 	\includegraphics[width=\textwidth]{images/remote.jpg}
-	\caption{AirTag inside a remote control.}
+	\caption{AirTag inside a remote control (images from \cite{reverse}).}
 	\label{img:controller}
 \end{figure}
 
 \section{Conclusion}
-In conclusion, the paper provided a comprehensive exploration of various technological aspects. Section\ref{sec:intro} offered a broad overview of the themes to be addressed, setting the stage for deeper investigation. Section \ref{sec:uwb} delved into Ultra-Wideband (UWB) technology, offering not only a general introduction but also a detailed analysis of its security implications, particularly in the context of Apple's implementation.
+In conclusion, the paper provided a comprehensive exploration of various technological aspects. Section \ref{sec:intro} offered a broad overview of the themes to be addressed, setting the stage for deeper investigation. Section \ref{sec:uwb} delved into UWB technology, offering not only a general introduction but also a detailed analysis of its security implications, particularly in the context of Apple's implementation.
 
-Progressing to Section \ref{sec:find}, the focus shifted to the FindMy network. Here, the discussion began with a holistic overview, elucidating the array of features this service provides, followed by a practical example to illustrate its operation. Subsequently, an intricate examination of FindMy's security measures was conducted, shedding light on the intricacies of its encryption protocols.
+Progressing to Section \ref{sec:find}, the focus shifted to the FindMy network. Here, the discussion began with an overview, followed by a practical example to illustrate its operation. Subsequently, an examination of FindMy's security measures was conducted, shedding light on the intricacies of its encryption protocols.
 
-Section \ref{sec:at} centered on AirTag, starting with a comprehensive overview before dissecting its architectural components, encompassing both software and hardware aspects. This was followed by an in-depth security analysis, uncovering vulnerabilities inherent in these devices that could potentially be exploited by malicious entities. Despite their cost-effectiveness and utility, it was evident that improvements in security measures, such as the introduction of authentication protocols during key exchange, were necessary to fortify their defenses against replay attacks, as discussed in \ref{sec}.
+Section \ref{sec:at} centered on AirTag, starting with an overview before analyzing its architectural components, encompassing both software and hardware aspects. This was followed by an in-depth security analysis, uncovering vulnerabilities inherent in these devices that could potentially be exploited by malicious entities. Despite their cost-effectiveness and utility, it was evident that improvements in security measures, such as the introduction of authentication protocols during key exchange, were necessary to fortify their defenses against replay attacks, as discussed in \ref{sec}.
 Lastly, the paper briefly report practical applications of these technologies, including an example where modifications were applied to adapt them to alternative contexts. 
 
 \printbibliography
