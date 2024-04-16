@@ -190,7 +190,7 @@ Let us first define a few terms in accordance with \cite{whocanfind}:
   \item \textit{Apple’s Servers}: Apple’s servers store the location reports submitted by finder devices; only owner devices can fetch those reports and decrypt them locally.
 \end{itemize}
 \subsubsection{Workflow}
-An online device can simply report its location to the user via iCloud. Find My works offline by sending out short range BLE signals from the missing device that can be detected by other Apple devices in use nearby. Those nearby devices then relay the detected location of the missing device to iCloud so users can locate it in the Find My app while protecting the privacy and security of all the users involved. An example of the previous workflow is represented in figure \ref{process}.
+An online device can report its location to the user via iCloud. Find My works offline by sending out short range BLE signals from the missing device that can be detected by other Apple devices in use nearby. Those nearby devices then relay the detected location of the missing device to iCloud so users can locate it in the Find My app while protecting the privacy and security of all the users involved. An example of the previous workflow is represented in figure \ref{process}.
 
 \begin{figure}[]
 	\centering
@@ -233,7 +233,7 @@ Scheme (ECIES), which performs an ephemeral Elliptic Curve Diffie-Hellmann (ECDH
   \item Use the last 16 bytes as an initialization vector $IV$.
   \item Encrypt the location report under $e'$ and the $IV$ with AES-GCM. 
 \end{enumerate} 
-The ephemeral public key $p'$ and the authentication tag of AES-GCM are part of the uploaded message All location reports are identified by an $ID$ which is the SHA-256 hash of $p_i$, as we can see in figures \ref{comparison}.
+The ephemeral public key $p'$ and the authentication tag of AES-GCM are part of the uploaded message. All location reports are identified by an $ID$ which is the SHA-256 hash of $p_i$, as we can see in figures \ref{comparison}.
 
 \paragraph{Decryption}
 An owner device that retrieves encrypted location reports follows the inverse of the encryption procedure:
@@ -247,7 +247,7 @@ An owner device that retrieves encrypted location reports follows the inverse of
 	\centering
 	\includegraphics[width=0.5\textwidth]{images/packet.png}\hfill 
 	\includegraphics[width=0.5\textwidth]{images/findmysec.png}
-	\caption{(a) Binary format of a location report \quad (b) Example of sent payload.}
+	\caption{(a) Binary format of a location report \quad (b) Example of sent payload (images from \cite{whocanfind},\cite{airguard}).}
 	\label{comparison}
 \end{figure}
 
