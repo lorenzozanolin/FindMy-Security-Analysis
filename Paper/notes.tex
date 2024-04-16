@@ -12,6 +12,16 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage[obeyspaces]{url}
+
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
 \graphicspath{{./images/}}
 \usepackage{hyperref}
 \hypersetup{
@@ -149,9 +159,10 @@ There are several useful features within this app, as example:
 \end{figure}
 
 \subsection{Functioning}
-As for the functioning, we will use the content of \cite{Mayo_2021,Itani_2021,Clover_2022,OBoyle_2021} to describe the entire process. First of all we want to register our products within the application; in case of a non-accessory item, it will automatically be inserted in the \textit{Devices} section. In case of accessories, like AirTag, you need to manually add them using the \textit{Items} section.
+%As for the functioning, we will use the content of \cite{Mayo_2021,Itani_2021,Clover_2022,OBoyle_2021} to describe the entire process. 
+Now, we will descrive the entire functioning process; first of all we want to register our products within the application; in case of a non-accessory item, it will automatically be inserted in the \textit{Devices} section. In case of accessories, like AirTag, you need to manually add them using the \textit{Items} section.
 
-Now you should be able to localize online devices from the map; in case of a close AirTag you can also use the \textit{Precision finding} to locate the object using U1 chip (this function is only available for iPhone 11 and aboves), as represented in Figure \ref{findmy1}. The technology fuses input from the iPhone's camera, ARKit, accelerometer and gyroscope in order to guide the user to their AirTag using a combination of sound, haptics, and visual feedback. 
+Now you should be able to localize online devices from the map; in case of a close AirTag you can also use the \textit{Precision finding} to locate the object using U1 chip, as represented in Figure \ref{findmy1}. The technology fuses input from the iPhone's camera, ARKit, accelerometer and gyroscope in order to guide the user to their AirTag using a combination of sound, haptics, and visual feedback. 
 
 \begin{figure}[t]
 	\centering
@@ -164,34 +175,35 @@ In case of a stolen device, you can always activate \textit{Lost Mode}; it will 
 
 This technology seems already pretty useful, but if a device is powered off how can it be localized? With the introduction of iOS 15 and the U1 chips, Apple claimed that even a U1-based iPhone can be localized even when turned off if and only if the Bluetooth is turned on. From Apple: With iOS 15, your iPhone is still traceable through the Find My network even when the device is powered off. 
 It seems that with iOS 15, the phone is not really fully powered off, it stays in a low-power state and acts like an AirTag, allowing any nearby iOS device to pick up the Bluetooth signal and send back its location.
-This also means if the iPhone runs out of battery during the day, the owner still has a chance of finding its location for several more hours. In fact, Apple says the location tracking will even keep working whilst the phone is reset to factory settings with Activation Lock enabled. And what about other devices, like Macbooks? Since Apple has not commented on the matter, the author conducted some tests and discovered that, regrettably, even machines with high specifications lack the U1 chip and are therefore not localizable when turned off. 
+This also means if the iPhone runs out of battery during the day, the owner still has a chance of finding its location for several more hours. In fact, Apple says the location tracking will even keep working whilst the phone is reset to factory settings with Activation Lock enabled. What about other devices, like Macbooks? Since Apple has not commented on the matter, the author conducted some tests and discovered that even machines with high specifications lack the U1 chip and are therefore not localizable when turned off. 
 
 As already written, AirTags can be tracked through the \textit{Items} tab and have all of the tracking features available to Apple devices like iPhones and iPads. There's a Lost Mode, and AirTags can also take advantage of the Find My network that allows them to be tracked by billions of iPhones, iPads, and Macs when they're out of range of the owner devices. The only way to stop an AirTag from being fully detectable is to remove the CR2032 coin battery (or when it fully discharges).
 
 \subsection{Security analysis}
 In this section we will analyze the security measures implemented in FindMy to increase the safety of the architecture. Let us add some more details in the process of localizing an object.
+\subsubsection{Preliminars definitions}
 Let us first define a few terms in accordance with \cite{whocanfind}:
 \begin{itemize}
   \item \textit{Owner Devices}: Owner devices share a common Apple ID and can use the Find My application on macOS, iOS and ipadOS to search for any devices of the same owner.
   \item \textit{Lost Devices}: Devices that determine to be in a lost state start sending out BLE advertisements with a public key to be discovered by finder devices. Apple devices are considered to be lost when they lose Internet connectivity. Third-party accessories \cite{gadget} are small battery-powered devices that can be attached to a personal item and are set up through an owner device. Accessories determine to be lost when they lose their BLE connection to the owner device.
-  \item \textit{Finder Devices}: Finder devices form the core of the FindMy network. As of 2023, only iPhones and iPads with a GPS module are offering finder capabilities. Finder devices can discover lost devices and accessories by scanning for BLE advertisements. Upon receiving an advertisement, a finder creates an end-to-end encrypted location report that includes its current location and
-  sends it to Apple’s servers. We will see what are the contents of the report.
-  \item \textit{Apple’s Servers}: Apple’s servers store the location reports submitted by finder devices. Only owner devices can fetch those reports and decrypt them locally.
+  \item \textit{Finder Devices}: Finder devices form the core of the FindMy network. As of 2023, only iPhones and iPads with a GPS module are offering finder capabilities. Finder devices can discover lost devices and accessories by scanning for BLE advertisements. Upon receiving an advertisement, a finder creates an end-to-end encrypted location report that includes its current location and sends it to Apple’s servers. We will see what are the contents of the report.
+  \item \textit{Apple’s Servers}: Apple’s servers store the location reports submitted by finder devices; only owner devices can fetch those reports and decrypt them locally.
 \end{itemize}
-An online device can simply report its location to the user via iCloud. Find My works offline by sending out short range Bluetooth signals from the missing device that can be detected by other Apple devices in use nearby. Those nearby devices then relay the detected location of the missing device to iCloud so users can locate it in the Find My app while protecting the privacy and security of all the users involved. An example of the previous workflow is represented in figure \ref{process}.
+\subsubsection{Workflow}
+An online device can simply report its location to the user via iCloud. Find My works offline by sending out short range BLE signals from the missing device that can be detected by other Apple devices in use nearby. Those nearby devices then relay the detected location of the missing device to iCloud so users can locate it in the Find My app while protecting the privacy and security of all the users involved. An example of the previous workflow is represented in figure \ref{process}.
 
 \begin{figure}[]
 	\centering
 	\includegraphics[width=.5\textwidth]{images/process.png}
-	\caption{FindMy workflow (simplified).}
+	\caption{FindMy workflow (image from \cite{whocanfind}).}
 	\label{process}
 \end{figure}
 All finder devices regularly scan for FindMy advertisements.
 The finder creates and uploads an encrypted position report to Apple's servers whenever it receives a packet in the FindMy advertising format; finder devices are likely to use less energy and bandwidth because they gather reports over time and transfer them in batches on a regular basis. The evaluation done in \cite{whocanfind} discovered that the median time from generating to uploading a location report is 26 min and the delay can increase to several hours if the finder device is in a low power mode.
 
+\subsubsection{Cryptography}
 We will now delve more in the used Cryptography protocols. 
-
-\subsubsection{Advertisement keys}\label{keys}
+\paragraph{Advertisement keys}\label{keys}
 FindMy utilises Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind} the process to generate \textit{advertisement keys} is the following:
 \begin{enumerate}
   \item Each owner device generates a private/public key pair
@@ -206,10 +218,10 @@ FindMy utilises Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind} th
   where Equation $(1)$ derives a new symmetric key from the last used symmetric key with 32 bytes length. Equation $(2)$ derives the so-called “anti-tracking” keys $u_i$ and $v_i$ from the new symmetric key with a length of $36$ bytes each. Finally, Eqs. $(3)$ and $(4)$ create the advertisement key pair via EC point multiplication using the anti-tracking keys and the master beacon key $d_0$.
 \end{enumerate}
 
-\subsubsection{Key synchronization}
+\paragraph{Key synchronization}
 To download and decode location information, the advertisement keys must be accessed by all owner devices. In order to synchronize the master beacon keys, FindMy uses iCloud to encrypt a property list file in the Galois/Counter mode of the Advanced Encryption Standard (AES-GCM) \cite{gcm}. The file's decryption key is kept in the iCloud keychain underneath the label “Beacon Store”.
 
-\subsubsection{Encryption}
+\paragraph{Encryption}
 The BLE advertisements sent out by a lost device contain an EC public key $p_i$. A finder
 device that receives such an advertisement determines its current location and encrypts the location with $p_i$. OF employs the Elliptic Curve Integrated Encryption
 Scheme (ECIES), which performs an ephemeral Elliptic Curve Diffie-Hellmann (ECDH) key exchange to derive a shared secret used to encrypt the report. According to \cite{whocanfind}, the finder’s encryption algorithm works as follows:
@@ -223,7 +235,7 @@ Scheme (ECIES), which performs an ephemeral Elliptic Curve Diffie-Hellmann (ECDH
 \end{enumerate} 
 The ephemeral public key $p'$ and the authentication tag of AES-GCM are part of the uploaded message All location reports are identified by an $ID$ which is the SHA-256 hash of $p_i$, as we can see in figures \ref{comparison}.
 
-\subsubsection{Decryption}
+\paragraph{Decryption}
 An owner device that retrieves encrypted location reports follows the inverse of the encryption procedure:
 \begin{enumerate}
   \item The owner device selects the proper advertisement keys $(d_i, p_i)$ based on the hashed $p_i$ of the location report.

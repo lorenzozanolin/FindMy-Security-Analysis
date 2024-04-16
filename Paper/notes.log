@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  16 APR 2024 15:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  16 APR 2024 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -175,6 +175,18 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
+(/usr/local/texlive/2022/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box52
+\beforetitleunit=\skip52
+\aftertitleunit=\skip53
+\ttl@plus=\dimen159
+\ttl@minus=\dimen160
+\ttl@toksa=\toks24
+\titlewidth=\dimen161
+\titlewidthlast=\dimen162
+\titlewidthfirst=\dimen163
+)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
 
@@ -216,7 +228,7 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen159
+\@linkdim=\dimen164
 \Hy@linkcounter=\count277
 \Hy@pagecounter=\count278
 
@@ -247,7 +259,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4390.
 \c@Hy@tempcnt=\count280
 LaTeX Info: Redefining \url on input line 4749.
-\XeTeXLinkMargin=\dimen160
+\XeTeXLinkMargin=\dimen165
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -257,8 +269,8 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count281
-\Field@Width=\dimen161
-\Fld@charsize=\dimen162
+\Field@Width=\dimen166
+\Fld@charsize=\dimen167
 Package hyperref Info: Hyper figures OFF on input line 6027.
 Package hyperref Info: Link nesting OFF on input line 6032.
 Package hyperref Info: Hyper index ON on input line 6035.
@@ -299,28 +311,28 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip52
+\Hy@SectionHShift=\skip54
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 23.
+Package hyperref Info: Option `colorlinks' set `true' on input line 33.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count287
-\lst@gtempboxa=\box52
-\lst@token=\toks24
+\lst@gtempboxa=\box53
+\lst@token=\toks25
 \lst@length=\count288
-\lst@currlwidth=\dimen163
+\lst@currlwidth=\dimen168
 \lst@column=\count289
 \lst@pos=\count290
-\lst@lostspace=\dimen164
-\lst@width=\dimen165
+\lst@lostspace=\dimen169
+\lst@width=\dimen170
 \lst@newlines=\count291
 \lst@lineno=\count292
-\lst@maxwidth=\dimen166
+\lst@maxwidth=\dimen171
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count293
 \lst@skipnumbers=\count294
-\lst@framebox=\box53
+\lst@framebox=\box54
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -386,14 +398,14 @@ Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 \c@blx@sectionciteorder@0=\count336
 \blx@entrysetcounter=\count337
 \blx@biblioinstance=\count338
-\labelnumberwidth=\skip53
-\labelalphawidth=\skip54
-\biblabelsep=\skip55
-\bibitemsep=\skip56
-\bibnamesep=\skip57
-\bibinitsep=\skip58
-\bibparsep=\skip59
-\bibhang=\skip60
+\labelnumberwidth=\skip55
+\labelalphawidth=\skip56
+\biblabelsep=\skip57
+\bibitemsep=\skip58
+\bibnamesep=\skip59
+\bibinitsep=\skip60
+\bibparsep=\skip61
+\bibhang=\skip62
 \blx@bcfin=\read3
 \blx@bcfout=\write3
 \blx@langwohyphens=\language88
@@ -476,20 +488,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count407
 \c@pageref=\count408
 \c@savedpageref=\count409
-\shorthandwidth=\skip61
-\shortjournalwidth=\skip62
-\shortserieswidth=\skip63
-\shorttitlewidth=\skip64
-\shortauthorwidth=\skip65
-\shorteditorwidth=\skip66
-\locallabelnumberwidth=\skip67
-\locallabelalphawidth=\skip68
-\localshorthandwidth=\skip69
-\localshortjournalwidth=\skip70
-\localshortserieswidth=\skip71
-\localshorttitlewidth=\skip72
-\localshortauthorwidth=\skip73
-\localshorteditorwidth=\skip74
+\shorthandwidth=\skip63
+\shortjournalwidth=\skip64
+\shortserieswidth=\skip65
+\shorttitlewidth=\skip66
+\shortauthorwidth=\skip67
+\shorteditorwidth=\skip68
+\locallabelnumberwidth=\skip69
+\locallabelalphawidth=\skip70
+\localshorthandwidth=\skip71
+\localshortjournalwidth=\skip72
+\localshortserieswidth=\skip73
+\localshorttitlewidth=\skip74
+\localshortauthorwidth=\skip75
+\localshorteditorwidth=\skip76
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -560,7 +572,7 @@ Package: expl3 2022-02-24 L3 programming layer (loader)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count421
-\l__pdf_internal_box=\box54
+\l__pdf_internal_box=\box55
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2022-02-24 L3 programming layer (loader) 
@@ -582,24 +594,24 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./notes.aux)
 \openout1 = `notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -608,16 +620,16 @@ Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count424
-\scratchdimen=\dimen167
-\scratchbox=\box55
+\scratchdimen=\dimen172
+\scratchbox=\box56
 \nofMPsegments=\count425
 \nofMParguments=\count426
-\everyMPshowfont=\toks25
+\everyMPshowfont=\toks26
 \MPscratchCnt=\count427
-\MPscratchDim=\dimen168
+\MPscratchDim=\dimen173
 \MPnumerator=\count428
 \makeMPintoPDFobject=\count429
-\everyMPtoPDFconversion=\toks26
+\everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -635,7 +647,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 )
-Package hyperref Info: Link coloring ON on input line 57.
+Package hyperref Info: Link coloring ON on input line 67.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -649,9 +661,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count430
 )
-LaTeX Info: Redefining \ref on input line 57.
-LaTeX Info: Redefining \pageref on input line 57.
-LaTeX Info: Redefining \nameref on input line 57.
+LaTeX Info: Redefining \ref on input line 67.
+LaTeX Info: Redefining \pageref on input line 67.
+LaTeX Info: Redefining \nameref on input line 67.
  (./notes.out) (./notes.out)
 \@outlinefile=\write4
 \openout4 = `notes.out'.
@@ -685,20 +697,20 @@ Package biblatex Warning: Biber reported the following issues
  accesso' of date field 'urldate' - ignoring.
 
 )
-Package biblatex Info: Reference section=0 on input line 57.
-Package biblatex Info: Reference segment=0 on input line 57.
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 60
+Package biblatex Info: Reference section=0 on input line 67.
+Package biblatex Info: Reference segment=0 on input line 67.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 70
 .
  (/usr/local/texlive/2022/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -711,107 +723,107 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (2.44511pt too wide) in paragraph at lines 80--81
+Overfull \hbox (2.44511pt too wide) in paragraph at lines 90--91
 \OT1/cmr/m/n/10 In the rapidly evolv-ing land-scape of tech-no-log-i-cal ad-van
 ce-ments, Ap-ple's AirTags
  []
 
 [2] [3] [4]
-<images/findmy.jpg, id=175, 2055.68pt x 1329.96875pt>
+<images/findmy.jpg, id=169, 2055.68pt x 1329.96875pt>
 File: images/findmy.jpg Graphic file (type jpg)
 <use images/findmy.jpg>
-Package pdftex.def Info: images/findmy.jpg  used on input line 146.
+Package pdftex.def Info: images/findmy.jpg  used on input line 156.
 (pdftex.def)             Requested size: 310.4979pt x 200.86667pt.
  [5]
-<images/airtag-precision-finding-2.jpg, id=188, 803.0pt x 789.95125pt>
+<images/airtag-precision-finding-2.jpg, id=178, 803.0pt x 789.95125pt>
 File: images/airtag-precision-finding-2.jpg Graphic file (type jpg)
 <use images/airtag-precision-finding-2.jpg>
 Package pdftex.def Info: images/airtag-precision-finding-2.jpg  used on input l
-ine 158.
+ine 169.
 (pdftex.def)             Requested size: 207.0021pt x 203.63469pt.
  [6 <./images/findmy.jpg>] [7 <./images/airtag-precision-finding-2.jpg>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 183.
+               Default added (so using `tbp') on input line 195.
 
-<images/process.png, id=207, 871.255pt x 582.175pt>
+<images/process.png, id=193, 871.255pt x 582.175pt>
 File: images/process.png Graphic file (type png)
 <use images/process.png>
-Package pdftex.def Info: images/process.png  used on input line 185.
+Package pdftex.def Info: images/process.png  used on input line 197.
 (pdftex.def)             Requested size: 172.5pt x 115.26035pt.
 [8 <./images/process.png>] [9]
-<images/packet.png, id=243, 981.6675pt x 450.68375pt>
+<images/packet.png, id=233, 981.6675pt x 450.68375pt>
 File: images/packet.png Graphic file (type png)
 <use images/packet.png>
-Package pdftex.def Info: images/packet.png  used on input line 236.
+Package pdftex.def Info: images/packet.png  used on input line 248.
 (pdftex.def)             Requested size: 172.5pt x 79.19405pt.
-<images/findmysec.png, id=244, 1208.515pt x 836.12375pt>
+<images/findmysec.png, id=234, 1208.515pt x 836.12375pt>
 File: images/findmysec.png Graphic file (type png)
 <use images/findmysec.png>
-Package pdftex.def Info: images/findmysec.png  used on input line 237.
+Package pdftex.def Info: images/findmysec.png  used on input line 249.
 (pdftex.def)             Requested size: 172.5pt x 119.34024pt.
- [10 <./images/packet.png> <./images/findmysec.png>] [11]
-Overfull \hbox (11.99689pt too wide) in paragraph at lines 273--275
+ [10] [11 <./images/packet.png> <./images/findmysec.png>]
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 285--287
 \OT1/cmtt/m/n/10 found . apple . com / airtag ? pid = 5500 & b = 00 & pt = 004c
  & fv = 00100e10 & dg = 00 & z = 00 &
  []
 
 [12]
-<images/pcb.png, id=278, 962.59625pt x 744.7825pt>
+<images/pcb.png, id=270, 962.59625pt x 744.7825pt>
 File: images/pcb.png Graphic file (type png)
 <use images/pcb.png>
-Package pdftex.def Info: images/pcb.png  used on input line 296.
+Package pdftex.def Info: images/pcb.png  used on input line 308.
 (pdftex.def)             Requested size: 345.0pt x 266.92822pt.
  [13] [14 <./images/pcb.png>] [15]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 330.
+               Default added (so using `tbp') on input line 342.
 
-<images/remote.jpg, id=305, 2546.01187pt x 630.85687pt>
+<images/remote.jpg, id=297, 2546.01187pt x 630.85687pt>
 File: images/remote.jpg Graphic file (type jpg)
 <use images/remote.jpg>
-Package pdftex.def Info: images/remote.jpg  used on input line 332.
+Package pdftex.def Info: images/remote.jpg  used on input line 344.
 (pdftex.def)             Requested size: 345.0pt x 85.47966pt.
 [16 <./images/remote.jpg>]
-Overfull \hbox (7.6041pt too wide) in paragraph at lines 346--346
+Overfull \hbox (7.6041pt too wide) in paragraph at lines 358--358
 []\OT1/cmr/m/n/10 en. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\OT1/cmtt/m/n/
 10 https : / / csrc . nist . gov / CSRC / media / Events / Key -[] Management -
 []
  []
 
 [17]
-Overfull \hbox (4.80281pt too wide) in paragraph at lines 346--346
+Overfull \hbox (4.80281pt too wide) in paragraph at lines 358--358
 \OT1/cmtt/m/n/10 news / apple / 156605 -[] what -[] is -[] precision -[] findin
 g -[] on -[] apple -[] airtags -[]
  []
 
 
-Overfull \hbox (0.26723pt too wide) in paragraph at lines 346--346
+Overfull \hbox (0.26723pt too wide) in paragraph at lines 358--358
 []\OT1/cmr/m/n/10 Limited Re-sults. \OT1/cmr/m/it/10 nRF52 De-bug Res-ur-rec-ti
 on: Ap-pro-tect By-pass\OT1/cmr/m/n/10 . June 2020.
  []
 
 
-Overfull \hbox (19.34721pt too wide) in paragraph at lines 346--346
+Overfull \hbox (19.34721pt too wide) in paragraph at lines 358--358
 \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\OT1/cmtt/m/n/10 https : / / limited
 results . com / 2020 / 06 / nrf52 -[] debug -[] resurrection -[]
  []
 
-[18] (./notes.aux)
+[18] [19] (./notes.aux)
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: 20017C2CE1BBE19ADD62B1A30A519ABF;3163.
+(rerunfilecheck)             Checksum: 84C82C320A4AE0BDB899A030C29A5C9E;3022.
 Package logreq Info: Writing requests to 'notes.run.xml'.
 \openout1 = `notes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21072 strings out of 478268
- 366163 string characters out of 5846347
- 1074418 words of memory out of 5000000
- 38955 multiletter control sequences out of 15000+600000
+ 21371 strings out of 478268
+ 370287 string characters out of 5846347
+ 1082383 words of memory out of 5000000
+ 39248 multiletter control sequences out of 15000+600000
  480194 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,9n,77p,1207b,1822s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,9n,77p,1207b,1820s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -831,10 +843,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texm
 f-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on notes.pdf (18 pages, 2799783 bytes).
+Output written on notes.pdf (19 pages, 2800979 bytes).
 PDF statistics:
  466 PDF objects out of 1000 (max. 8388607)
- 395 compressed objects within 4 object streams
- 91 named destinations out of 1000 (max. 500000)
- 228 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 393 compressed objects within 4 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 220 words of extra memory for PDF output out of 10000 (max. 10000000)
 

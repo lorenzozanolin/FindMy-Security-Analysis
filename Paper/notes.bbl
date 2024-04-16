@@ -145,6 +145,7 @@
       \field{month}{2}
       \field{title}{Find my App: Everything to Know}
       \field{year}{2022}
+      \true{nocite}
       \verb{urlraw}
       \verb https://www.macrumors.com/guide/find-my/
       \endverb
@@ -405,6 +406,7 @@
       \field{month}{10}
       \field{title}{How are iPhones still findable even when turned off}
       \field{year}{2021}
+      \true{nocite}
       \verb{urlraw}
       \verb https://www.xda-developers.com/iphone-findable-turned-off/#:~:text=Most%20time%2C%20U1%20is%20on,the%20connected%20device%20via%20Bluetooth.
       \endverb
@@ -513,6 +515,7 @@
       \field{month}{6}
       \field{title}{iOS 15: Find My network can still find your iPhone when it is powered off, or factory reset - 9to5Mac}
       \field{year}{2021}
+      \true{nocite}
       \verb{urlraw}
       \verb https://9to5mac.com/2021/06/07/ios-15-find-my-network-can-find-your-iphone-when-it-is-powered-off/
       \endverb
@@ -628,6 +631,7 @@
       \field{month}{11}
       \field{title}{What is Precision Finding on AirTags and how does it work?}
       \field{year}{2021}
+      \true{nocite}
       \verb{urlraw}
       \verb https://www.pocket-lint.com/phones/news/apple/156605-what-is-precision-finding-on-apple-airtags-and-how-does-it-work/
       \endverb
