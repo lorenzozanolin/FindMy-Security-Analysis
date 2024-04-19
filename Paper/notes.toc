@@ -14,7 +14,7 @@
 \contentsline {subsubsection}{\numberline {3.3.3}Cryptography}{9}{subsubsection.3.3.3}%
 \contentsline {paragraph}{\numberline {3.3.3.1}Advertisement keys}{9}{paragraph.3.3.3.1}%
 \contentsline {paragraph}{\numberline {3.3.3.2}Key synchronization}{9}{paragraph.3.3.3.2}%
-\contentsline {paragraph}{\numberline {3.3.3.3}Encryption}{10}{paragraph.3.3.3.3}%
+\contentsline {paragraph}{\numberline {3.3.3.3}Encryption}{9}{paragraph.3.3.3.3}%
 \contentsline {paragraph}{\numberline {3.3.3.4}Decryption}{10}{paragraph.3.3.3.4}%
 \contentsline {section}{\numberline {4}AirTag}{10}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Overview}{11}{subsection.4.1}%
