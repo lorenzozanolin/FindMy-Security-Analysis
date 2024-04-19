@@ -490,6 +490,38 @@
       \field{pages}{1\bibrangedash 17}
       \range{pages}{17}
     \endentry
+    \entry{KittyCatGO2024}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f1bfc1d1289fca82d7ca5e4cd059890b}{%
+           family={KittyCatGO},
+           familyi={K\bibinitperiod},
+           given={Emily\bibnamedelima -},
+           giveni={E\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \strng{namehash}{f1bfc1d1289fca82d7ca5e4cd059890b}
+      \strng{fullhash}{f1bfc1d1289fca82d7ca5e4cd059890b}
+      \strng{bibnamehash}{f1bfc1d1289fca82d7ca5e4cd059890b}
+      \strng{authorbibnamehash}{f1bfc1d1289fca82d7ca5e4cd059890b}
+      \strng{authornamehash}{f1bfc1d1289fca82d7ca5e4cd059890b}
+      \strng{authorfullhash}{f1bfc1d1289fca82d7ca5e4cd059890b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{KittyCatGO}
+      \field{month}{3}
+      \field{title}{The Apple AirTag for Cats: A pet tracking review}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://kittycatgo.com/the-apple-airtag-for-cats-a-pet-tracking-review/
+      \endverb
+      \verb{url}
+      \verb https://kittycatgo.com/the-apple-airtag-for-cats-a-pet-tracking-review/
+      \endverb
+    \endentry
     \entry{Mayo_2021}{misc}{}
       \name{author}{1}{}{%
         {{hash=c778b58759960b3a1cf6a7fac7ff22a8}{%
