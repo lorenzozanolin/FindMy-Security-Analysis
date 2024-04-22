@@ -522,6 +522,38 @@
       \verb https://kittycatgo.com/the-apple-airtag-for-cats-a-pet-tracking-review/
       \endverb
     \endentry
+    \entry{Maric2023}{article}{}
+      \name{author}{1}{}{%
+        {{hash=371edf25793edaccd373de74f2ace98f}{%
+           family={Maric},
+           familyi={M\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {enAU}%
+      }
+      \strng{namehash}{371edf25793edaccd373de74f2ace98f}
+      \strng{fullhash}{371edf25793edaccd373de74f2ace98f}
+      \strng{bibnamehash}{371edf25793edaccd373de74f2ace98f}
+      \strng{authorbibnamehash}{371edf25793edaccd373de74f2ace98f}
+      \strng{authornamehash}{371edf25793edaccd373de74f2ace98f}
+      \strng{authorfullhash}{371edf25793edaccd373de74f2ace98f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CarExpert}
+      \field{month}{3}
+      \field{title}{How to keep track of your car with these cheap devices: AirTag v SmartTag+ v GPS | CarExpert}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.carexpert.com.au/car-comparisons/stolen-car-these-cheap-devices-will-track-it-airtag-smarttag-and-gps-tracker
+      \endverb
+      \verb{url}
+      \verb https://www.carexpert.com.au/car-comparisons/stolen-car-these-cheap-devices-will-track-it-airtag-smarttag-and-gps-tracker
+      \endverb
+    \endentry
     \entry{Mayo_2021}{misc}{}
       \name{author}{1}{}{%
         {{hash=c778b58759960b3a1cf6a7fac7ff22a8}{%
@@ -782,6 +814,36 @@
       \endverb
       \verb{url}
       \verb https://infocenter.nordicsemi.com/index.jsp?topic=%2Fps_nrf52833%2Fdif.html&anchor=concept_udr_mns_1s
+      \endverb
+    \endentry
+    \entry{Src2024}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=276e79316561733d64abdf00f8e8ae48}{%
+           family={Src},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-GB}%
+      }
+      \strng{namehash}{276e79316561733d64abdf00f8e8ae48}
+      \strng{fullhash}{276e79316561733d64abdf00f8e8ae48}
+      \strng{bibnamehash}{276e79316561733d64abdf00f8e8ae48}
+      \strng{authorbibnamehash}{276e79316561733d64abdf00f8e8ae48}
+      \strng{authornamehash}{276e79316561733d64abdf00f8e8ae48}
+      \strng{authorfullhash}{276e79316561733d64abdf00f8e8ae48}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PitPat}
+      \field{month}{3}
+      \field{title}{Can I use an AirTag to track my dog?}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.pitpat.com/doggy-products/can-i-use-an-airtag-to-track-my-dog/
+      \endverb
+      \verb{url}
+      \verb https://www.pitpat.com/doggy-products/can-i-use-an-airtag-to-track-my-dog/
       \endverb
     \endentry
   \enddatalist

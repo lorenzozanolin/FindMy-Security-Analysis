@@ -331,12 +331,27 @@ However, despite these safeguards, the potential for AirTags to be used for stal
 % monitoraggio remoto, solo come intrusion detector, wallet trcker (piu i wallet fatti apposta), remote tracking di persone nel caso si splittino (es. ad un concerto) e ci sia poca connessione internet (cosi non serve chiamarsi), drone tracking, localizzare gli scaffali nei supermercati (idea possibile se le API sono aperte), usarlo come tag nfc e quindi creare automazioni, per spedire un pacco e tracciarlo
 Some useful applications can be the following:
 \begin{itemize}
-  \item Travel: AirTags can be beneficial for travelers. They can attach AirTags to their luggage, making it easier to identify and track their bags during travel. As example, 
+  \item \textit{Travel}: AirTags can be beneficial for travelers. They can attach AirTags to their luggage, making it easier to identify and track their bags during travel. As example, 
   imagine you have just landed from a trip and are eager to grab your bags, waiting endlessly at the carousel can be frustrating. You start worrying that your luggage got lost, but if you've got AirTags inside, you can quickly check if it's still at the airport or somewhere else. Even if it's taking longer than expected, you can keep tabs on it until the airline sorts things out and gets it back to you.
-  \item Pet Tracking: while not explicitly designed for pets, some users have found AirTags useful for tracking their pets; by attaching an AirTag to a pet's collar, owners can monitor their pet's location and quickly locate them if they wander off. Some tests were conducted in \cite{KittyCatGO2024} and, as we could expect, it seems that the AirTag doesn’t work quite when in motion, as example on a moving cat. 
-  \item Child Safety: similarly to pets, AirTags can offer an additional layer of security for keeping track of children in crowded or unfamiliar places. By attaching an AirTag to a child's backpack or clothing, parents can monitor their child's whereabouts and receive alerts if they stray too far.
-  \item Vehicle Tracking: AirTags can also be used to track vehicles, such as bicycles, motorcycles or cars in the same way as the two above.
-  \item People with Dementia Tracking: people with Alzheimer's or another form of dementia can lose their ability to recognize familiar places, so it's not uncommon for them to wander off and get lost and confused; in this case, we can use AirTags to be sure about where they are.
+  \item \textit{Pet Tracking}: while not explicitly designed for pets, some users have found AirTags useful for tracking their pets; by attaching an AirTag to a pet's collar, owners can monitor their pet's location and quickly locate them if they wander off. Some tests were conducted in \cite{KittyCatGO2024} and, as we could expect, it seems that the AirTag doesn’t work quite when in motion, as example on a moving cat. In \cite{Src2024}, they conducted a test trying to track a dog. As before, the experiment was delusional; they tried to simulate the dog using a plastic box that contained the AirTag and was dropped near a spot where dog walkers regularly walk past it every day. It took several hours before the user got the first fix on this lost AirTag’s location. And that was just a single one-off fix. There wasn’t another for several more hours.
+  \item \textit{Child Safety}: similarly to pets, AirTags can offer an additional layer of security for keeping track of children in crowded or unfamiliar places. By attaching an AirTag to a child's backpack or clothing, parents can monitor their child's whereabouts and receive alerts if they stray too far. Ethical debates can arise regarding this issue, as experts have long been worried about the impact of more restrictive parenting on children’s mental health and development; we will not go any deeper on this question since it is a technical report.
+  \item \textit{Vehicle Tracking}: AirTags can also be used to track vehicles, such as bicycles, motorcycles or cars in the same way as the two above. An experiment was done in \cite{Maric2023} were an Apple AirTag, a Samsung SmartTag+, and a GPS unit with 3G and 4G compatibility have been used to evaluate their performance and determine the most cost-effective solution to track a device; additionally as a backup measure to these external devices, they used the ConnectedDrive feature on a BMW 3 Series to compare its effectiveness against the other options. Table \ref{vehicles} compares the cost of the used options, data is taken from \cite{Maric2023}.
+  
+  \begin{table}[h] 
+    \caption{Solutions cost comparison.}
+      \centering
+      \begin{tabular}{|c|c|c}
+        \cline{1-2}
+        \textbf{Device}           & \textbf{Cost (\$AUD)}  &  \\ \cline{1-2}
+        Apple AirTag              & \$45                   &  \\ \cline{1-2}
+        Samsung SmartTag+         & \$60                   &  \\ \cline{1-2}
+        GPS tracker with SIM card & $147 plus $7 per month &  \\ \cline{1-2}
+        BMW ConnectedDrive        & From \$119 per year    &  \\ \cline{1-2}
+        \end{tabular}
+        \label{vehicles}
+      \end{table}
+
+  \item \textit{People with Dementia Tracking}: people with Alzheimer's or another form of dementia can lose their ability to recognize familiar places, so it's not uncommon for them to wander off and get lost and confused; in this case, we can use AirTags to be sure about where they are.
 \end{itemize}
 
 \subsection{Mods}
