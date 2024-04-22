@@ -1,25 +1,25 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'notes.blg'
-[53] biber-darwin:340> INFO - === Mon Apr 22, 2024, 17:06:20
+[52] biber-darwin:340> INFO - === Mon Apr 22, 2024, 17:59:45
 [63] Biber.pm:418> INFO - Reading 'notes.bcf'
-[137] Biber.pm:969> INFO - Using all citekeys in bib section 0
-[149] Biber.pm:4383> INFO - Processing section 0
-[157] Biber.pm:4574> INFO - Looking for bibtex file 'thud.bib' for section 0
-[158] bibtex.pm:1713> INFO - LaTeX decoding ...
-[175] bibtex.pm:1518> INFO - Found BibTeX data source 'thud.bib'
-[272] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[272] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[272] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[272] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[292] bbl.pm:654> INFO - Writing 'notes.bbl' with encoding 'UTF-8'
-[300] bbl.pm:757> INFO - Output to notes.bbl
-[300] Biber.pm:130> WARN - legacy year field 's.d.' in entry 'encstore' is not an integer - this will probably not sort properly.
-[300] Biber.pm:130> WARN - Entry 'encstore' (thud.bib): Invalid format 'Data di accesso' of date field 'urldate' - ignoring
-[300] Biber.pm:130> WARN - legacy month field 'June' in entry 'side' is not an integer - this will probably not sort properly.
-[300] Biber.pm:130> WARN - legacy month field 'May' in entry 'tweet' is not an integer - this will probably not sort properly.
-[300] Biber.pm:130> WARN - legacy year field 's.d.' in entry 'renesas' is not an integer - this will probably not sort properly.
-[300] Biber.pm:130> WARN - Entry 'renesas' (thud.bib): Invalid format 'Data di accesso' of date field 'urldate' - ignoring
-[300] Biber.pm:130> WARN - legacy month field 'May' in entry 'telecomando' is not an integer - this will probably not sort properly.
-[300] Biber.pm:130> WARN - legacy year field 's.d.' in entry 'nordicsemi' is not an integer - this will probably not sort properly.
-[300] Biber.pm:130> WARN - legacy month field 'April' in entry 'server' is not an integer - this will probably not sort properly.
-[300] Biber.pm:132> INFO - WARNINGS: 9
+[134] Biber.pm:969> INFO - Using all citekeys in bib section 0
+[146] Biber.pm:4383> INFO - Processing section 0
+[153] Biber.pm:4574> INFO - Looking for bibtex file 'thud.bib' for section 0
+[154] bibtex.pm:1713> INFO - LaTeX decoding ...
+[172] bibtex.pm:1518> INFO - Found BibTeX data source 'thud.bib'
+[268] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[268] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[268] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[268] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[288] bbl.pm:654> INFO - Writing 'notes.bbl' with encoding 'UTF-8'
+[296] bbl.pm:757> INFO - Output to notes.bbl
+[296] Biber.pm:130> WARN - legacy month field 'May' in entry 'telecomando' is not an integer - this will probably not sort properly.
+[296] Biber.pm:130> WARN - legacy year field 's.d.' in entry 'renesas' is not an integer - this will probably not sort properly.
+[296] Biber.pm:130> WARN - Entry 'renesas' (thud.bib): Invalid format 'Data di accesso' of date field 'urldate' - ignoring
+[296] Biber.pm:130> WARN - legacy month field 'May' in entry 'tweet' is not an integer - this will probably not sort properly.
+[296] Biber.pm:130> WARN - legacy year field 's.d.' in entry 'nordicsemi' is not an integer - this will probably not sort properly.
+[296] Biber.pm:130> WARN - legacy year field 's.d.' in entry 'encstore' is not an integer - this will probably not sort properly.
+[296] Biber.pm:130> WARN - Entry 'encstore' (thud.bib): Invalid format 'Data di accesso' of date field 'urldate' - ignoring
+[296] Biber.pm:130> WARN - legacy month field 'June' in entry 'side' is not an integer - this will probably not sort properly.
+[296] Biber.pm:130> WARN - legacy month field 'April' in entry 'server' is not an integer - this will probably not sort properly.
+[297] Biber.pm:132> INFO - WARNINGS: 9

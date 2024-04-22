@@ -846,6 +846,22 @@
       \verb https://www.pitpat.com/doggy-products/can-i-use-an-airtag-to-track-my-dog/
       \endverb
     \endentry
+    \entry{bracelets}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medical ID Fashions}
+      \field{title}{Unremovable AirTag® bracelets}
+      \verb{urlraw}
+      \verb https://www.medicalidfashions.com/Unremovable%20AirTag%20Bracelets
+      \endverb
+      \verb{url}
+      \verb https://www.medicalidfashions.com/Unremovable%20AirTag%20Bracelets
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
