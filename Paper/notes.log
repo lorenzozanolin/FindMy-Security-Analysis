@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  22 APR 2024 18:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  22 APR 2024 18:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -780,61 +780,61 @@ Package pdftex.def Info: images/pcb.png  used on input line 308.
  [13] [14 <./images/pcb.png>] [15] [16]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 356.
+               Default added (so using `tbp') on input line 357.
 
 <images/AirT-Blk-Sm.jpg, id=323, 216.81pt x 144.54pt>
 File: images/AirT-Blk-Sm.jpg Graphic file (type jpg)
 <use images/AirT-Blk-Sm.jpg>
-Package pdftex.def Info: images/AirT-Blk-Sm.jpg  used on input line 358.
+Package pdftex.def Info: images/AirT-Blk-Sm.jpg  used on input line 359.
 (pdftex.def)             Requested size: 120.7521pt x 80.50293pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 368.
+               Default added (so using `tbp') on input line 369.
 
 <images/remote.jpg, id=328, 2546.01187pt x 630.85687pt>
 File: images/remote.jpg Graphic file (type jpg)
 <use images/remote.jpg>
-Package pdftex.def Info: images/remote.jpg  used on input line 370.
+Package pdftex.def Info: images/remote.jpg  used on input line 371.
 (pdftex.def)             Requested size: 345.0pt x 85.47966pt.
-[17 <./images/AirT-Blk-Sm.jpg>]
-Overfull \hbox (7.6041pt too wide) in paragraph at lines 384--384
+[17] [18 <./images/AirT-Blk-Sm.jpg> <./images/remote.jpg>]
+Overfull \hbox (7.6041pt too wide) in paragraph at lines 385--385
 []\OT1/cmr/m/n/10 en. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\OT1/cmtt/m/n/
 10 https : / / csrc . nist . gov / CSRC / media / Events / Key -[] Management -
 []
  []
 
-[18 <./images/remote.jpg>]
-Overfull \hbox (5.80281pt too wide) in paragraph at lines 384--384
+[19]
+Overfull \hbox (5.80281pt too wide) in paragraph at lines 385--385
 \OT1/cmtt/m/n/10 stolen -[] car -[] these -[] cheap -[] devices -[] will -[] tr
 ack -[] it -[] airtag -[] smarttag -[]
  []
 
-[19]
-Overfull \hbox (4.80281pt too wide) in paragraph at lines 384--384
+
+Overfull \hbox (4.80281pt too wide) in paragraph at lines 385--385
 \OT1/cmtt/m/n/10 news / apple / 156605 -[] what -[] is -[] precision -[] findin
 g -[] on -[] apple -[] airtags -[]
  []
 
 
-Overfull \hbox (0.26723pt too wide) in paragraph at lines 384--384
+Overfull \hbox (0.26723pt too wide) in paragraph at lines 385--385
 []\OT1/cmr/m/n/10 Limited Re-sults. \OT1/cmr/m/it/10 nRF52 De-bug Res-ur-rec-ti
 on: Ap-pro-tect By-pass\OT1/cmr/m/n/10 . June 2020.
  []
 
 
-Overfull \hbox (19.34721pt too wide) in paragraph at lines 384--384
+Overfull \hbox (19.34721pt too wide) in paragraph at lines 385--385
 \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\OT1/cmtt/m/n/10 https : / / limited
 results . com / 2020 / 06 / nrf52 -[] debug -[] resurrection -[]
  []
 
-
-Overfull \hbox (19.55273pt too wide) in paragraph at lines 384--384
+[20]
+Overfull \hbox (19.55273pt too wide) in paragraph at lines 385--385
 []\OT1/cmr/m/it/10 Unremovable AirTag\TS1/cmr/m/it/10 ® \OT1/cmr/m/it/10 bracel
 ets\OT1/cmr/m/n/10 . en. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\OT1/cmtt/m
 /n/10 https : / / www . medicalidfashions .
  []
 
-[20] (./notes.aux)
+[21] (./notes.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -845,9 +845,9 @@ Package logreq Info: Writing requests to 'notes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21409 strings out of 478268
- 371250 string characters out of 5846347
- 1082812 words of memory out of 5000000
+ 21410 strings out of 478268
+ 371257 string characters out of 5846347
+ 1084812 words of memory out of 5000000
  39272 multiletter control sequences out of 15000+600000
  480911 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -873,10 +873,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texm
 f-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022/texmf-
 dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-di
 st/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on notes.pdf (20 pages, 2879878 bytes).
+Output written on notes.pdf (21 pages, 2880882 bytes).
 PDF statistics:
- 524 PDF objects out of 1000 (max. 8388607)
- 439 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
+ 528 PDF objects out of 1000 (max. 8388607)
+ 442 compressed objects within 5 object streams
+ 105 named destinations out of 1000 (max. 500000)
  233 words of extra memory for PDF output out of 10000 (max. 10000000)
 
