@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  24 APR 2024 15:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  24 APR 2024 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -810,6 +810,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 334--334
 
 [15] [16]
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 370.
 
@@ -835,13 +838,13 @@ Overfull \hbox (7.6041pt too wide) in paragraph at lines 400--400
 []
  []
 
-[19 <./images/remote.jpg>]
+[19 <./images/remote.jpg>] [20]
 Overfull \hbox (5.80281pt too wide) in paragraph at lines 400--400
 \OT1/cmtt/m/n/10 stolen -[] car -[] these -[] cheap -[] devices -[] will -[] tr
 ack -[] it -[] airtag -[] smarttag -[]
  []
 
-[20]
+
 Overfull \hbox (4.80281pt too wide) in paragraph at lines 400--400
 \OT1/cmtt/m/n/10 news / apple / 156605 -[] what -[] is -[] precision -[] findin
 g -[] on -[] apple -[] airtags -[]
@@ -871,16 +874,16 @@ ets\OT1/cmr/m/n/10 . en. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\OT1/cmtt/m
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: 41A4003814316A46EAB68EAE5B92B606;3165.
+(rerunfilecheck)             Checksum: 35DF32CD1A0AD048E05146FDB5CAC0F9;3180.
 Package logreq Info: Writing requests to 'notes.run.xml'.
 \openout1 = `notes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21544 strings out of 478268
- 373552 string characters out of 5846347
- 1085132 words of memory out of 5000000
- 39398 multiletter control sequences out of 15000+600000
+ 21545 strings out of 478268
+ 373569 string characters out of 5846347
+ 1087199 words of memory out of 5000000
+ 39399 multiletter control sequences out of 15000+600000
  480911 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,10n,77p,1562b,1820s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -905,10 +908,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texm
 f-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022/texmf-
 dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-di
 st/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on notes.pdf (21 pages, 2883437 bytes).
+Output written on notes.pdf (21 pages, 2883777 bytes).
 PDF statistics:
- 537 PDF objects out of 1000 (max. 8388607)
- 451 compressed objects within 5 object streams
+ 538 PDF objects out of 1000 (max. 8388607)
+ 452 compressed objects within 5 object streams
  107 named destinations out of 1000 (max. 500000)
  233 words of extra memory for PDF output out of 10000 (max. 10000000)
 
