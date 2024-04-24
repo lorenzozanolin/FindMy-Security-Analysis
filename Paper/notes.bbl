@@ -538,6 +538,36 @@
       \verb https://kittycatgo.com/the-apple-airtag-for-cats-a-pet-tracking-review/
       \endverb
     \endentry
+    \entry{Lin}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f87a48871351b84c2d8c427cf7ace9d8}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \strng{namehash}{f87a48871351b84c2d8c427cf7ace9d8}
+      \strng{fullhash}{f87a48871351b84c2d8c427cf7ace9d8}
+      \strng{bibnamehash}{f87a48871351b84c2d8c427cf7ace9d8}
+      \strng{authorbibnamehash}{f87a48871351b84c2d8c427cf7ace9d8}
+      \strng{authornamehash}{f87a48871351b84c2d8c427cf7ace9d8}
+      \strng{authorfullhash}{f87a48871351b84c2d8c427cf7ace9d8}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Oberlo}
+      \field{title}{Smartphone Market Share Worldwide [Feb 2024 Update]}
+      \verb{urlraw}
+      \verb https://www.oberlo.com/statistics/smartphone-market-share
+      \endverb
+      \verb{url}
+      \verb https://www.oberlo.com/statistics/smartphone-market-share
+      \endverb
+    \endentry
     \entry{Maric2023}{article}{}
       \name{author}{1}{}{%
         {{hash=371edf25793edaccd373de74f2ace98f}{%
@@ -876,6 +906,43 @@
       \endverb
       \verb{url}
       \verb https://www.medicalidfashions.com/Unremovable%20AirTag%20Bracelets
+      \endverb
+    \endentry
+    \entry{findmyscreen}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9a044a319921c3f05d7ffd8218d47456}{%
+           family={Zibreg},
+           familyi={Z\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9a044a319921c3f05d7ffd8218d47456}{%
+           family={Zibreg},
+           familyi={Z\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \strng{namehash}{206d11fa3e8b064ff585449179ff55f0}
+      \strng{fullhash}{206d11fa3e8b064ff585449179ff55f0}
+      \strng{bibnamehash}{206d11fa3e8b064ff585449179ff55f0}
+      \strng{authorbibnamehash}{206d11fa3e8b064ff585449179ff55f0}
+      \strng{authornamehash}{206d11fa3e8b064ff585449179ff55f0}
+      \strng{authorfullhash}{206d11fa3e8b064ff585449179ff55f0}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{iDownloadBlog.com}
+      \field{month}{4}
+      \field{title}{How to add third-party accessories to Apple’s Find My app to keep track of them}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.idownloadblog.com/2021/04/09/add-third-party-find-my-accessories-tutorial/
+      \endverb
+      \verb{url}
+      \verb https://www.idownloadblog.com/2021/04/09/add-third-party-find-my-accessories-tutorial/
       \endverb
     \endentry
   \enddatalist
