@@ -381,6 +381,22 @@
       \verb https://arxiv.org/abs/2103.02282
       \endverb
     \endentry
+    \entry{voltage}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Design and Reuse}
+      \field{title}{How a voltage glitch attack could cripple your SoC or MCU - and how to securely protect it}
+      \verb{urlraw}
+      \verb https://www.design-reuse.com/articles/48553/how-a-voltage-glitch-attack-could-cripple-your-soc-or-mcu.html
+      \endverb
+      \verb{url}
+      \verb https://www.design-reuse.com/articles/48553/how-a-voltage-glitch-attack-could-cripple-your-soc-or-mcu.html
+      \endverb
+    \endentry
     \entry{Itani_2021}{misc}{}
       \name{author}{1}{}{%
         {{hash=9f0b435a7fdf9775bcb7ac69faff51d4}{%
