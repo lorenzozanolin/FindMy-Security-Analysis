@@ -145,7 +145,6 @@
       \field{month}{2}
       \field{title}{Find my App: Everything to Know}
       \field{year}{2022}
-      \true{nocite}
       \verb{urlraw}
       \verb https://www.macrumors.com/guide/find-my/
       \endverb
@@ -267,6 +266,37 @@
       \endverb
       \warn{\item Entry 'encstore' (thud.bib): Invalid format 'Data di accesso' of date field 'urldate' - ignoring}
     \endentry
+    \entry{Figueroa2022}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8c477044efd9bbba94ac992894a00bbf}{%
+           family={Figueroa},
+           familyi={F\bibinitperiod},
+           given={Chad},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \strng{namehash}{8c477044efd9bbba94ac992894a00bbf}
+      \strng{fullhash}{8c477044efd9bbba94ac992894a00bbf}
+      \strng{bibnamehash}{8c477044efd9bbba94ac992894a00bbf}
+      \strng{authorbibnamehash}{8c477044efd9bbba94ac992894a00bbf}
+      \strng{authornamehash}{8c477044efd9bbba94ac992894a00bbf}
+      \strng{authorfullhash}{8c477044efd9bbba94ac992894a00bbf}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{title}{What does antenna diversity do? Durrell2012.com}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://durrell2012.com/what-does-antenna-diversity-do/
+      \endverb
+      \verb{url}
+      \verb https://durrell2012.com/what-does-antenna-diversity-do/
+      \endverb
+    \endentry
     \entry{sha}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=312359d3b416dc36d67dab0e5f171530}{%
@@ -298,6 +328,38 @@
       \field{year}{2003}
       \field{pages}{175\bibrangedash 193}
       \range{pages}{19}
+    \endentry
+    \entry{Global_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=31ce16b654eb059b0cbe8a9ac5694359}{%
+           family={Global},
+           familyi={G\bibinitperiod},
+           given={Deb\bibnamedelimb Spitler\bibnamedelima Hid},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \strng{namehash}{31ce16b654eb059b0cbe8a9ac5694359}
+      \strng{fullhash}{31ce16b654eb059b0cbe8a9ac5694359}
+      \strng{bibnamehash}{31ce16b654eb059b0cbe8a9ac5694359}
+      \strng{authorbibnamehash}{31ce16b654eb059b0cbe8a9ac5694359}
+      \strng{authornamehash}{31ce16b654eb059b0cbe8a9ac5694359}
+      \strng{authorfullhash}{31ce16b654eb059b0cbe8a9ac5694359}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Security Industry Association}
+      \field{month}{11}
+      \field{title}{Applying Ultra-Wideband wireless technology for security and automation}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.securityindustry.org/2020/11/17/applying-ultra-wideband-wireless-technology-for-security-and-automation/
+      \endverb
+      \verb{url}
+      \verb https://www.securityindustry.org/2020/11/17/applying-ultra-wideband-wireless-technology-for-security-and-automation/
+      \endverb
     \endentry
     \entry{airguard}{inproceedings}{}
       \name{author}{3}{}{%
@@ -506,6 +568,38 @@
       \field{pages}{1\bibrangedash 17}
       \range{pages}{17}
     \endentry
+    \entry{Kelly_2023}{article}{}
+      \name{author}{1}{}{%
+        {{hash=db18d1f258e51d5e98e77f53e5da2196}{%
+           family={Kelly},
+           familyi={K\bibinitperiod},
+           given={Heather},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{db18d1f258e51d5e98e77f53e5da2196}
+      \strng{fullhash}{db18d1f258e51d5e98e77f53e5da2196}
+      \strng{bibnamehash}{db18d1f258e51d5e98e77f53e5da2196}
+      \strng{authorbibnamehash}{db18d1f258e51d5e98e77f53e5da2196}
+      \strng{authornamehash}{db18d1f258e51d5e98e77f53e5da2196}
+      \strng{authorfullhash}{db18d1f258e51d5e98e77f53e5da2196}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Washington Post}
+      \field{month}{8}
+      \field{title}{Parents are using AirTags to track kids and give them freedom}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.washingtonpost.com/technology/2023/07/26/tracking-kids-airtags/
+      \endverb
+      \verb{url}
+      \verb https://www.washingtonpost.com/technology/2023/07/26/tracking-kids-airtags/
+      \endverb
+    \endentry
     \entry{KittyCatGO2024}{misc}{}
       \name{author}{1}{}{%
         {{hash=f1bfc1d1289fca82d7ca5e4cd059890b}{%
@@ -625,7 +719,6 @@
       \field{month}{6}
       \field{title}{iOS 15: Find My network can still find your iPhone when it is powered off, or factory reset - 9to5Mac}
       \field{year}{2021}
-      \true{nocite}
       \verb{urlraw}
       \verb https://9to5mac.com/2021/06/07/ios-15-find-my-network-can-find-your-iphone-when-it-is-powered-off/
       \endverb
@@ -741,12 +834,44 @@
       \field{month}{11}
       \field{title}{What is Precision Finding on AirTags and how does it work?}
       \field{year}{2021}
-      \true{nocite}
       \verb{urlraw}
       \verb https://www.pocket-lint.com/phones/news/apple/156605-what-is-precision-finding-on-apple-airtags-and-how-does-it-work/
       \endverb
       \verb{url}
       \verb https://www.pocket-lint.com/phones/news/apple/156605-what-is-precision-finding-on-apple-airtags-and-how-does-it-work/
+      \endverb
+    \endentry
+    \entry{Peterson_2022}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9e607cd6437d9c9d932fc5cf8426dfb7}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Jake},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{9e607cd6437d9c9d932fc5cf8426dfb7}
+      \strng{fullhash}{9e607cd6437d9c9d932fc5cf8426dfb7}
+      \strng{bibnamehash}{9e607cd6437d9c9d932fc5cf8426dfb7}
+      \strng{authorbibnamehash}{9e607cd6437d9c9d932fc5cf8426dfb7}
+      \strng{authornamehash}{9e607cd6437d9c9d932fc5cf8426dfb7}
+      \strng{authorfullhash}{9e607cd6437d9c9d932fc5cf8426dfb7}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Gadget Hacks}
+      \field{month}{12}
+      \field{title}{20 surprisingly practical uses for Apple AirTags}
+      \field{year}{2022}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://ios.gadgethacks.com/how-to/20-surprisingly-practical-uses-for-apple-airtags-0384571/
+      \endverb
+      \verb{url}
+      \verb https://ios.gadgethacks.com/how-to/20-surprisingly-practical-uses-for-apple-airtags-0384571/
       \endverb
     \endentry
     \entry{renesas}{online}{}
