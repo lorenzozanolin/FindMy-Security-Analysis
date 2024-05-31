@@ -222,9 +222,8 @@ FindMy utilizes Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind}, t
 To download and decode location information, the advertisement keys must be accessed by all owner devices. In order to synchronize the master beacon keys, FindMy uses iCloud to encrypt a property list file in the Galois/Counter mode of the Advanced Encryption Standard (AES-GCM) \cite{gcm}. The file's decryption key is kept in the iCloud keychain underneath the label “Beacon Store”.
 
 \paragraph{Encryption}
-The BLE advertisements sent out by a lost device contain an EC public key $p_i$. A finder
-device that receives such an advertisement determines its current location and encrypts the location with $p_i$. OF employs the Elliptic Curve Integrated Encryption
-Scheme (ECIES), which performs an ephemeral Elliptic Curve Diffie-Hellmann (ECDH) key exchange to derive a shared secret used to encrypt the report. According to \cite{whocanfind}, the finder’s encryption algorithm works as follows:
+The BLE advertisements sent out by a lost device contain an EC public key $p_i$. 
+When a finder device sees one of these advertisements, it uses $p_i$ to encrypt its current position and determines it. OF uses the Elliptic Curve Integrated Encryption Scheme (ECIES), which generates a shared secret that is utilized to encrypt the report through an ephemeral Elliptic Curve Diffie-Hellmann (ECDH) key exchange. According to \cite{whocanfind}, the finder’s encryption algorithm works as follows:
 \begin{enumerate}
   \item Generate a new ephemeral key $(d', p')$ on the NIST P-224 curve for a received FindMy lost advertisement.
   \item Perform ECDH using the ephemeral private key $d'$ and the advertised public key $p_i$ to generate a shared secret.
@@ -236,7 +235,7 @@ Scheme (ECIES), which performs an ephemeral Elliptic Curve Diffie-Hellmann (ECDH
 The ephemeral public key $p'$ and the authentication tag of AES-GCM are part of the uploaded message. All location reports are identified by an $ID$ which is the SHA-256 hash of $p_i$, as we can see in Figure \ref{comparison}.
 
 \paragraph{Decryption}
-An owner device that retrieves encrypted location reports follows the inverse of the encryption procedure:
+An owner device that downloads encrypted location reports follows the inverse of the encryption procedure:
 \begin{enumerate}
   \item The owner device selects the proper advertisement keys $(d_i, p_i)$ based on the hashed $p_i$ of the location report.
   \item It performs the ECDH key exchange with the finder’s ephemeral public key $p'$ and the lost device’s private key $d_i$ to compute the symmetric key $e'$ and the $IV$.
@@ -259,7 +258,7 @@ An AirTag is a small tracking device developed and sold by Apple; it is intended
 \subsection{Architecture}
 First of all, we will analyze the architecture of this product; the information has been reverse engineered by Adam Catley in \cite{reverse}. We will cover both the hardware and software aspects of this kind of device.
 \subsubsection{Software analysis}
-As for the software part, we can identify various states in which AirTag can be; we will now quickly present all of them.
+As for the software part, we will present informations taken from \cite{reverse}. Adam Catley identified various states in which AirTag can be; we will now quickly present all of them.
 \begin{itemize}
   \item \textit{Not registered}: when the AirTag is brand new, has been reset, or has been removed from the FindMy network. It waits to be connected to while advertising itself every 33 ms.
   \item \textit{Initialisation}: the AirTag is registered to an Apple ID and a public/private key pair is generated and shared between the AirTag and the connected iOS device.
@@ -271,7 +270,7 @@ As for the software part, we can identify various states in which AirTag can be;
   \item \textit{Sound alert}: a command to play a noise is received from either a connected device or by detecting motion. Lasts a maximum of 20 seconds.
   \item \textit{Precision finding}: triggered by the owner’s device while Connected. Is overridden by Sound alert.
 \end{itemize}
-As we will see in Section \ref{hw}, the AirTag uses an NFC antenna to allow anyone who finds an AirTag to potentially identify the owner, even if they have an Android device. The tag can only be read when the AirTag is powered by a battery and it contains a URL to uniquely identify the AirTag, depending on its current state. There are some parameters that are attached to the URL, used to identify the device; we will briefly present them. Keep in mind that all of the following parameters are fixed for a single unit, even after power cycles, long runtime, resets and modes.
+As we will see in Section \ref{hw}, even if the finder has an Android device, they may be able to identify the owner of an AirTag thanks to its NFC antenna. Depending on its current status, the tag carries a URL that uniquely identifies the AirTag. It can only be read when the AirTag is powered by a battery. There are some parameters that are attached to the URL, used to identify the device; we will briefly present them. These informations were presented in \cite{reverse}. Keep in mind that all of the following parameters are fixed for a single unit, even after power cycles, long runtime, resets and modes.
 \begin{itemize}
   \item \textit{pid}: product ID for AirTag.
   \item \textit{b}: something related to the battery.
