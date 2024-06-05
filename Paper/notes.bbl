@@ -32,6 +32,19 @@
       \verb https://csrc.nist.gov/CSRC/media/Events/Key-Management-Workshop-2000/documents/x963_overview.pdf
       \endverb
     \endentry
+    \entry{tof}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.analog.com/en/resources/glossary/time-of-flight.html
+      \endverb
+      \verb{url}
+      \verb https://www.analog.com/en/resources/glossary/time-of-flight.html
+      \endverb
+    \endentry
     \entry{aps}{misc}{}
       \name{author}{1}{}{%
         {{hash=9f6290f4436e5a2351f12e03b6433c3c}{%
@@ -459,6 +472,33 @@
       \verb https://www.design-reuse.com/articles/48553/how-a-voltage-glitch-attack-could-cripple-your-soc-or-mcu.html
       \endverb
     \endentry
+    \entry{tdoa}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4fbadcd411e6d245121f816cd5bd9387}{%
+           family={Inpixon},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{4fbadcd411e6d245121f816cd5bd9387}
+      \strng{fullhash}{4fbadcd411e6d245121f816cd5bd9387}
+      \strng{bibnamehash}{4fbadcd411e6d245121f816cd5bd9387}
+      \strng{authorbibnamehash}{4fbadcd411e6d245121f816cd5bd9387}
+      \strng{authornamehash}{4fbadcd411e6d245121f816cd5bd9387}
+      \strng{authorfullhash}{4fbadcd411e6d245121f816cd5bd9387}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Time Difference of Arrival (TDOA) multilateration | INPIXON}
+      \verb{urlraw}
+      \verb https://www.inpixon.com/technology/standards/time-difference-of-arrival
+      \endverb
+      \verb{url}
+      \verb https://www.inpixon.com/technology/standards/time-difference-of-arrival
+      \endverb
+    \endentry
     \entry{Itani_2021}{misc}{}
       \name{author}{1}{}{%
         {{hash=9f0b435a7fdf9775bcb7ac69faff51d4}{%
@@ -874,32 +914,6 @@
       \verb https://ios.gadgethacks.com/how-to/20-surprisingly-practical-uses-for-apple-airtags-0384571/
       \endverb
     \endentry
-    \entry{renesas}{online}{}
-      \name{author}{1}{}{%
-        {{hash=678b770f0219a53253f027ba8d7cf415}{%
-           family={Renesas},
-           familyi={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{678b770f0219a53253f027ba8d7cf415}
-      \strng{fullhash}{678b770f0219a53253f027ba8d7cf415}
-      \strng{bibnamehash}{678b770f0219a53253f027ba8d7cf415}
-      \strng{authorbibnamehash}{678b770f0219a53253f027ba8d7cf415}
-      \strng{authornamehash}{678b770f0219a53253f027ba8d7cf415}
-      \strng{authorfullhash}{678b770f0219a53253f027ba8d7cf415}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Defend Your Vehicle Against Relay Attack: Defense Technology Against Latest Automotive Theft}
-      \field{year}{s.d.}
-      \verb{urlraw}
-      \verb https://www.renesas.com/us/en/document/whp/defend-your-vehicle-against-relay-attack-defense-technology-against-latest-automotive-theft
-      \endverb
-      \verb{url}
-      \verb https://www.renesas.com/us/en/document/whp/defend-your-vehicle-against-relay-attack-defense-technology-against-latest-automotive-theft
-      \endverb
-      \warn{\item Entry 'renesas' (thud.bib): Invalid format 'Data di accesso' of date field 'urldate' - ignoring}
-    \endentry
     \entry{gadget}{misc}{}
       \name{author}{1}{}{%
         {{hash=2f00f49051e4cb21ec481030efceca3b}{%
@@ -985,6 +999,38 @@
       \endverb
       \verb{url}
       \verb https://infocenter.nordicsemi.com/index.jsp?topic=%2Fps_nrf52833%2Fdif.html&anchor=concept_udr_mns_1s
+      \endverb
+    \endentry
+    \entry{twr}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=073042b0a05c0277356d6ec8637d6b0a}{%
+           family={Simek},
+           familyi={S\bibinitperiod},
+           given={Milan},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \strng{namehash}{073042b0a05c0277356d6ec8637d6b0a}
+      \strng{fullhash}{073042b0a05c0277356d6ec8637d6b0a}
+      \strng{bibnamehash}{073042b0a05c0277356d6ec8637d6b0a}
+      \strng{authorbibnamehash}{073042b0a05c0277356d6ec8637d6b0a}
+      \strng{authornamehash}{073042b0a05c0277356d6ec8637d6b0a}
+      \strng{authorfullhash}{073042b0a05c0277356d6ec8637d6b0a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sewio RTLS}
+      \field{month}{1}
+      \field{title}{Two Way Ranging (TWR) - SeWiO RTLS}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.sewio.net/uwb-technology/two-way-ranging/
+      \endverb
+      \verb{url}
+      \verb https://www.sewio.net/uwb-technology/two-way-ranging/
       \endverb
     \endentry
     \entry{Src2024}{misc}{}
