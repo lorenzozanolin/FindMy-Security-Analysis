@@ -1079,6 +1079,38 @@
       \verb https://www.medicalidfashions.com/Unremovable%20AirTag%20Bracelets
       \endverb
     \endentry
+    \entry{Zafar2019}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f2d03cff064cc344c434548a000e1640}{%
+           family={Zafar},
+           familyi={Z\bibinitperiod},
+           given={Ramish},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \strng{namehash}{f2d03cff064cc344c434548a000e1640}
+      \strng{fullhash}{f2d03cff064cc344c434548a000e1640}
+      \strng{bibnamehash}{f2d03cff064cc344c434548a000e1640}
+      \strng{authorbibnamehash}{f2d03cff064cc344c434548a000e1640}
+      \strng{authornamehash}{f2d03cff064cc344c434548a000e1640}
+      \strng{authorfullhash}{f2d03cff064cc344c434548a000e1640}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Wccftech}
+      \field{month}{11}
+      \field{title}{iPhone 11’s U1 Chip Uses 6Hz \& 8GHz Frequencies In UWB Spectrum}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://wccftech.com/iphone-11-u1-chip-uwb/
+      \endverb
+      \verb{url}
+      \verb https://wccftech.com/iphone-11-u1-chip-uwb/
+      \endverb
+    \endentry
     \entry{findmyscreen}{article}{}
       \name{author}{2}{}{%
         {{hash=9a044a319921c3f05d7ffd8218d47456}{%

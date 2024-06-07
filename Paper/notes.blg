@@ -1,24 +1,24 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'notes.blg'
-[68] biber-darwin:340> INFO - === Mon Jun  3, 2024, 17:58:32
-[82] Biber.pm:418> INFO - Reading 'notes.bcf'
-[177] Biber.pm:969> INFO - Using all citekeys in bib section 0
-[192] Biber.pm:4383> INFO - Processing section 0
-[202] Biber.pm:4574> INFO - Looking for bibtex file 'thud.bib' for section 0
-[204] bibtex.pm:1713> INFO - LaTeX decoding ...
-[234] bibtex.pm:1518> INFO - Found BibTeX data source 'thud.bib'
-[383] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[383] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[383] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[384] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[415] bbl.pm:654> INFO - Writing 'notes.bbl' with encoding 'UTF-8'
-[429] bbl.pm:757> INFO - Output to notes.bbl
-[429] Biber.pm:130> WARN - Duplicate entry key: 'gcm' in file 'thud.bib', skipping ...
-[429] Biber.pm:130> WARN - legacy month field 'May' in entry 'tweet' is not an integer - this will probably not sort properly.
-[429] Biber.pm:130> WARN - legacy month field 'May' in entry 'telecomando' is not an integer - this will probably not sort properly.
-[429] Biber.pm:130> WARN - legacy month field 'June' in entry 'side' is not an integer - this will probably not sort properly.
-[429] Biber.pm:130> WARN - legacy year field 's.d.' in entry 'encstore' is not an integer - this will probably not sort properly.
-[429] Biber.pm:130> WARN - Entry 'encstore' (thud.bib): Invalid format 'Data di accesso' of date field 'urldate' - ignoring
-[429] Biber.pm:130> WARN - legacy year field 's.d.' in entry 'nordicsemi' is not an integer - this will probably not sort properly.
-[429] Biber.pm:130> WARN - legacy month field 'April' in entry 'server' is not an integer - this will probably not sort properly.
-[430] Biber.pm:132> INFO - WARNINGS: 8
+[52] biber-darwin:340> INFO - === Fri Jun  7, 2024, 17:46:32
+[63] Biber.pm:418> INFO - Reading 'notes.bcf'
+[137] Biber.pm:969> INFO - Using all citekeys in bib section 0
+[149] Biber.pm:4383> INFO - Processing section 0
+[156] Biber.pm:4574> INFO - Looking for bibtex file 'thud.bib' for section 0
+[158] bibtex.pm:1713> INFO - LaTeX decoding ...
+[181] bibtex.pm:1518> INFO - Found BibTeX data source 'thud.bib'
+[299] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[299] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[299] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[299] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[324] bbl.pm:654> INFO - Writing 'notes.bbl' with encoding 'UTF-8'
+[335] bbl.pm:757> INFO - Output to notes.bbl
+[335] Biber.pm:130> WARN - Duplicate entry key: 'gcm' in file 'thud.bib', skipping ...
+[335] Biber.pm:130> WARN - legacy month field 'June' in entry 'side' is not an integer - this will probably not sort properly.
+[335] Biber.pm:130> WARN - legacy year field 's.d.' in entry 'nordicsemi' is not an integer - this will probably not sort properly.
+[335] Biber.pm:130> WARN - legacy month field 'May' in entry 'telecomando' is not an integer - this will probably not sort properly.
+[335] Biber.pm:130> WARN - legacy month field 'May' in entry 'tweet' is not an integer - this will probably not sort properly.
+[335] Biber.pm:130> WARN - legacy year field 's.d.' in entry 'encstore' is not an integer - this will probably not sort properly.
+[335] Biber.pm:130> WARN - Entry 'encstore' (thud.bib): Invalid format 'Data di accesso' of date field 'urldate' - ignoring
+[335] Biber.pm:130> WARN - legacy month field 'April' in entry 'server' is not an integer - this will probably not sort properly.
+[335] Biber.pm:132> INFO - WARNINGS: 8
