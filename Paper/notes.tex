@@ -204,7 +204,7 @@ This kind of devices create and upload an encrypted position report to Apple's s
 \subsubsection{Cryptography} \label{sec:crypto}
 We will now delve more into the Cryptography protocols used. 
 \paragraph{Advertisement keys}\label{keys}
-FindMy utilizes Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind}, the process to generate \textit{advertisement keys} is the following:
+FindMy utilizes Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind}, ``the process to generate \textit{advertisement keys} is the following:
 \begin{enumerate}
   \item Each owner device generates a private/public key pair
   $(d_0, p_0)$ on the NIST $P-224$ curve and a $32$-byte symmetric key $SK_0$ that together form the master beacon key. Those keys are never sent out via BLE and are used to derive the rolling advertisement keys included in the BLE advertisements. Note that device tracking is hard since rolling keys can be deterministically derived if and only if one knows the initial input keys $(d_0, p_0)$ and $SK0$.
@@ -215,15 +215,15 @@ FindMy utilizes Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind}, t
     d_i &= (d_0 * u_i) + v_i \\
     p_i &= d_i * G
   \end{align}
-  where Equation $(1)$ derives a new symmetric key from the last used symmetric key with 32 bytes length. Equation $(2)$ derives the so-called “anti-tracking” keys $u_i$ and $v_i$ from the new symmetric key with a length of $36$ bytes each. Finally, Eqs. $(3)$ and $(4)$ create the advertisement key pair via EC point multiplication using the anti-tracking keys and the master beacon key $d_0$.
+  where Equation $(1)$ derives a new symmetric key from the last used symmetric key with 32 bytes length. Equation $(2)$ derives the so-called “anti-tracking” keys $u_i$ and $v_i$ from the new symmetric key with a length of $36$ bytes each. Finally, Eqs. $(3)$ and $(4)$ create the advertisement key pair via EC point multiplication using the anti-tracking keys and the master beacon key $d_0$".
 \end{enumerate}
 
 \paragraph{Key synchronization}
 To download and decode location information, the advertisement keys must be accessed by all owner devices. In order to synchronize the master beacon keys, FindMy uses iCloud to encrypt a property list file in the Galois/Counter mode of the Advanced Encryption Standard (AES-GCM) \cite{gcm}. The file's decryption key is kept in the iCloud keychain underneath the label “Beacon Store”.
 
 \paragraph{Encryption}
-The BLE advertisements sent out by a lost device contain an EC public key $p_i$. 
-When a finder device sees one of these advertisements, it uses $p_i$ to encrypt its current position and determines it. OF uses the Elliptic Curve Integrated Encryption Scheme (ECIES), which generates a shared secret that is utilized to encrypt the report through an ephemeral Elliptic Curve Diffie-Hellmann (ECDH) key exchange. According to \cite{whocanfind}, the finder’s encryption algorithm works as follows:
+Each report contains an EC public key $p_i$. When a finder device receives a report, it saves its location and encrypts it using the $p_i$ key; Subsequently, it uploads the packet to Apple's servers.
+OF uses the Elliptic Curve Integrated Encryption Scheme (ECIES), which generates a shared secret that is utilized to encrypt the report through an ephemeral Elliptic Curve Diffie-Hellmann (ECDH) key exchange. According to \cite{whocanfind}, ``the finder’s encryption algorithm works as follows:
 \begin{enumerate}
   \item Generate a new ephemeral key $(d', p')$ on the NIST P-224 curve for a received FindMy lost advertisement.
   \item Perform ECDH using the ephemeral private key $d'$ and the advertised public key $p_i$ to generate a shared secret.
@@ -232,14 +232,14 @@ When a finder device sees one of these advertisements, it uses $p_i$ to encrypt 
   \item Use the last 16 bytes as an initialization vector $IV$.
   \item Encrypt the location report under $e'$ and the $IV$ with AES-GCM. 
 \end{enumerate} 
-The ephemeral public key $p'$ and the authentication tag of AES-GCM are part of the uploaded message. All location reports are identified by an $ID$ which is the SHA-256 hash of $p_i$, as we can see in Figure \ref{comparison}.
+The ephemeral public key $p'$ and the authentication tag of AES-GCM are part of the uploaded message". All location reports are identified by an $ID$ which is the SHA-256 hash of $p_i$, as we can see in Figure \ref{comparison}.
 
 \paragraph{Decryption}
-An owner device that downloads encrypted location reports follows the inverse of the encryption procedure:
+For decryption, the procedure implemented is the reverse of the encryption process. From \cite{whocanfind}, ``An owner device that downloads encrypted location reports follows the inverse of the encryption procedure:
 \begin{enumerate}
   \item The owner device selects the proper advertisement keys $(d_i, p_i)$ based on the hashed $p_i$ of the location report.
   \item It performs the ECDH key exchange with the finder’s ephemeral public key $p'$ and the lost device’s private key $d_i$ to compute the symmetric key $e'$ and the $IV$.
-  \item Now, the owner can use $e'$ and $IV$ to decrypt the location report.
+  \item Now, the owner can use $e'$ and $IV$ to decrypt the location report."
 \end{enumerate}
 
 \begin{figure}
@@ -258,7 +258,7 @@ An AirTag is a small tracking device developed and sold by Apple; it is intended
 \subsection{Architecture}
 First of all, we will analyze the architecture of this product; the information has been reverse engineered by Adam Catley in \cite{reverse}. We will cover both the hardware and software aspects of this kind of device.
 \subsubsection{Software analysis}\label{sec:beacons}
-As for the software part, we will present informations taken from \cite{reverse}. Adam Catley identified various states in which AirTag can be; we will now quickly present all of them.
+As for the software part, we will present informations taken from \cite{reverse}: ``there are various states in which AirTag can be; we will now quickly present all of them.
 \begin{itemize}
   \item \textit{Not registered}: when removed from FindMy network or reset, the AirTag is brand new and every 33 milliseconds, it advertises itself as it waits to be connected.
   \item \textit{Initialisation}: a public/private key pair is created and shared by the AirTag and the linked iOS device after it is registered to an Apple ID.
@@ -268,9 +268,9 @@ As for the software part, we will present informations taken from \cite{reverse}
   \item \textit{Lost}: occurs 3 days after Disconnected or Out of sync begins. Moves to Waiting for motion every 6 hours.
   \item \textit{Waiting for motion}: samples the accelerometer every 10 seconds until motion is detected.
   \item \textit{Sound alert}: a command to play a noise is received from either a connected device or by detecting motion. Lasts a maximum of 20 seconds.
-  \item \textit{Precision finding}: triggered by the owner’s device while Connected. Is overridden by Sound alert.
+  \item \textit{Precision finding}: triggered by the owner’s device while Connected. Is overridden by Sound alert."
 \end{itemize}
-As we will see in Section \ref{hw}, even if the finder has an Android device, they may be able to identify the owner of an AirTag thanks to its NFC antenna. Depending on its current status, the tag carries a URL that uniquely identifies the AirTag. It can only be read when the AirTag is powered by a battery. There are some parameters that are attached to the URL, used to identify the device; we will briefly present them. These informations were presented in \cite{reverse}. Keep in mind that all of the following parameters are fixed for a single unit, even after power cycles, long runtime, resets and modes.
+As we will see in Section \ref{hw}, even if the finder has an Android device, they may be able to identify the owner of an AirTag thanks to its NFC antenna. Depending on its current status, the tag carries a URL that uniquely identifies the AirTag. It can only be read when the AirTag is powered by a battery. There are some parameters that are attached to the URL, used to identify the device; we will briefly present them. These informations were presented in \cite{reverse}, ``Keep in mind that all of the following parameters are fixed for a single unit, even after power cycles, long runtime, resets and modes.
 \begin{itemize}
   \item \textit{pid}: product ID for AirTag.
   \item \textit{b}: something related to the battery.
@@ -280,12 +280,13 @@ As we will see in Section \ref{hw}, even if the finder has an Android device, th
   \item \textit{z}: unknown.
   \item \textit{bt}: Bluetooth address; will be present only when Unregistered.
   \item \textit{st}: serial number of the tag (the one printed on the device under the battery); will be present only when Unregistered.
-  \item \textit{bp}: Bluetooth protocol version; will be present only when Unregistered.
+  \item \textit{bp}: Bluetooth protocol version; will be present only when Unregistered."
 \end{itemize}
 In the \textbf{Unregistered} state, the stored URL has the following format:
 \url{https://found.apple.com/airtag?pid=5500&b=00&pt=004c&fv=00100e10&dg=00&z=00&bt=A0B1C2D3E4F5&sr=ABCDEF123456&bp=0015}
 
-Once the device is \textbf{registered}, the parameters \textit{bt, sr, bp} will be removed and replaced with a single anonymous identifier \textit{pi}, which is the only parameter that changes at least every 15 minutes when the Bluetooth address and/or the advertising data changes. It is likely the current P-224 public key $p_i$ presented in \ref{keys} or the SHA-224 of it. 
+According to \cite{reverse},
+``Once the device is \textbf{registered}, the parameters \textit{bt, sr, bp} will be removed and replaced with a single anonymous identifier \textit{pi}, which is the only parameter that changes at least every 15 minutes when the Bluetooth address and/or the advertising data changes". It is likely the current P-224 public key $p_i$ presented in \ref{keys} or the SHA-224 of it. 
 
 
 The device operates on a schedule designed to optimize its functionality:
@@ -315,7 +316,7 @@ Security-wise, there is a lack of basic security controls in this kind of device
 \subsubsection{Vulnerabilities}\label{sec:vuln}
 We will present some vulnerabilities that have been found by by Adam Catley in \cite{reverse}; Table \ref{vuln} resumes them.
 \paragraph{Exploitable voltage levels}
-The Nordic nRF52832 has the function Access Port Protection \cite{nordicsemi} that is used to disable access to the Debug Port through SWD and prevent reading out the internal memory; however, according to \cite{side}, this mechanism is vulnerable to side channel attacks and can be bypassed through voltage glitching. Consequentially, it is possible to extract Bluetooth pairing keys to connect to the owner’s phone or run (on the AirTag) a custom firmware since Apple does not check the signature of it (the firmware). In this case, if an attacker is able to use voltage glitching to inject a modified firmware, maybe he can use it to track the owner and it will not be discovered since the anti-stalking countermeasures presented in \ref{countermeasures} do not work with personal objects. According to \cite{voltage}, the only way to guarantee the security of the voltage glitch detection circuitry protecting an SoC or microcontroller is to implement the detector on the chip itself. An example of detector is Voltage Glitch Detector IP from INVIA, which provides comprehensive protection against power glitching attack. It detects positive and negative supply voltage glitches, and has a slope detection range between 100 MV/s and 2 GV/s.
+The Nordic nRF52832 has the function Access Port Protection \cite{nordicsemi} that is used to disable access to the Debug Port through SWD and prevent reading out the internal memory; however, according to \cite{side}, this mechanism is vulnerable to side channel attacks and can be bypassed through voltage glitching. Consequentially, it is possible to extract Bluetooth pairing keys to connect to the owner’s phone or run (on the AirTag) a custom firmware since Apple does not check the signature of it (the firmware). In this case, if an attacker is able to use voltage glitching to inject a modified firmware, maybe he can use it to track the owner and it will not be discovered since the anti-stalking countermeasures presented in \ref{countermeasures} do not work with personal objects. According to \cite{voltage}, ``the only way to guarantee the security of the voltage glitch detection circuitry protecting an SoC or microcontroller is to implement the detector on the chip itself. An example of detector is Voltage Glitch Detector IP from INVIA, which provides comprehensive protection against power glitching attack. It detects positive and negative supply voltage glitches, and has a slope detection range between 100 MV/s and 2 GV/s".
 
 \paragraph{Insecure Storage}The GD25LE32D 32Mbit NOR flash is not encrypted, as we can see in \cite{tweet}; also, the nRF52832 does not have any secure storage functionality. In this case, we don't know if this is a real vulnerability since we do not know whether the FindMy private key-pair is stored inside the AirTag. However, an attacker can read without problems all the information that is stored within the device and, in general, this behavior can be exploited (maybe in the future) to inject malicious data into the AirTag or to read sensible informations. To prevent this, we can implement encryption via software or hardware; typically, on small devices, it is better to use dedicated hardware circuitry to encrypt data.
 
