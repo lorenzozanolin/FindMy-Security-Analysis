@@ -60,6 +60,7 @@
       \strng{authorbibnamehash}{9f6290f4436e5a2351f12e03b6433c3c}
       \strng{authornamehash}{9f6290f4436e5a2351f12e03b6433c3c}
       \strng{authorfullhash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \field{extraname}{1}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
@@ -72,6 +73,35 @@
       \endverb
       \verb{url}
       \verb https://support.apple.com/en-gb/guide/security/welcome/web
+      \endverb
+    \endentry
+    \entry{Apple}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9f6290f4436e5a2351f12e03b6433c3c}{%
+           family={Apple},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \strng{namehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{fullhash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{bibnamehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{authorbibnamehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{authornamehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{authorfullhash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Apple}
+      \field{title}{ICloud+ - Find my}
+      \verb{urlraw}
+      \verb https://www.apple.com/icloud/find-my/
+      \endverb
+      \verb{url}
+      \verb https://www.apple.com/icloud/find-my/
       \endverb
     \endentry
     \entry{reverse}{misc}{}

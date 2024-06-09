@@ -177,20 +177,20 @@ This technology seems pretty useful already, but if a device is powered off, how
 It seems that with iOS 15, the phone is not really fully powered off, it stays in a low-power state and acts like an AirTag, allowing any nearby iOS device to pick up the Bluetooth signal and send back its location.
 This also means if the iPhone runs out of battery during the day, the owner still has a chance of finding its location for several more hours. As long as Activation Lock is activated and the phone is restored to factory settings, Apple claims that location tracking will continue to function". This seems very useful for iPhones, but what about other devices, like Macbooks? Since Apple has not commented on the matter, the author conducted some tests and discovered that even machines with high specifications lack the U1 chip and are therefore not localizable when turned off. 
 
-As already written, all of the tracking capabilities that are available for Apple devices, such as iPhones and iPads, are also accessible for AirTags and may be tracked via the \textit{Items} section. When AirTags are out of range of their owners' devices, they may be tracked by billions of iPhones, iPads, and Macs thanks to the Find My network and a Lost Mode. The only way to stop an AirTag from being fully detectable is to remove the CR2032 coin battery (or when it fully discharges).
+Like other devices registered on FindMy, AirTags can also be located by other Apple devices in the same manner as written before. Specifically, as we will see in the Section \ref{sec:beacons}, once an AirTag moves out of proximity range of the owner's other devices, it begins to send BLE beacons to be identified and detected on FindMy. The only way to stop an AirTag from being fully detectable is to remove the CR2032 coin battery (or when it fully discharges).
 
 \subsection{Security analysis}
 In this section, we will analyze the security measures implemented in FindMy to increase the safety of the architecture. Let us add some more details to the process of localizing an object.
 \subsubsection{Preliminars definitions}
 We will first define a few terms taken from \cite{whocanfind}:
 \begin{itemize}
-  \item \textit{Owner Devices}: owner devices linked to a shared Apple ID can utilize the Find My application across macOS, iOS and iPadOS to locate any devices associated with the same owner.
-  \item \textit{Lost Devices}: when devices are deemed lost, they begin broadcasting BLE advertisements containing a public key, which can be detected by finder devices. Apple devices are classified as lost when they lose internet connectivity. Third-party accessories \cite{gadget} are compact, battery-powered devices that can be affixed to personal items and are configured via the owner's device. Accessories are considered lost when they lose their BLE connection to the owner's device.
-  \item \textit{Finder Devices}: the FindMy network is supported by Finder devices. By 2023, the only iPhones and iPads with a GPS module will be able to use a finder. By looking for BLE ads, finder devices can identify misplaced gadgets and accessories. A finder device sends an end-to-end encrypted location report, including its current location, to Apple's servers after intercepting an advertisement. We will see what the contents of the report are.
-  \item \textit{Apple’s Servers}: the location reports that finding devices send are stored on Apple's servers and only owner devices are able to retrieve and locally decrypt those information.
+  \item \textit{Owner Devices}: Apple devices owned by the user that can be located; the complete list of detectable devices is available in \cite{Apple}. Within the FindMy section of your iCloud account, you can view the location of all your devices.
+  \item \textit{Lost Devices}: Apple devices that are considered to be in a Lost state; as we will see in section \ref{sec:crypto}, these devices start sending BLE beacons to be detectable by other Apple devices. There are two types of devices that can be considered lost; according to \cite{whocanfind}, ``Apple devices are classified as lost when they lose internet connectivity. Third-party accessories \cite{gadget} are compact, battery-powered devices that can be affixed to personal items and are configured via the owner's device. Accessories are considered lost when they lose their BLE connection to the owner's device".
+  \item \textit{Finder Devices}: Apple devices that enable the localization of lost devices. According to \cite{whocanfind}, ``the only iPhones and iPads with a GPS module will be able to use a finder. By looking for BLE ads, finder devices can identify misplaced gadgets and accessories. A finder device sends an end-to-end encrypted location report, including its current location, to Apple's servers after intercepting an advertisement. We will see what the contents of the report are".
+  \item \textit{Apple’s Servers}: They are used to store all location reports sent by the various finder devices, and only the respective parties can access and download them locally. All information is encrypted, and only those with the private key can access it, namely the owners of the involved devices.
 \end{itemize}
 \subsubsection{Workflow}
-From \cite{aps}, page 202: An online device can report its location to the user via iCloud. Find My works offline by sending out short range BLE signals from the missing device that can be detected by other Apple devices in use nearby. Those nearby devices then relay the detected location of the missing device to iCloud so users can locate it in the Find My app while protecting the privacy and security of all the users involved. An example of the previous workflow is represented in Figure \ref{process}.
+From \cite{aps}, page 202: ``An online device can report its location to the user via iCloud. Find My works offline by sending out short range BLE signals from the missing device that can be detected by other Apple devices in use nearby. Those nearby devices then relay the detected location of the missing device to iCloud so users can locate it in the Find My app while protecting the privacy and security of all the users involved". An example of the previous workflow is represented in Figure \ref{process}.
 
 \begin{figure}[]
 	\centering
@@ -198,10 +198,10 @@ From \cite{aps}, page 202: An online device can report its location to the user 
 	\caption{FindMy workflow (image from \cite{whocanfind}).}
 	\label{process}
 \end{figure}
-All finder devices regularly scan for FindMy advertisements.
-The finder creates and uploads an encrypted position report to Apple's servers whenever it receives a packet in the FindMy advertising format. Finder devices are likely to use less energy and bandwidth because they gather reports over time and transfer them in batches on a regular basis. The evaluation done in \cite{whocanfind} discovered that the median time from generating to uploading a location report is 26 minutes and the delay can increase to several hours if the finder device is in low power mode.
+All finder devices regularly scan for FindMy advertisements (if the option is enabled in Settings).
+This kind of devices create and upload an encrypted position report to Apple's servers whenever they receives a beacon in the FindMy advertising format; they are likely to use less energy and bandwidth because they gather reports over time and transfer them in batches on a regular basis. The evaluation done in \cite{whocanfind} discovered that ``the median time from generating to uploading a location report is 26 minutes and the delay can increase to several hours if the finder device is in low power mode".
 
-\subsubsection{Cryptography}
+\subsubsection{Cryptography} \label{sec:crypto}
 We will now delve more into the Cryptography protocols used. 
 \paragraph{Advertisement keys}\label{keys}
 FindMy utilizes Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind}, the process to generate \textit{advertisement keys} is the following:
@@ -257,7 +257,7 @@ An AirTag is a small tracking device developed and sold by Apple; it is intended
  By connecting to compatible Apple devices (iPhones, iPads, and Macs) through Bluetooth, the AirTag enables users to locate the linked object and, subsequently, the AirTag itself using the Find My app. In order to help with lost item recovery, the gadget has capabilities including accurate location tracking, proximity notifications and a Lost Mode. Its design prioritizes privacy and security, safeguarding user data through the use of encryption and anonymization. Support for the AirTag was introduced in iOS 14.5 and Apple lists as compatible all the devices that support iOS 14 and iPadOS.
 \subsection{Architecture}
 First of all, we will analyze the architecture of this product; the information has been reverse engineered by Adam Catley in \cite{reverse}. We will cover both the hardware and software aspects of this kind of device.
-\subsubsection{Software analysis}
+\subsubsection{Software analysis}\label{sec:beacons}
 As for the software part, we will present informations taken from \cite{reverse}. Adam Catley identified various states in which AirTag can be; we will now quickly present all of them.
 \begin{itemize}
   \item \textit{Not registered}: when removed from FindMy network or reset, the AirTag is brand new and every 33 milliseconds, it advertises itself as it waits to be connected.
