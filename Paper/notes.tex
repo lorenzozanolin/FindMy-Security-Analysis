@@ -123,7 +123,7 @@ Table \ref{tableu} represents the principal differences between the two technolo
 \subsection{Security analysis}
 The fact that UWB pulses are resistant to the multipath effect\footnote{From \cite{Figueroa2022}: ``Multipath interference occurs when a signal from a transmitter arrives at a receiver via two or more routes; typically there is a direct path plus a number of indirect paths caused by reflections".} is one of its key characteristics. This occurs when radio waves are reflected or refracted by artificial or natural objects near the primary signal channel, causing the signal to reach the receiver via many paths. Positioning accuracy is improved by immunity to the multipath effect, particularly when compared to other technologies that are more vulnerable. Moreover, UWB's resilience to jamming and narrowband fading makes it a particularly reliable technology choice, even when several UWB systems are being used at once.
 
-Another important aspect to consider is the resistance to Relay Attacks, which is a vulnerability of the majority of signal-based architectures; we will present a concrete example taken from \cite{Global_2020}. In this attack, the goal is to trick a car into thinking the key and owner are close by using two people with hacking devices. The first relays signals from the car to the second thief, who transmits the signal to the house. The key responds, allowing entry into the car. The relay attack intercepts and amplifies wireless signals used to unlock the door and start the car, despite the key's distance. With UWB, that would not be possible due to its working scheme: to ensure the car doesn't have to make assumptions, rapid measurements are utilized to establish distance very precisely. Any attempt to relay attack or intercept the UWB signal will merely cause the answering device's acknowledgement signals to arrive later, indicating to the car that the responding device is actually farther away rather than closer. The car's presumption is replaced with assurance when using UWB, which greatly increases the security of the passive keyless entry system.
+Another important aspect to consider is the resistance to Relay Attacks, which is a vulnerability of the majority of signal-based architectures; we will present a concrete example taken from \cite{Global_2020}. In this attack, the goal is to trick a car into thinking the key and owner are close by using two people with hacking devices. The first relays signals from the car to the second thief, who transmits the signal to the house. The key responds, allowing entry into the car. The relay attack intercepts and amplifies wireless signals used to unlock the door and start the car, despite the key's distance. With UWB, that would not be possible due to its working scheme: to ensure the car doesn't have to make assumptions, rapid measurements are utilized to establish distance very precisely. Any attempt to relay attack or intercept the UWB signal will merely cause the answering device's acknowledgement signals to arrive later, indicating to the car that the real key is actually farther away. The car's presumption is replaced with assurance when using UWB, which greatly increases the security of the passive keyless entry system.
 
 The implemented security measures, taken by Apple, are the following: MAC address randomization and frame sequence number randomization \cite{aps}.
 
@@ -222,8 +222,8 @@ FindMy utilizes Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind}, `
 To download and decode location information, the advertisement keys must be accessed by all owner devices. In order to synchronize the master beacon keys, FindMy uses iCloud to encrypt a property list file in the Galois/Counter mode of the Advanced Encryption Standard (AES-GCM) \cite{gcm}. The file's decryption key is kept in the iCloud keychain underneath the label “Beacon Store”.
 
 \paragraph{Encryption}
-Each BLE beacon contains an Elliptic Curve public key $p_i$. When a finder device receives a beacon, it saves its location and encrypts it using the $p_i$ key; Subsequently, it uploads the packet to Apple's servers.
-OF uses the Elliptic Curve Integrated Encryption Scheme (ECIES), which generates a shared secret that is utilized to encrypt the report through an ephemeral Elliptic Curve Diffie-Hellmann (ECDH) key exchange. According to \cite{whocanfind}, ``the finder’s encryption algorithm works as follows:
+Each BLE beacon contains an Elliptic Curve public key $p_i$. When a finder device intercepts a beacon, it saves its location and encrypts it using the $p_i$ key; Subsequently, it uploads the packet to Apple's servers.
+OF uses the Elliptic Curve Integrated Encryption Scheme (ECIES), which generates a shared secret that is utilized to encrypt the report through an ephemeral key exchange (Elliptic Curve Diffie-Hellmann (ECDH)). According to \cite{whocanfind}, ``the finder’s encryption algorithm works as follows:
 \begin{enumerate}
   \item Generate a new ephemeral key $(d', p')$ on the NIST P-224 curve for a received FindMy lost advertisement.
   \item Perform ECDH using the ephemeral private key $d'$ and the advertised public key $p_i$ to generate a shared secret.
@@ -287,7 +287,7 @@ In the \textbf{Unregistered} state, the stored URL has the following format:
 \url{https://found.apple.com/airtag?pid=5500&b=00&pt=004c&fv=00100e10&dg=00&z=00&bt=A0B1C2D3E4F5&sr=ABCDEF123456&bp=0015}
 
 According to \cite{reverse},
-``Once the device is \textbf{registered}, the parameters \textit{bt, sr, bp} will be removed and replaced with a single anonymous identifier \textit{pi}, which is the only parameter that changes at least every 15 minutes when the Bluetooth address and/or the advertising data changes". It is likely the current P-224 public key $p_i$ presented in \ref{keys} or the SHA-224 of it. 
+``Once the device is \textbf{registered}, the parameters \textit{bt, sr, bp} will be removed and replaced with a single anonymous identifier \textit{pi}, which is the only parameter that changes at least every 15 minutes when the Bluetooth address and/or the advertising data changes". Probably, it is the P-224  $p_i$ presented in \ref{keys} or the SHA-224 of it. 
 
 
 The device operates on a schedule designed to optimize its functionality:
@@ -301,7 +301,7 @@ Finally, in close proximity to its proprietor's device, the tag establishes a BL
 \subsubsection{Hardware analysis}\label{hw}
 As for the hardware part, an important aspect comes to light: all of the used components, aside the Apple's U1 UWB chip, are off the shelf, as we can see in Figure \ref{img:pcb}.
 Each AirTag has three antennas: one for BLE that works at 2.4 GHz, one for NFC at 13.56 MHz and finally the UWB one at 6.5-8 GHz.
-The outer plastic shell, which serves as a diaphragm, is adhered to the voice coil. When the coil is energized, the fixed magnet causes it to move back and forth, creating sound and serving as the speaker.
+We have a plastic case that works as a diaphragm and it is adhered to the voice coil. When the coil is energized, the fixed magnet causes it to move back and forth, creating sound and serving as the speaker.
 If motion is detected, the speaker will loudly beep for up to 20 seconds after being away from its owner for three days. After that, it will be silent for the following six hours before watching for movement once more.
 \begin{figure}[ht]
 	\centering
@@ -311,7 +311,7 @@ If motion is detected, the speaker will loudly beep for up to 20 seconds after b
 \end{figure}
 
 \subsection{Security Analysis}\label{sec}
-Security-wise, there is a lack of basic security controls in this kind of device; in fact, none of the data in the AirTag is protected from tampering or disclosure.
+Security-wise, from \cite{reverse} it has emerged that no security checks are performed on the device during its operation; in fact, none of the data in the AirTag is protected from tampering or disclosure.
 \subsubsection{Vulnerabilities}\label{sec:vuln}
 We will present some vulnerabilities that have been found by by Adam Catley in \cite{reverse}; Table \ref{vuln} resumes them.
 \paragraph{Exploitable voltage levels}
