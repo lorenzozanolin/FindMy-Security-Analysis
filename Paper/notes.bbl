@@ -911,6 +911,38 @@
       \verb https://www.pocket-lint.com/phones/news/apple/156605-what-is-precision-finding-on-apple-airtags-and-how-does-it-work/
       \endverb
     \endentry
+    \entry{Oberli_2019}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=68c4db8ddb4ec0379560abb5ed451dbb}{%
+           family={Oberli},
+           familyi={O\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{68c4db8ddb4ec0379560abb5ed451dbb}
+      \strng{fullhash}{68c4db8ddb4ec0379560abb5ed451dbb}
+      \strng{bibnamehash}{68c4db8ddb4ec0379560abb5ed451dbb}
+      \strng{authorbibnamehash}{68c4db8ddb4ec0379560abb5ed451dbb}
+      \strng{authornamehash}{68c4db8ddb4ec0379560abb5ed451dbb}
+      \strng{authorfullhash}{68c4db8ddb4ec0379560abb5ed451dbb}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Kudelski Security Research}
+      \field{month}{5}
+      \field{title}{SWD - ARM’s alternative to JTAG}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://research.kudelskisecurity.com/2019/05/16/swd-arms-alternative-to-jtag/
+      \endverb
+      \verb{url}
+      \verb https://research.kudelskisecurity.com/2019/05/16/swd-arms-alternative-to-jtag/
+      \endverb
+    \endentry
     \entry{Peterson_2022}{misc}{}
       \name{author}{1}{}{%
         {{hash=9e607cd6437d9c9d932fc5cf8426dfb7}{%

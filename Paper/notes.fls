@@ -829,6 +829,12 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT ./images/pcb.png
+INPUT ./images/pcb.png
+INPUT images/pcb.png
+INPUT ./images/pcb.png
+INPUT ./images/pcb.png
 INPUT ./images/findmy.jpg
 INPUT ./images/findmy.jpg
 INPUT images/findmy.jpg
@@ -854,12 +860,6 @@ INPUT ./images/findmysec.png
 INPUT images/findmysec.png
 INPUT ./images/findmysec.png
 INPUT ./images/findmysec.png
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-INPUT ./images/pcb.png
-INPUT ./images/pcb.png
-INPUT images/pcb.png
-INPUT ./images/pcb.png
-INPUT ./images/pcb.png
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcbx1000.tfm
 INPUT ./images/AirT-Blk-Sm.jpg
 INPUT ./images/AirT-Blk-Sm.jpg
