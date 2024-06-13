@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {2}AirTag}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Overview}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}History}{2}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Architecture}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}Protocols}{3}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}UWB}{3}{subsubsection.2.3.1}%
 \contentsline {subsubsubsection}{\numberline {2.3.1.1}Overview}{3}{subsubsubsection.2.3.1.1}%
 \contentsline {subsubsubsection}{\numberline {2.3.1.2}Security analysis}{4}{subsubsubsection.2.3.1.2}%
