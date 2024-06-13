@@ -731,6 +731,38 @@
       \verb https://kittycatgo.com/the-apple-airtag-for-cats-a-pet-tracking-review/
       \endverb
     \endentry
+    \entry{Kumar_2023}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f8ca7fee112f8a7d0d22270baf5f7b02}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Anurag},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{f8ca7fee112f8a7d0d22270baf5f7b02}
+      \strng{fullhash}{f8ca7fee112f8a7d0d22270baf5f7b02}
+      \strng{bibnamehash}{f8ca7fee112f8a7d0d22270baf5f7b02}
+      \strng{authorbibnamehash}{f8ca7fee112f8a7d0d22270baf5f7b02}
+      \strng{authornamehash}{f8ca7fee112f8a7d0d22270baf5f7b02}
+      \strng{authorfullhash}{f8ca7fee112f8a7d0d22270baf5f7b02}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medium}
+      \field{month}{6}
+      \field{title}{Apple AirTags made \$1 Billion revenue - Medium}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://anurag-iim.medium.com/2022-apple-airtags-made-1-billion-revenue-88880a31b752
+      \endverb
+      \verb{url}
+      \verb https://anurag-iim.medium.com/2022-apple-airtags-made-1-billion-revenue-88880a31b752
+      \endverb
+    \endentry
     \entry{Lin}{misc}{}
       \name{author}{1}{}{%
         {{hash=f87a48871351b84c2d8c427cf7ace9d8}{%
