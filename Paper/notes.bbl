@@ -19,6 +19,21 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Bloomberg}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{month}{5}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.bloomberg.com/news/newsletters/2024-05-19/what-is-apple-doing-in-ai-summaries-cloud-and-on-device-llms-openai-deal-lwdj5pkz
+      \endverb
+      \verb{url}
+      \verb https://www.bloomberg.com/news/newsletters/2024-05-19/what-is-apple-doing-in-ai-summaries-cloud-and-on-device-llms-openai-deal-lwdj5pkz
+      \endverb
+    \endentry
     \entry{ANSI}{misc}{}
       \list{language}{1}{%
         {en}%
@@ -102,6 +117,20 @@
       \endverb
       \verb{url}
       \verb https://www.apple.com/icloud/find-my/
+      \endverb
+    \endentry
+    \entry{TechCrunch}{misc}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Apple accidentally confirms the existence of an unreleased product, AirTags}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://techcrunch.com/2020/04/02/apple-accidentally-confirms-the-existence-of-an-unreleased-product-airtags/?guccounter=1&guce_referrer=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnLw&guce_referrer_sig=AQAAAFwBYOWxztTVLDOZqfDxI7FEfhMGWanPQAjHHzQDGUmDVInr-WTC670Gr5Q7TJ56qCGlfDdFY52gyoFpCgnF6-9lAuKJxdf9ujOhjEl1mmsdH6WhFdKMCR_8WEguBRSNHKV3tDMYbJa9gxPiZ3pTW217wTCFf4rfQHrQXhHCCiQg
+      \endverb
+      \verb{url}
+      \verb https://techcrunch.com/2020/04/02/apple-accidentally-confirms-the-existence-of-an-unreleased-product-airtags/?guccounter=1&guce_referrer=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnLw&guce_referrer_sig=AQAAAFwBYOWxztTVLDOZqfDxI7FEfhMGWanPQAjHHzQDGUmDVInr-WTC670Gr5Q7TJ56qCGlfDdFY52gyoFpCgnF6-9lAuKJxdf9ujOhjEl1mmsdH6WhFdKMCR_8WEguBRSNHKV3tDMYbJa9gxPiZ3pTW217wTCFf4rfQHrQXhHCCiQg
       \endverb
     \endentry
     \entry{reverse}{misc}{}
@@ -976,6 +1005,38 @@
       \verb https://ios.gadgethacks.com/how-to/20-surprisingly-practical-uses-for-apple-airtags-0384571/
       \endverb
     \endentry
+    \entry{Rambo_2019}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=eab0980e7c313958c3ccc3c932df0622}{%
+           family={Rambo},
+           familyi={R\bibinitperiod},
+           given={Guilherme},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \strng{namehash}{eab0980e7c313958c3ccc3c932df0622}
+      \strng{fullhash}{eab0980e7c313958c3ccc3c932df0622}
+      \strng{bibnamehash}{eab0980e7c313958c3ccc3c932df0622}
+      \strng{authorbibnamehash}{eab0980e7c313958c3ccc3c932df0622}
+      \strng{authornamehash}{eab0980e7c313958c3ccc3c932df0622}
+      \strng{authorfullhash}{eab0980e7c313958c3ccc3c932df0622}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{9to5Mac}
+      \field{month}{8}
+      \field{title}{Apple revamping Find My Friends \& Find My iPhone in unified app, developing Tile-like personal item tracking - 9to5Mac}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://9to5mac.com/2019/04/17/find-my-iphone-revamp/
+      \endverb
+      \verb{url}
+      \verb https://9to5mac.com/2019/04/17/find-my-iphone-revamp/
+      \endverb
+    \endentry
     \entry{gadget}{misc}{}
       \name{author}{1}{}{%
         {{hash=2f00f49051e4cb21ec481030efceca3b}{%
@@ -1123,6 +1184,37 @@
       \endverb
       \verb{url}
       \verb https://www.pitpat.com/doggy-products/can-i-use-an-airtag-to-track-my-dog/
+      \endverb
+    \endentry
+    \entry{Macworld}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d37865d41002956fdba461a66504b4b1}{%
+           family={staff},
+           familyi={s\bibinitperiod},
+           given={Macworld},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{d37865d41002956fdba461a66504b4b1}
+      \strng{fullhash}{d37865d41002956fdba461a66504b4b1}
+      \strng{bibnamehash}{d37865d41002956fdba461a66504b4b1}
+      \strng{authorbibnamehash}{d37865d41002956fdba461a66504b4b1}
+      \strng{authornamehash}{d37865d41002956fdba461a66504b4b1}
+      \strng{authorfullhash}{d37865d41002956fdba461a66504b4b1}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Macworld}
+      \field{title}{Apple AirTags rumors: iOS 14.5 can track 'Items' in the Find My app}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.macworld.com/article/234037/apple-airtags-bluetooth-track-find-my-ultrawide-band-u1-keychain-locate-lost-items.html
+      \endverb
+      \verb{url}
+      \verb https://www.macworld.com/article/234037/apple-airtags-bluetooth-track-find-my-ultrawide-band-u1-keychain-locate-lost-items.html
       \endverb
     \endentry
     \entry{bracelets}{misc}{}
