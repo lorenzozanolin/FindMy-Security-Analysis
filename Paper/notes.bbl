@@ -19,6 +19,22 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Transmission}{misc}{}
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{journaltitle}{Advanced PCB Design Blog | Cadence}
+      \field{month}{9}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://resources.pcb.cadence.com/blog/2022-transmission-rate-vs-bandwidth-in-bluetooth-technology
+      \endverb
+      \verb{url}
+      \verb https://resources.pcb.cadence.com/blog/2022-transmission-rate-vs-bandwidth-in-bluetooth-technology
+      \endverb
+    \endentry
     \entry{Bloomberg}{misc}{}
       \list{language}{1}{%
         {en}%
@@ -133,6 +149,22 @@
       \verb https://techcrunch.com/2020/04/02/apple-accidentally-confirms-the-existence-of-an-unreleased-product-airtags/?guccounter=1&guce_referrer=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnLw&guce_referrer_sig=AQAAAFwBYOWxztTVLDOZqfDxI7FEfhMGWanPQAjHHzQDGUmDVInr-WTC670Gr5Q7TJ56qCGlfDdFY52gyoFpCgnF6-9lAuKJxdf9ujOhjEl1mmsdH6WhFdKMCR_8WEguBRSNHKV3tDMYbJa9gxPiZ3pTW217wTCFf4rfQHrQXhHCCiQg
       \endverb
     \endentry
+    \entry{blee}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Moko Smart}
+      \field{title}{Bluetooth VS Bluetooth Low Energy: A Detailed Comparison}
+      \verb{urlraw}
+      \verb https://www.mokosmart.com/bluetooth-vs-bluetooth-low-energy-a-detailed-comparison/
+      \endverb
+      \verb{url}
+      \verb https://www.mokosmart.com/bluetooth-vs-bluetooth-low-energy-a-detailed-comparison/
+      \endverb
+    \endentry
     \entry{reverse}{misc}{}
       \name{author}{1}{}{%
         {{hash=04bf7516395430b67677c79becd911c1}{%
@@ -222,6 +254,21 @@
       \endverb
       \verb{url}
       \verb https://www.macrumors.com/guide/find-my/
+      \endverb
+    \endentry
+    \entry{matlab}{misc}{}
+      \list{language}{1}{%
+        {it}%
+      }
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Comparison of Bluetooth BR/EDR and Bluetooth LE specifications}
+      \verb{urlraw}
+      \verb https://it.mathworks.com/help/bluetooth/gs/comparison-of-bluetooth-bredr-and-bluetooth-le.html
+      \endverb
+      \verb{url}
+      \verb https://it.mathworks.com/help/bluetooth/gs/comparison-of-bluetooth-bredr-and-bluetooth-le.html
       \endverb
     \endentry
     \entry{Coppens2022}{article}{}
@@ -367,6 +414,38 @@
       \endverb
       \verb{url}
       \verb https://durrell2012.com/what-does-antenna-diversity-do/
+      \endverb
+    \endentry
+    \entry{G_2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d58a16a77827b556ff2b8a6bf1cad561}{%
+           family={G},
+           familyi={G\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \strng{namehash}{d58a16a77827b556ff2b8a6bf1cad561}
+      \strng{fullhash}{d58a16a77827b556ff2b8a6bf1cad561}
+      \strng{bibnamehash}{d58a16a77827b556ff2b8a6bf1cad561}
+      \strng{authorbibnamehash}{d58a16a77827b556ff2b8a6bf1cad561}
+      \strng{authornamehash}{d58a16a77827b556ff2b8a6bf1cad561}
+      \strng{authorfullhash}{d58a16a77827b556ff2b8a6bf1cad561}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Headphonesty}
+      \field{month}{5}
+      \field{title}{Different Bluetooth versions: what you need to know}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.headphonesty.com/2021/01/bluetooth-versions/
+      \endverb
+      \verb{url}
+      \verb https://www.headphonesty.com/2021/01/bluetooth-versions/
       \endverb
     \endentry
     \entry{sha}{inproceedings}{}

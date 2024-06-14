@@ -13,7 +13,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage[obeyspaces]{url}
-
+\usepackage{adjustbox}
 \usepackage{titlesec}
 
 \setcounter{secnumdepth}{4}
@@ -128,7 +128,35 @@ The first news regarding AirTag dates back to April 19, 2019, when, according to
 Currently, according to \cite{Kumar_2023}, Apple has generated over 1 billion dollars in revenue from the sale of this device (about 55 million units sold) and right now Apple is preparing a new generation of AirTag with the codename B589, expected to be released in 2025 (from \cite{Bloomberg}).
 
 \subsection{Protocols}
-First of all, this devices utilize two technologies: UWB and Bluetooth; we will briefly look at both of them.
+First of all, this devices utilize two technologies: Bluetooth and UWB; we will briefly look at both of them.
+
+\subsubsection{Bluetooth}
+\subsubsubsection{Overview}
+Bluetooth is situated in the realm of short-range communications. It offers a more convenient alternative to wired connections between two devices. In such applications, having a large available bandwidth is not necessary. This means that Bluetooth radio transmitters can use relatively low transmission power. Bluetooth operates in the 2.45 GHz band, which does not require concessions or licenses.
+
+According to \cite{Transmission}, there are various versions of this protocol. In the first version (1.1), transfer speeds were in the order of 700 Kb/s; currently, with versions 5.x, transfer rates can reach around 50 Mb/s. With version 4.x, Bluetooth Low Energy (BLE) technology was introduced, which allows for optimal implementation of IoT applications with very low power consumption. In the 5.x version, BLE has a speed of 2 Mb/s. The frequency band used is the same, but the number of channels is different. According to \cite{blee}, Bluetooth uses 79 one-MHz channels, while BLE uses 40 two-MHz channels (37 for data and 3 for advertisement). The reliable range covered by the two technologies also varies: under 30 meters for the former, while the latter can cover up to 150 meters in unobstructed spaces.
+The two technologies are intended to serve different purposes. Bluetooth is primarily used for audio and video streaming, as well as data transfer, all of which require high throughput at the expense of energy consumption (1 W). In contrast, BLE is primarily used in healthcare, smart devices, and sensors in IoT devices, where efficiency (0.01 - 0.5 W) and low latency are critical.
+
+We will present a brief summary on the differences of the various versions in the Table \ref{tabBle}, data is taken from \cite{G_2023,matlab}.
+
+\begin{table}[h]
+  \caption{Bluetooth versions comparison.}
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{l|l|l|l|l|}
+  \cline{2-5}
+                                     & \textbf{Transfer speed - Bluetooth}      & \textbf{Transfer speed - BLE} & \textbf{Range (theorical)} & \textbf{Power consumption} \\ \hline
+  \multicolumn{1}{|l|}{\textbf{1.x}} & 732 Kb/s (1.1) - 1 Mb/s (1.2)            & -                             & 10 meters                  & 1W                         \\ \hline
+  \multicolumn{1}{|l|}{\textbf{2.x}} & 2.1 Mb/s                                 & -                             & 30 meters                  & 1 W                        \\ \hline
+  \multicolumn{1}{|l|}{\textbf{3.x}} & 800 Kb/s - 24 Mb/s (if Wi-Fi is present) & -                             & 30 meters                  & 1 W                        \\ \hline
+  \multicolumn{1}{|l|}{\textbf{4.x}} & 25 Mb/s                                  & 1 Mb/s                        & 60 meters                  & 0.01 W - 0.5 W             \\ \hline
+  \multicolumn{1}{|l|}{\textbf{5.x}} & 50 Mb/s                                  & 2 Mb/s                        & 240 meters                 & 0.01 W - 0.5 W             \\ \hline
+  \end{tabular}
+  \end{adjustbox}
+  \label{tabBle}
+\end{table}
+
+
 \subsubsection{UWB}\label{sec:uwb}
 \subsubsubsection{Overview}
 Within the domain of wireless communication technologies, UWB operates by employing extremely low-power, short-duration pulses that span a broad spectrum and result in increased distance measuring precision, allowing for high data transfer rates and precise positioning capabilities over a wide frequency range, typically several gigahertz. Originally conceived for military and radar applications, it has gradually invaded diverse sectors, finding particular prominence in consumer electronics, healthcare, automotive systems, and the Internet of Things (IoT).
@@ -139,7 +167,7 @@ Because of its wide spectrum utilization, UWB can coexist peacefully with other 
 
 According to \cite{aps}, ``Apple-designed U1 chip uses UWB technology for spatial awareness, allowing iPhone 11, iPhone 11 Pro and iPhone 11 Pro Max or later iPhone models to precisely locate other U1-equipped Apple devices"; this means that when two U1 devices come close to each other, the two start measuring their exact distance using ToF. According to IEEE 802.15.4a \cite{5394030}, ``UWB can determine the relative position of other devices in the line of sight even up to 200 meters", which means that we can leverage this technology to track items that are very close to us and those that are relatively distant.
 
-It is important to distinguish the differences between Bluetooth Low Energy (BLE) and UWB. The former allows for detecting a device but cannot accurately measure its position, as it relies on the device's range. UWB, on the other hand, enables precise localization of the device by measuring the position based on the time interval between when the signal leaves point A and when it arrives at point B.
+It is important to distinguish the differences between BLE and UWB. The former allows for detecting a device but cannot accurately measure its position, as it relies on the device's range. UWB, on the other hand, enables precise localization of the device by measuring the position based on the time interval between when the signal leaves point A and when it arrives at point B.
 Table \ref{tableu} represents the principal differences between the two technologies, data is taken from \cite{encstore}:
 \begin{table}[h] 
 \caption{BLE-UWB comparison.}
@@ -169,10 +197,6 @@ From \cite{aps}: ``Apple platforms use a randomized media access control address
 
 \paragraph{Frame sequence number randomization}
 From \cite{aps}: ``Apple devices randomize the sequence numbers whenever a MAC address is changed to a new randomized address". As before, this addition increases the privacy, also avoid the possibility of replay attacks.
-
-
-\subsubsection{Bluetooth}
-%.... da fare
 
 
 Now, we will analyze the architecture of this product; the information has been reverse engineered by Adam Catley in \cite{reverse}. We will cover both the hardware and software aspects of this kind of device.

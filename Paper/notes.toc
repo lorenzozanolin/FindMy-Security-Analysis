@@ -4,31 +4,32 @@
 \contentsline {subsection}{\numberline {2.1}Overview}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}History}{2}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Protocols}{3}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}UWB}{3}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1}Bluetooth}{3}{subsubsection.2.3.1}%
 \contentsline {subsubsubsection}{\numberline {2.3.1.1}Overview}{3}{subsubsubsection.2.3.1.1}%
-\contentsline {subsubsubsection}{\numberline {2.3.1.2}Security analysis}{4}{subsubsubsection.2.3.1.2}%
-\contentsline {paragraph}{MAC address randomization}{5}{section*.2}%
-\contentsline {paragraph}{Frame sequence number randomization}{5}{section*.3}%
-\contentsline {subsubsection}{\numberline {2.3.2}Bluetooth}{5}{subsubsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.4}Software analysis}{5}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Hardware analysis}{7}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Security Analysis}{7}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.3.2}UWB}{4}{subsubsection.2.3.2}%
+\contentsline {subsubsubsection}{\numberline {2.3.2.1}Overview}{4}{subsubsubsection.2.3.2.1}%
+\contentsline {subsubsubsection}{\numberline {2.3.2.2}Security analysis}{5}{subsubsubsection.2.3.2.2}%
+\contentsline {paragraph}{MAC address randomization}{6}{section*.3}%
+\contentsline {paragraph}{Frame sequence number randomization}{6}{section*.4}%
+\contentsline {subsection}{\numberline {2.4}Software analysis}{6}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Hardware analysis}{8}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Security Analysis}{8}{subsection.2.6}%
 \contentsline {subsubsection}{\numberline {2.6.1}Vulnerabilities}{8}{subsubsection.2.6.1}%
-\contentsline {paragraph}{Exploitable voltage levels}{8}{section*.5}%
-\contentsline {paragraph}{Insecure Storage}{9}{section*.6}%
-\contentsline {paragraph}{Unathenticated transmission}{9}{section*.7}%
-\contentsline {subsubsection}{\numberline {2.6.2}Anti-stalking countermeasures}{9}{subsubsection.2.6.2}%
+\contentsline {paragraph}{Exploitable voltage levels}{8}{section*.6}%
+\contentsline {paragraph}{Insecure Storage}{9}{section*.7}%
+\contentsline {paragraph}{Unathenticated transmission}{10}{section*.8}%
+\contentsline {subsubsection}{\numberline {2.6.2}Anti-stalking countermeasures}{10}{subsubsection.2.6.2}%
 \contentsline {section}{\numberline {3}FindMy network}{11}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Overview}{11}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Functioning}{12}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Security analysis}{13}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Security analysis}{14}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Preliminars definitions}{14}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Workflow}{14}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2}Workflow}{15}{subsubsection.3.3.2}%
 \contentsline {subsubsection}{\numberline {3.3.3}Cryptography}{15}{subsubsection.3.3.3}%
-\contentsline {paragraph}{Advertisement keys}{15}{section*.12}%
-\contentsline {paragraph}{Key synchronization}{16}{section*.13}%
-\contentsline {paragraph}{Encryption}{16}{section*.14}%
-\contentsline {paragraph}{Decryption}{16}{section*.15}%
+\contentsline {paragraph}{Advertisement keys}{16}{section*.13}%
+\contentsline {paragraph}{Key synchronization}{16}{section*.14}%
+\contentsline {paragraph}{Encryption}{16}{section*.15}%
+\contentsline {paragraph}{Decryption}{17}{section*.16}%
 \contentsline {section}{\numberline {4}Useful applications}{17}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Mods}{19}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Mods}{20}{subsection.4.1}%
 \contentsline {section}{\numberline {5}Conclusion}{20}{section.5}%
