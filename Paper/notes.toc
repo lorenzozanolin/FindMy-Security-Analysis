@@ -28,11 +28,11 @@
 \contentsline {subsection}{\numberline {3.3}Security analysis}{16}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Preliminars definitions}{16}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Workflow}{16}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Cryptography}{17}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3}Cryptography}{16}{subsubsection.3.3.3}%
 \contentsline {paragraph}{Advertisement keys}{17}{section*.16}%
-\contentsline {paragraph}{Key synchronization}{18}{section*.17}%
+\contentsline {paragraph}{Key synchronization}{17}{section*.17}%
 \contentsline {paragraph}{Encryption}{18}{section*.18}%
 \contentsline {paragraph}{Decryption}{18}{section*.19}%
-\contentsline {section}{\numberline {4}Useful applications}{19}{section.4}%
+\contentsline {section}{\numberline {4}Useful applications}{18}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Mods}{21}{subsection.4.1}%
 \contentsline {section}{\numberline {5}Conclusion}{21}{section.5}%

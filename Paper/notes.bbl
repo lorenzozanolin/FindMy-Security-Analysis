@@ -963,6 +963,7 @@
       \field{month}{6}
       \field{title}{iOS 15: Find My network can still find your iPhone when it is powered off, or factory reset - 9to5Mac}
       \field{year}{2021}
+      \true{nocite}
       \verb{urlraw}
       \verb https://9to5mac.com/2021/06/07/ios-15-find-my-network-can-find-your-iphone-when-it-is-powered-off/
       \endverb
@@ -1207,6 +1208,7 @@
       \field{labeltitlesource}{title}
       \field{title}{MFi Program - create accessories that communicate with Apple devices using MFi technologies and components}
       \field{year}{2023}
+      \true{nocite}
       \verb{urlraw}
       \verb https://mfi.apple.com/
       \endverb
