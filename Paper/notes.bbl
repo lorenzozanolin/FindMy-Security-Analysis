@@ -512,6 +512,40 @@
       \verb https://www.securityindustry.org/2020/11/17/applying-ultra-wideband-wireless-technology-for-security-and-automation/
       \endverb
     \endentry
+    \entry{1200664}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=29fc11f5f5b13fb090752838862cb8c9}{%
+           family={Hager},
+           familyi={H\bibinitperiod},
+           given={C.T.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fe91414047a5b2301e5004b6e5df25b3}{%
+           family={Midkiff},
+           familyi={M\bibinitperiod},
+           given={S.F.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbf20101ca3854cc1404fe4f22825e3b}
+      \strng{fullhash}{cbf20101ca3854cc1404fe4f22825e3b}
+      \strng{bibnamehash}{cbf20101ca3854cc1404fe4f22825e3b}
+      \strng{authorbibnamehash}{cbf20101ca3854cc1404fe4f22825e3b}
+      \strng{authornamehash}{cbf20101ca3854cc1404fe4f22825e3b}
+      \strng{authorfullhash}{cbf20101ca3854cc1404fe4f22825e3b}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2003 IEEE Wireless Communications and Networking, 2003. WCNC 2003.}
+      \field{title}{An analysis of Bluetooth security vulnerabilities}
+      \field{volume}{3}
+      \field{year}{2003}
+      \field{pages}{1825\bibrangedash 1831 vol.3}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/WCNC.2003.1200664
+      \endverb
+      \keyw{Bluetooth;Communication system security;Authentication;Cryptography;Protocols;Wireless LAN;Wireless personal area networks;Wireless communication;Taxonomy;National security}
+    \endentry
     \entry{airguard}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=bb054e68faf50580039b177699243dc0}{%
@@ -1343,6 +1377,31 @@
       \verb{url}
       \verb https://www.medicalidfashions.com/Unremovable%20AirTag%20Bracelets
       \endverb
+    \endentry
+    \entry{vainio2000bluetooth}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=72471c4cdde67b721cb4c470798d0f50}{%
+           family={Vainio},
+           familyi={V\bibinitperiod},
+           given={Juha\bibnamedelima T},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f3dbb83f81678e58c71c9ebd560df53}
+      \strng{fullhash}{1f3dbb83f81678e58c71c9ebd560df53}
+      \strng{bibnamehash}{1f3dbb83f81678e58c71c9ebd560df53}
+      \strng{authorbibnamehash}{1f3dbb83f81678e58c71c9ebd560df53}
+      \strng{authornamehash}{1f3dbb83f81678e58c71c9ebd560df53}
+      \strng{authorfullhash}{1f3dbb83f81678e58c71c9ebd560df53}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of Helsinki University of Technology, Telecommunications Software and Multimedia Laboratory, Seminar on Internetworking: Ad Hoc Networking, Spring}
+      \field{title}{Bluetooth security}
+      \field{volume}{5}
+      \field{year}{2000}
     \endentry
     \entry{Zafar2019}{article}{}
       \name{author}{1}{}{%

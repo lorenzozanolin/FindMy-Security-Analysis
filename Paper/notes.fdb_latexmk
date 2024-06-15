@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber notes"] 1718363512 "notes.bcf" "notes.bbl" "notes" 1718363546
-  "notes.bcf" 1718363546 113374 dd1e78e1a400184114f1d4ee57a668f1 "pdflatex"
-  "thud.bib" 1718362833 12694 ff71b51068da10cef9175be6dfd6abaf ""
+["biber notes"] 1718457155 "notes.bcf" "notes.bbl" "notes" 1718457233
+  "notes.bcf" 1718457233 113763 f4cbdd5ba03494297ef0fed508942ae6 "pdflatex"
+  "thud.bib" 1718374978 13506 3a4f9d3c1cd1f806ac0cb1381f4308cc ""
   (generated)
   "notes.bbl"
   "notes.blg"
-["pdflatex"] 1718363544 "notes.tex" "notes.pdf" "notes" 1718363546
+["pdflatex"] 1718457231 "notes.tex" "notes.pdf" "notes" 1718457233
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcbx1000.tfm" 1136768653 1536 30fde759286ded71559881bfa2623939 ""
@@ -161,19 +161,21 @@
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "images/AirT-Blk-Sm.jpg" 1713801443 47733 4d035a96114f7f4c97bacae45237337c ""
   "images/airtag-precision-finding-2.jpg" 1700474628 54098 5b287043e5f0ab5924fd16503d9a543a ""
+  "images/auth.png" 1718374907 100019 a5fd6ad5730ead8f61197713f4ec7cbf ""
+  "images/enc.png" 1718374839 109207 bda571db9c8f4d51df0ab8cf4d830b8f ""
   "images/findmy.jpg" 1700168800 443231 e39864d286212de797e300f241c18d24 ""
   "images/findmysec.png" 1700169858 137403 84b3f6a7b26de792f75eb65fb7a5ded1 ""
   "images/packet.png" 1700560122 57974 a9ed053669cbaa9d3141bc79b708c4e4 ""
   "images/pcb.png" 1708703511 749914 89d0a95a1546f439058cd99a63782641 ""
   "images/process.png" 1700499779 297464 8cbcde6a17ccb098ab04976d0b0dffcf ""
   "images/remote.jpg" 1708877842 909051 58bfa84c6dc33ad5e282d9c73d140e5a ""
-  "notes.aux" 1718363546 16635 8b556ee4a48e5bd542e40dddd97b1070 "pdflatex"
-  "notes.bbl" 1718363513 56434 6c8fb8d22c4cd17d88913457f8e5fa08 "biber notes"
-  "notes.out" 1718363546 4611 0a41cd089c5c862458ef39b998b22ce9 "pdflatex"
-  "notes.run.xml" 1718363546 2306 98834386d197c57129649db4740ac82f "pdflatex"
-  "notes.tex" 1718363541 53982 8556313cc59107c96de951edae12a74a ""
-  "notes.toc" 1718363546 2670 3153c3a6e1e99484652f87f08a1c7dfc "pdflatex"
-  "thud.bib" 1718362833 12694 ff71b51068da10cef9175be6dfd6abaf ""
+  "notes.aux" 1718457233 17654 91e2337ef77b850eb885e50f5827b948 "pdflatex"
+  "notes.bbl" 1718457157 59130 16b066a3bd608f98f51d8962520d0932 "biber notes"
+  "notes.out" 1718457233 4777 42be8fed6b8804a7964b4d808035fc84 "pdflatex"
+  "notes.run.xml" 1718457233 2306 98834386d197c57129649db4740ac82f "pdflatex"
+  "notes.tex" 1718457228 56536 973e971054e4be63dafc0edf51630b49 ""
+  "notes.toc" 1718457233 2774 1ab889fcda429b981aa82342853be6e9 "pdflatex"
+  "thud.bib" 1718374978 13506 3a4f9d3c1cd1f806ac0cb1381f4308cc ""
   (generated)
   "notes.aux"
   "notes.bcf"

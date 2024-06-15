@@ -134,7 +134,7 @@ First of all, this devices utilize two technologies: Bluetooth and UWB; we will 
 \subsubsubsection{Overview}
 Bluetooth is situated in the realm of short-range communications. It offers a more convenient alternative to wired connections between two devices. In such applications, having a large available bandwidth is not necessary. This means that Bluetooth radio transmitters can use relatively low transmission power. Bluetooth operates in the 2.45 GHz band, which does not require concessions or licenses.
 
-According to \cite{Transmission}, there are various versions of this protocol. In the first version (1.1), transfer speeds were in the order of 700 Kb/s; currently, with versions 5.x, transfer rates can reach around 50 Mb/s. With version 4.x, Bluetooth Low Energy (BLE) technology was introduced, which allows for optimal implementation of IoT applications with very low power consumption. In the 5.x version, BLE has a speed of 2 Mb/s. The frequency band used is the same, but the number of channels is different. According to \cite{blee}, Bluetooth uses 79 one-MHz channels, while BLE uses 40 two-MHz channels (37 for data and 3 for advertisement). The reliable range covered by the two technologies also varies: under 30 meters for the former, while the latter can cover up to 150 meters in unobstructed spaces.
+According to \cite{Transmission}, there are various versions of this protocol. In the first version (1.1), transfer speeds were in the order of 700 Kb/s; currently, with versions 5.x, transfer rates can reach around 50 Mb/s. With version 4.x, Bluetooth Low Energy (BLE) technology was introduced, which allows for optimal implementation of IoT applications with very low power consumption. In the 5.x version, BLE has a speed of 2 Mb/s. The frequency band used is the same, but the number of channels is different. According to \cite{blee}, Bluetooth uses 79 channels with 1 MHz bandwidth, while BLE uses 40 channels (37 for data and 3 for advertisement) with 2 MHz bandwidth. The reliable range covered by the two technologies also varies: under 30 meters for the former, while the latter can cover up to 150 meters in unobstructed spaces.
 The two technologies are intended to serve different purposes. Bluetooth is primarily used for audio and video streaming, as well as data transfer, all of which require high throughput at the expense of energy consumption (1 W). In contrast, BLE is primarily used in healthcare, smart devices, and sensors in IoT devices, where efficiency (0.01 - 0.5 W) and low latency are critical.
 
 We will present a brief summary on the differences of the various versions in the Table \ref{tabBle}, data is taken from \cite{G_2023,matlab}.
@@ -146,7 +146,7 @@ We will present a brief summary on the differences of the various versions in th
   \begin{tabular}{l|l|l|l|l|}
   \cline{2-5}
                                      & \textbf{Transfer speed - Bluetooth}      & \textbf{Transfer speed - BLE} & \textbf{Range (theorical)} & \textbf{Power consumption} \\ \hline
-  \multicolumn{1}{|l|}{\textbf{1.x}} & 732 Kb/s (1.1) - 1 Mb/s (1.2)            & -                             & 10 meters                  & 1W                         \\ \hline
+  \multicolumn{1}{|l|}{\textbf{1.x}} & 732 Kb/s (v1.1) - 1 Mb/s (v1.2)            & -                             & 10 meters                  & 1W                         \\ \hline
   \multicolumn{1}{|l|}{\textbf{2.x}} & 2.1 Mb/s                                 & -                             & 30 meters                  & 1 W                        \\ \hline
   \multicolumn{1}{|l|}{\textbf{3.x}} & 800 Kb/s - 24 Mb/s (if Wi-Fi is present) & -                             & 30 meters                  & 1 W                        \\ \hline
   \multicolumn{1}{|l|}{\textbf{4.x}} & 25 Mb/s                                  & 1 Mb/s                        & 60 meters                  & 0.01 W - 0.5 W             \\ \hline
@@ -155,6 +155,32 @@ We will present a brief summary on the differences of the various versions in th
   \end{adjustbox}
   \label{tabBle}
 \end{table}
+
+\subsubsubsection{Security analysis}
+Firstly, we will analyze the security measures implemented in the basic version of Bluetooth. This technology ensures Authentication and Encryption at layer 2 of the ISO-OSI stack; to achieve this, secret links are created and shared among participants, exchanged during the initial pairing phase. Typically, each device is identified by its Bluetooth address, and a PIN is subsequently required to authenticate the other party (it may happen that the PIN is stored in the device's long-term memory, thus not requiring user input). According to \cite{1200664}, Encryption is performed using the E0 stream cipher, composed of four linear feedback shift registers (LSFRs). The output of these registers is summed, and the result is XORed with the status register value.
+
+For authentication, a challenge and response technique is used to verify one of the parties. Both participants possess an E1 authentication function and a pre-shared key that acts as the authenticator. The verifier sends a random number to the claimant, who then uses the E1 function along with the pre-shared key to generate an output that is sent back to the verifier. If the value obtained from the verifier's E1 function matches the one sent by the claimant, then the claimant is authenticated.
+
+Figure \ref{blusec} visually illustrates the encryption and authentication processes, with further details available in \cite{1200664}.
+
+Secondly, Apple, in \cite{aps} on page 172, defines the enhancements made to provide greater security to Bluetooth and BLE; they are listed below: `` The Bluetooth security model for both versions includes the following distinct security features:
+\begin{itemize}
+  \item Pairing: The process for creating one or more shared secret keys.
+  \item Bonding: The act of storing the keys created during pairing for use in subsequent connections to form a trusted device pair.
+  \item Authentication: Verifying that the two devices have the same keys.
+  \item Encryption: Message confidentiality.
+  \item Message integrity: Protection against message forgeries.
+  \item Secure Simple Pairing: Protection against passive eavesdropping and protection against
+  man-in-the-middle attacks."
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{images/enc.png}\hfill 
+	\includegraphics[width=0.5\textwidth]{images/auth.png}
+	\caption{(a) Encryption process \quad (b) Authentication process (images from \cite{vainio2000bluetooth}).}
+	\label{blusec}
+\end{figure}
 
 
 \subsubsection{UWB}\label{sec:uwb}
