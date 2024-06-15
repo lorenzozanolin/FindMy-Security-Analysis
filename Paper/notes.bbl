@@ -76,6 +76,45 @@
       \verb https://www.analog.com/en/resources/glossary/time-of-flight.html
       \endverb
     \endentry
+    \entry{antonioli2022blurtooth}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=6541c93d815af2233e6875af3d582bae}{%
+           family={Antonioli},
+           familyi={A\bibinitperiod},
+           given={Daniele},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5a15b644ff2a26a8dfaa583ff566128f}{%
+           family={Tippenhauer},
+           familyi={T\bibinitperiod},
+           given={Nils\bibnamedelima Ole},
+           giveni={N\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=3e1d14138780968c52171f2fa733778b}{%
+           family={Rasmussen},
+           familyi={R\bibinitperiod},
+           given={Kasper},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2410abb6cefe7a55bdca6176f9019943}{%
+           family={Payer},
+           familyi={P\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d52875636aaf8569844cfd8586682c68}
+      \strng{fullhash}{e535d2098850e37d582e2528ced6f9df}
+      \strng{bibnamehash}{d52875636aaf8569844cfd8586682c68}
+      \strng{authorbibnamehash}{d52875636aaf8569844cfd8586682c68}
+      \strng{authornamehash}{d52875636aaf8569844cfd8586682c68}
+      \strng{authorfullhash}{e535d2098850e37d582e2528ced6f9df}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2022 ACM on Asia conference on computer and communications security}
+      \field{title}{Blurtooth: Exploiting cross-transport key derivation in bluetooth classic and bluetooth low energy}
+      \field{year}{2022}
+      \field{pages}{196\bibrangedash 207}
+      \range{pages}{12}
+    \endentry
     \entry{aps}{misc}{}
       \name{author}{1}{}{%
         {{hash=9f6290f4436e5a2351f12e03b6433c3c}{%
@@ -271,94 +310,6 @@
       \verb https://it.mathworks.com/help/bluetooth/gs/comparison-of-bluetooth-bredr-and-bluetooth-le.html
       \endverb
     \endentry
-    \entry{Coppens2022}{article}{}
-      \name{author}{6}{}{%
-        {{hash=d8db4fa0ca0f5d0013df06398544ba1d}{%
-           family={Coppens},
-           familyi={C\bibinitperiod},
-           given={Dieter},
-           giveni={D\bibinitperiod}}}%
-        {{hash=70acd6bfd2f0e181aacb6b29b809eb4f}{%
-           family={Shahid},
-           familyi={S\bibinitperiod},
-           given={Adnan},
-           giveni={A\bibinitperiod}}}%
-        {{hash=354e5e4a18a1a1fa6089d8d15337d42e}{%
-           family={Lemey},
-           familyi={L\bibinitperiod},
-           given={Sam},
-           giveni={S\bibinitperiod}}}%
-        {{hash=bc6715c5523a4c8811ace86ae09a4d81}{%
-           family={Van\bibnamedelima Herbruggen},
-           familyi={V\bibinitperiod\bibinitdelim H\bibinitperiod},
-           given={Ben},
-           giveni={B\bibinitperiod}}}%
-        {{hash=2145fd71e43344ed634c52862bd22d50}{%
-           family={Marshall},
-           familyi={M\bibinitperiod},
-           given={Chris},
-           giveni={C\bibinitperiod}}}%
-        {{hash=8d45ae88023827aad660a67cd2b12254}{%
-           family={De\bibnamedelima Poorter},
-           familyi={D\bibinitperiod\bibinitdelim P\bibinitperiod},
-           given={Eli},
-           giveni={E\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Institute of Electrical}%
-        {Electronics Engineers (IEEE)}%
-      }
-      \strng{namehash}{50c017479c909b0124edaf820650700f}
-      \strng{fullhash}{54b72d8060fc8361408ba5788dde8ff4}
-      \strng{bibnamehash}{50c017479c909b0124edaf820650700f}
-      \strng{authorbibnamehash}{50c017479c909b0124edaf820650700f}
-      \strng{authornamehash}{50c017479c909b0124edaf820650700f}
-      \strng{authorfullhash}{54b72d8060fc8361408ba5788dde8ff4}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2169-3536}
-      \field{journaltitle}{IEEE Access}
-      \field{title}{An Overview of UWB Standards and Organizations (IEEE 802.15.4, FiRa, Apple): Interoperability Aspects and Future Research Directions}
-      \field{volume}{10}
-      \field{year}{2022}
-      \field{pages}{70219\bibrangedash 70241}
-      \range{pages}{23}
-      \verb{doi}
-      \verb 10.1109/access.2022.3187410
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1109/ACCESS.2022.3187410
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1109/ACCESS.2022.3187410
-      \endverb
-    \endentry
-    \entry{di2006uwb}{article}{}
-      \name{author}{1}{}{%
-        {{hash=f6f3296eedf51a474e969bb073b7ccc7}{%
-           family={Di\bibnamedelima Benedetto},
-           familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
-           given={Maria-Gabriella},
-           giveni={M\bibinithyphendelim G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Hindawi Publishing Corporation}%
-      }
-      \strng{namehash}{f6f3296eedf51a474e969bb073b7ccc7}
-      \strng{fullhash}{f6f3296eedf51a474e969bb073b7ccc7}
-      \strng{bibnamehash}{f6f3296eedf51a474e969bb073b7ccc7}
-      \strng{authorbibnamehash}{f6f3296eedf51a474e969bb073b7ccc7}
-      \strng{authornamehash}{f6f3296eedf51a474e969bb073b7ccc7}
-      \strng{authorfullhash}{f6f3296eedf51a474e969bb073b7ccc7}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{UWB communication systems: a comprehensive overview}
-      \field{year}{2006}
-    \endentry
     \entry{encstore}{online}{}
       \name{author}{1}{}{%
         {{hash=74acac2bdfdc6eff09c910b18f043e4f}{%
@@ -414,6 +365,55 @@
       \endverb
       \verb{url}
       \verb https://durrell2012.com/what-does-antenna-diversity-do/
+      \endverb
+    \endentry
+    \entry{article}{article}{}
+      \name{author}{5}{}{%
+        {{hash=91449c897d1f3597c92065bdd4822a03}{%
+           family={Fontaine},
+           familyi={F\bibinitperiod},
+           given={Jaron},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f1814bc8e3c776c136d5c8cce9436aa3}{%
+           family={Ridolfi},
+           familyi={R\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bc6715c5523a4c8811ace86ae09a4d81}{%
+           family={Van\bibnamedelima Herbruggen},
+           familyi={V\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=70acd6bfd2f0e181aacb6b29b809eb4f}{%
+           family={Shahid},
+           familyi={S\bibinitperiod},
+           given={Adnan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8d45ae88023827aad660a67cd2b12254}{%
+           family={De\bibnamedelima Poorter},
+           familyi={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Eli},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{9956bffd8f794d2a37e458433e84172b}
+      \strng{fullhash}{8d9e7a76eb3d3ad6eeb9b430ac4db3c2}
+      \strng{bibnamehash}{9956bffd8f794d2a37e458433e84172b}
+      \strng{authorbibnamehash}{9956bffd8f794d2a37e458433e84172b}
+      \strng{authornamehash}{9956bffd8f794d2a37e458433e84172b}
+      \strng{authorfullhash}{8d9e7a76eb3d3ad6eeb9b430ac4db3c2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{month}{01}
+      \field{title}{Edge Inference for UWB Ranging Error Correction Using Autoencoders}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 1}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2020.3012822
       \endverb
     \endentry
     \entry{G_2023}{misc}{}

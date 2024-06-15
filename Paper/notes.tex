@@ -162,6 +162,13 @@ Firstly, we will analyze the security measures implemented in the basic version 
 For authentication, a challenge and response technique is used to verify one of the parties. Both participants possess an E1 authentication function and a pre-shared key that acts as the authenticator. The verifier sends a random number to the claimant, who then uses the E1 function along with the pre-shared key to generate an output that is sent back to the verifier. If the value obtained from the verifier's E1 function matches the one sent by the claimant, then the claimant is authenticated.
 
 Figure \ref{blusec} visually illustrates the encryption and authentication processes, with further details available in \cite{1200664}.
+\begin{figure}[]
+	\centering
+	\includegraphics[width=0.5\textwidth]{images/enc.png}\hfill 
+	\includegraphics[width=0.5\textwidth]{images/auth.png}
+	\caption{(a) Encryption process \quad (b) Authentication process (images from \cite{vainio2000bluetooth}).}
+	\label{blusec}
+\end{figure}
 
 Secondly, Apple, in \cite{aps} on page 172, defines the enhancements made to provide greater security to Bluetooth and BLE; they are listed below: `` The Bluetooth security model for both versions includes the following distinct security features:
 \begin{itemize}
@@ -173,25 +180,22 @@ Secondly, Apple, in \cite{aps} on page 172, defines the enhancements made to pro
   \item Secure Simple Pairing: Protection against passive eavesdropping and protection against
   man-in-the-middle attacks."
 \end{itemize}
+Additionally, Apple has added two features for BLE: Address Randomisation and Cross-Transport Key Derivation.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{images/enc.png}\hfill 
-	\includegraphics[width=0.5\textwidth]{images/auth.png}
-	\caption{(a) Encryption process \quad (b) Authentication process (images from \cite{vainio2000bluetooth}).}
-	\label{blusec}
-\end{figure}
+\paragraph{Address Randomisation}\label{random} According to \cite{aps}, to ensure that an Apple device is not trackable, its BLE address is frequently changed to prevent traffic analysis. This is achieved through a technique called \textit{Address Randomisation}, which allows the device to frequently change its \textit{public} BLE address. Only known devices can resolve the \textit{private} BLE address, as it requires possession of the resolving key, which is exchanged between the two devices during the pairing phase.
 
+\paragraph{Cross-Transport Key Derivation}
+Initially, the link keys of BLE and Bluetooth were independent of each other; with this functionality (introduced in the Bluetooth standard), it is possible to derive a BLE link key from a Bluetooth link key and vice versa. This reduces the number of pairings required between two devices, thereby enhancing convenience and security, according to \cite{antonioli2022blurtooth}.
 
 \subsubsection{UWB}\label{sec:uwb}
 \subsubsubsection{Overview}
 Within the domain of wireless communication technologies, UWB operates by employing extremely low-power, short-duration pulses that span a broad spectrum and result in increased distance measuring precision, allowing for high data transfer rates and precise positioning capabilities over a wide frequency range, typically several gigahertz. Originally conceived for military and radar applications, it has gradually invaded diverse sectors, finding particular prominence in consumer electronics, healthcare, automotive systems, and the Internet of Things (IoT).
 
-From \cite{Coppens2022}: ``UWB achieves real-time accuracy because the receiver can determine the time of arrival of the signal, allowing centimeter-level accurate ranging using techniques such as Time-of-Flight (ToF)\footnote{From \cite{tof}, ``Time of flight is the measurement of time taken to travel a distance in order to determine distance, speed, or properties of the medium".}, Time Difference of Arrival (TDoA)\footnote{From \cite{tdoa}, ``TDoA is a positioning methodology that determines the difference between the time-of-arrival (ToA) of radio signals. TDoA is used in a real-time location system (RTLS) to accurately calculate the location"} and Two-Way Ranging (TWR)\footnote{From \cite{twr}, ``The Two Way Ranging method determines the Time of Flight of the UWB RF signal and then calculates the distance between the nodes by multiplying the time by the speed of light."}. Combining with error correction techniques, the ranging error can be as low as 58 mm".
+An advantage of UWB technology is its ability to provide accurate and real-time tracking, thanks to techniques such as Time-of-Flight (ToF)\footnote{From \cite{tof}, ``Time of flight is the measurement of time taken to travel a distance in order to determine distance, speed, or properties of the medium".}, Time Difference of Arrival (TDoA)\footnote{From \cite{tdoa}, ``TDoA is a positioning methodology that determines the difference between the time-of-arrival (ToA) of radio signals. TDoA is used in a real-time location system (RTLS) to accurately calculate the location"} and Two-Way Ranging (TWR)\footnote{From \cite{twr}, ``The Two Way Ranging method determines the Time of Flight of the UWB RF signal and then calculates the distance between the nodes by multiplying the time by the speed of light."}. According to \cite{article}, the ranging error can be as low as 58 mm.
 
-Because of its wide spectrum utilization, UWB can coexist peacefully with other wireless technologies and send out massive volumes of data quickly; also, it has a reduced range of operation due to the wide radio bandwidth it uses (according to \cite{Zafar2019}, ``U1 chip can emit data using two frequencies: 6.24 GHz and 8.2368 GHz. The FCC has allocated ultrawideband a spectrum starting from 3.1GHz to 10.6GHz."). To overcome this problem, we can use an antenna of type \textit{MIMO} (multiple-input and multiple-output) to enhance UWB's range; this kind of devices can be embedded into our everyday devices due to their reduced size. From \cite{di2006uwb}: ``due to the low energy density and the pseudo-random (PR) characteristics of the transmitted signal, the UWB signal is noise-like which makes unintended detection difficult".
+Because of its wide spectrum utilization, UWB can coexist peacefully with other wireless technologies and send out massive volumes of data quickly; also, it has a reduced range of operation due to the wide radio bandwidth it uses (according to \cite{Zafar2019}, ``U1 chip can emit data using two frequencies: 6.24 GHz and 8.2368 GHz. The FCC has allocated ultrawideband a spectrum starting from 3.1GHz to 10.6GHz."). To overcome this problem, we can use an antenna of type \textit{MIMO} (multiple-input and multiple-output) to enhance UWB's range; this kind of devices can be embedded into our everyday devices due to their reduced size.
 
-According to \cite{aps}, ``Apple-designed U1 chip uses UWB technology for spatial awareness, allowing iPhone 11, iPhone 11 Pro and iPhone 11 Pro Max or later iPhone models to precisely locate other U1-equipped Apple devices"; this means that when two U1 devices come close to each other, the two start measuring their exact distance using ToF. According to IEEE 802.15.4a \cite{5394030}, ``UWB can determine the relative position of other devices in the line of sight even up to 200 meters", which means that we can leverage this technology to track items that are very close to us and those that are relatively distant.
+According to \cite{aps}, ``Apple-designed U1 chip uses UWB technology for spatial awareness, allowing iPhone 11, iPhone 11 Pro and iPhone 11 Pro Max or later iPhone models to precisely locate other U1-equipped Apple devices"; this means that when two U1 devices come close to each other, the two start measuring their exact distance using ToF. According to IEEE 802.15.4a \cite{5394030}, the range of visibility for UWB is approximately 200 meters., which means that we can leverage this technology to track items that are very close to us and those that are relatively distant.
 
 It is important to distinguish the differences between BLE and UWB. The former allows for detecting a device but cannot accurately measure its position, as it relies on the device's range. UWB, on the other hand, enables precise localization of the device by measuring the position based on the time interval between when the signal leaves point A and when it arrives at point B.
 Table \ref{tableu} represents the principal differences between the two technologies, data is taken from \cite{encstore}:
@@ -216,30 +220,30 @@ The fact that UWB pulses are resistant to the multipath effect\footnote{From \ci
 
 Another important aspect to consider is the resistance to Relay Attacks, which is a vulnerability of the majority of signal-based architectures; we will present a concrete example taken from \cite{Global_2020}. In this attack, the goal is to trick a car into thinking the key and owner are close by using two people with hacking devices. The first relays signals from the car to the second thief, who transmits the signal to the house. The key responds, allowing entry into the car. The relay attack intercepts and amplifies wireless signals used to unlock the door and start the car, despite the key's distance. With UWB, that would not be possible due to its working scheme: to ensure the car doesn't have to make assumptions, rapid measurements are utilized to establish distance very precisely. Any attempt to relay attack or intercept the UWB signal will merely cause the answering device's acknowledgement signals to arrive later, indicating to the car that the real key is actually farther away. The car's presumption is replaced with assurance when using UWB, which greatly increases the security of the passive keyless entry system.
 
-The implemented security measures, taken by Apple, are the following: MAC address randomization and frame sequence number randomization \cite{aps}.
+The implemented security measures, taken by Apple, are the following: MAC address randomisation and frame sequence number randomisation \cite{aps}.
 
-\paragraph{MAC address randomization}
-From \cite{aps}: ``Apple platforms use a randomized media access control address (MAC address) when performing scans when not associated with another device. Because a device’s MAC address changes when disconnected from another device, it can’t be used to persistently track a device by passive observers of traffic". This provides us with a level of protection against visibility from malicious individuals attempting to sniff the traffic for malicious purposes.
+\paragraph{MAC address randomisation}
+This functionality is very similar to that discussed in \ref{random}, with the objective of concealing the MAC address of the device. In \cite{aps}, it is explained that the randomization procedure used for UWB is the same as that used for Wi-Fi. During a scanning procedure, the device randomizes its MAC address to prevent situations where someone might sniff the traffic to analyze the device's behavior. Once connected to a network, it will consistently show the same (randomized) MAC address, which will change once the session ends. This provides us with a level of protection against visibility from malicious individuals attempting to sniff the traffic for malicious purposes.
 
-\paragraph{Frame sequence number randomization}
-From \cite{aps}: ``Apple devices randomize the sequence numbers whenever a MAC address is changed to a new randomized address". As before, this addition increases the privacy, also avoid the possibility of replay attacks.
+\paragraph{Frame sequence number randomisation}
+This functionality stipulates that each time the device randomizes its MAC address (following a scan or disconnection), the sequence number of its packets is also randomized; as before, this addition increases the privacy, also avoid the possibility of replay attacks.
 
 
 Now, we will analyze the architecture of this product; the information has been reverse engineered by Adam Catley in \cite{reverse}. We will cover both the hardware and software aspects of this kind of device.
 \subsection{Software analysis}\label{sec:beacons}
 As for the software part, we will present informations taken from \cite{reverse}: ``there are various states in which AirTag can be; we will now quickly present all of them.
 \begin{itemize}
-  \item \textit{Not registered}: when removed from FindMy network or reset, the AirTag is brand new and every 33 milliseconds, it advertises itself as it waits to be connected.
-  \item \textit{Initialisation}: a public/private key pair is created and shared by the AirTag and the linked iOS device after it is registered to an Apple ID.
-  \item \textit{Connected}: the owner’s device is in range. No broadcasts occur.
-  \item \textit{Disconnected}: the owner’s device is out of range. Broadcasts identity every 2000 ms.
-  \item \textit{Out of sync}: happens when an AirTag reboots while separated from its owner’s device. Acts like Disconnected but absolute time is lost, so events are relative to time since power-up. Identity resets to its initial value.
-  \item \textit{Lost}: occurs 3 days after Disconnected or Out of sync begins. Moves to Waiting for motion every 6 hours.
-  \item \textit{Waiting for motion}: samples the accelerometer every 10 seconds until motion is detected.
-  \item \textit{Sound alert}: a command to play a noise is received from either a connected device or by detecting motion. Lasts a maximum of 20 seconds.
-  \item \textit{Precision finding}: triggered by the owner’s device while Connected. Is overridden by Sound alert."
+  \item \textit{Not registered}: When the AirTag is brand new, has been reset, or has been removed from the FindMy network. Waits to be connected to while advertising itself every 33ms.
+  \item \textit{Initialisation}: The AirTag is being registered to an Apple ID and a public/private key pair is generated and shared between the AirTag and the connected iOS device.
+  \item \textit{Connected}: The owner’s device is in range. No broadcasts occur.
+  \item \textit{Disconnected}: The owner’s device is out of range. Broadcasts identity every 2000 ms.
+  \item \textit{Out of sync}: Happens when an AirTag reboots while separated from its owner’s device. Acts like Disconnected but absolute time is lost so events are relative to time since power-up. Identity resets to initial value.
+  \item \textit{Lost}: Occurs 3 days after Disconnected or Out of sync begin. Moves to Waiting for motion every 6 hours.
+  \item \textit{Waiting for motion}: Samples the accelerometer every 10 seconds until motion is detected.
+  \item \textit{Sound alert}: A command to play a noise is received from either a connected device or by detecting motion. Lasts a maximum of 20 seconds.
+  \item \textit{Precision finding}: Triggered by the owner’s device while in Connected. Is overridden by Sound alert."
 \end{itemize}
-As we will see in Section \ref{hw}, even if the finder has an Android device, they may be able to identify the owner of an AirTag thanks to its NFC antenna. Depending on its current status, the tag carries a URL that uniquely identifies the AirTag. It can only be read when the AirTag is turned on (meaning that the battery within it is sufficiently charged). There are some parameters that are attached to the URL, used to identify the device; we will briefly present them. These informations were presented in \cite{reverse}, ``Keep in mind that all of the following parameters are fixed for a single unit, even after power cycles, long runtime, resets and modes.
+As we will see in Section \ref{hw}, even if the finder has an Android device, they may be able to identify the owner of an AirTag thanks to its NFC antenna. Depending on its current status, the tag carries a URL that uniquely identifies the AirTag. It can only be read when the AirTag is turned on (meaning that the battery within it is sufficiently charged). There are some parameters that are attached to the URL, used to identify the device; we will briefly present them. All of the following parameters are fixed for a single unit, even after power cycles, long runtime, resets and modes. From \cite{reverse}, ``
 \begin{itemize}
   \item \textit{pid}: product ID for AirTag.
   \item \textit{b}: something related to the battery.
@@ -255,7 +259,7 @@ In the \textbf{Unregistered} state, the stored URL has the following format:
 \url{https://found.apple.com/airtag?pid=5500&b=00&pt=004c&fv=00100e10&dg=00&z=00&bt=A0B1C2D3E4F5&sr=ABCDEF123456&bp=0015}
 
 According to \cite{reverse},
-``Once the device is \textbf{registered}, the parameters \textit{bt, sr, bp} will be removed and replaced with a single anonymous identifier \textit{pi}, which is the only parameter that changes at least every 15 minutes when the Bluetooth address and/or the advertising data changes". Probably, it is the P-224  $p_i$ presented in \ref{keys} or the SHA-224 of it. 
+Once the device is \textbf{registered}, ``the parameters \textit{bt, sr, bp} will be removed and replaced with a single anonymous identifier \textit{pi}, which is the only parameter that changes at least every 15 minutes when the Bluetooth address and/or the advertising data changes". Probably, it is the P-224 $p_i$ presented in \ref{keys} or the SHA-224 of it. 
 
 
 The device operates on a schedule designed to optimize its functionality:
@@ -283,7 +287,8 @@ Security-wise, from \cite{reverse} it has emerged that no security checks are pe
 \subsubsection{Vulnerabilities}\label{sec:vuln}
 We will present some vulnerabilities that have been found by by Adam Catley in \cite{reverse}; Table \ref{vuln} resumes them.
 \paragraph{Exploitable voltage levels}
-The Nordic nRF52832 has the function Access Port Protection \cite{nordicsemi} that it is used to prevent external parties from reading the internal memory and to limit access to the Debug Port via SWD\footnote{From \cite{Oberli_2019}, ``SWD is a standard for debugging and accessing microprocessor registers. This protocol has been in use for many years and is still in use today."}; however, according to \cite{side}, side channel attacks are effective against this mechanism, more specifically voltage glitching. Consequentially, ``it is possible to extract Bluetooth pairing keys to connect to the owner’s phone or run (on the AirTag) a custom firmware since Apple does not check the signature of it (the firmware)", from \cite{reverse}. In this case, if an attacker is able to use voltage glitching to inject a modified firmware, maybe he can use it to track the owner and it will not be discovered since the anti-stalking countermeasures presented in \ref{countermeasures} do not work with personal objects. According to \cite{voltage}, ``the only way to guarantee the security of the voltage glitch detection circuitry protecting an SoC or microcontroller is to implement the detector on the chip itself. An example of detector is Voltage Glitch Detector IP from INVIA, which provides comprehensive protection against power glitching attack. It detects positive and negative supply voltage glitches, and has a slope detection range between 100 MV/s and 2 GV/s".
+The Nordic nRF52832 has the function Access Port Protection \cite{nordicsemi} that it is used to prevent external parties from reading the internal memory and to limit access to the Debug Port via SWD\footnote{From \cite{Oberli_2019}, ``SWD is a standard for debugging and accessing microprocessor registers. This protocol has been in use for many years and is still in use today."}; however, according to \cite{side}, side channel attacks are effective against this mechanism, more specifically voltage glitching. Consequentially, ``it would be possible to disable other privacy features that Apple advertises, extract Bluetooth pairing keys to connect to the owner’s phone, or run completely custom firmware", from \cite{reverse}. In this case, if an attacker is able to use voltage glitching to inject a modified firmware, maybe he can use it to track the owner and it will not be discovered since the anti-stalking countermeasures presented in \ref{countermeasures} do not work with personal objects. 
+To ensure protection against voltage glitching attacks, it is necessary to implement a detector directly on the circuit that can detect when voltage levels are being tampered with. The Voltage Glitch Detector IP from INVIA ``detects positive and negative supply voltage glitches, and has a slope detection range between 100 MV/s and 2 GV/s", according to \cite{voltage}.
 
 \paragraph{Insecure Storage}All the informations saved into the GD25LE32D 32Mbit NOR flash are in clear, as we can see in \cite{tweet}; also, the nRF52832 does not have any encrypting functionality. In this case, we don't know if this is a real vulnerability since we do not know whether the FindMy private key-pair is stored inside the AirTag. However, an attacker can read without problems all the information that is stored within the device and, in general, this behavior can be exploited (maybe in the future) to inject malicious data into the AirTag or to read sensible informations. To prevent this, we can implement encryption via software or hardware; typically, on small devices, it is better to use dedicated hardware circuitry to encrypt data.
 
