@@ -312,9 +312,13 @@ An important aspect that has emerged with the AirTags is the stalking problem. S
 
 Apple has implemented measures to prevent the misuse of AirTags, including alerts and notifications for when an unknown AirTag is detected near a user's device, as well as features like Precision Finding, which can help users locate unwanted AirTags. The first line of defense in the event that someone plants an AirTag on a victim's belongings might be an alert to his iPhone indicating the presence of a foreign AirTag. Apple built the iPhone-AirTag connection to do this in two ways: either when you get to the place that your iPhone's machine learning intelligence has detected as home (or when you manually record it as home) or after the AirTag has stuck with you for a certain ``continuous" period of time that Apple deems sufficient to be considered abnormal. This seems perfect; however, if the victim has a non Apple device, such as an Android phone this could be a problem. To prevent this, Google and Apple collaborated to develop Unknow Tracker Alerts, which is a feature that was announced during the Google I/O 2023 opening presentation.
 
+In the paper \cite{shafqat2023track}, an experiment was conducted in which the payload of the beacon transmitted by the AirTag was successfully modified to appear as an iPhone, rendering it undetectable as a tracking device. As a direct consequence, tracking notifications were not triggered.
+
 An important factor is that AirTags can emit sounds when they are separated from the owner's devices for an extended period of time. This way, a victim of a stalking attempt can hear the noise emitted by the device and realize they are being tracked. More precisely, three days following separation is when sound alerts begin; even in that case, once the tag detects movement it will emit a sound for about 20 seconds, followed by at least 6 hours of silence (even if further movements are detected). The issue with this feature is that 20 seconds of sound followed by silence for 6 hours can be ineffective if the victim is in a noisy environment and unable to hear the emitted sounds from the device. Moreover, during the initial three days of silence, the attacker can study the victim's movements undisturbed without him being aware of it. According to \cite{server}, ``the frequency and duration of sounds can be adjusted from the Apple server side", meaning that Apple can increase both of them to avoid situations in which the victim is unable to hear the sounds.
 
 However, despite these safeguards, the potential for AirTags to be used for stalking remains a concern; in fact, a problem is that the voice coil can be disconnected without disassembly. The resulting problem is that an AirTag can function normally without the voice coil, and therefore, if used for stalking, it will be difficult for a user without an Apple device to detect its presence if it is well hidden.
+
+\subsection{Patents} %brevetti, da fare
 
 \section{FindMy network}\label{sec:find}
 \subsection{Overview}
@@ -432,6 +436,9 @@ For decryption, the procedure implemented is the reverse of the encryption proce
 	\caption{(a) Binary format of a location report \quad (b) Example of sent payload (images from \cite{whocanfind},\cite{airguard}).}
 	\label{comparison}
 \end{figure}
+
+\subsection{Support for non-Apple accesories} 
+%da fare
 
 \section{Useful applications}\label{appl}
 Some useful applications can be the following:

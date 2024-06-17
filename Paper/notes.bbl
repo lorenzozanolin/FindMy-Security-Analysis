@@ -1271,6 +1271,53 @@
       \verb https://infocenter.nordicsemi.com/index.jsp?topic=%2Fps_nrf52833%2Fdif.html&anchor=concept_udr_mns_1s
       \endverb
     \endentry
+    \entry{shafqat2023track}{article}{}
+      \name{author}{6}{}{%
+        {{hash=917a3ecc330b7cbda51a499bd9b02a92}{%
+           family={Shafqat},
+           familyi={S\bibinitperiod},
+           given={Narmeen},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b6d7701b3889388c442120cc1a5106f2}{%
+           family={Gerzon},
+           familyi={G\bibinitperiod},
+           given={Nicole},
+           giveni={N\bibinitperiod}}}%
+        {{hash=25210ac9a31f5c87bba9d77efac728d9}{%
+           family={Van\bibnamedelima Nortwick},
+           familyi={V\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Maggie},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4fc4caaa338e30909ab52d29676b8d5d}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=d85916d80055740c531622abd1c90d7c}{%
+           family={Mislove},
+           familyi={M\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=79ce0ca8e0e5e9e85076dff7133475fd}{%
+           family={Ranganathan},
+           familyi={R\bibinitperiod},
+           given={Aanjhan},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b97c59ca1d411bd7c27346dbf0efdca8}
+      \strng{fullhash}{164362c8e55b921e75dd5cf169fbd4a6}
+      \strng{bibnamehash}{b97c59ca1d411bd7c27346dbf0efdca8}
+      \strng{authorbibnamehash}{b97c59ca1d411bd7c27346dbf0efdca8}
+      \strng{authornamehash}{b97c59ca1d411bd7c27346dbf0efdca8}
+      \strng{authorfullhash}{164362c8e55b921e75dd5cf169fbd4a6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings on Privacy Enhancing Technologies}
+      \field{title}{Track you: A deep dive into safety alerts for apple airtags}
+      \field{year}{2023}
+    \endentry
     \entry{twr}{misc}{}
       \name{author}{1}{}{%
         {{hash=073042b0a05c0277356d6ec8637d6b0a}{%

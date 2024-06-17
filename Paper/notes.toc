@@ -1,38 +1,40 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {section}{\numberline {2}AirTag}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Overview}{2}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}History}{2}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Protocols}{3}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Bluetooth}{3}{subsubsection.2.3.1}%
-\contentsline {subsubsubsection}{\numberline {2.3.1.1}Overview}{3}{subsubsubsection.2.3.1.1}%
-\contentsline {subsubsubsection}{\numberline {2.3.1.2}Security analysis}{4}{subsubsubsection.2.3.1.2}%
-\contentsline {paragraph}{Address Randomisation}{5}{section*.3}%
-\contentsline {paragraph}{Cross-Transport Key Derivation}{5}{section*.4}%
-\contentsline {subsubsection}{\numberline {2.3.2}UWB}{5}{subsubsection.2.3.2}%
-\contentsline {subsubsubsection}{\numberline {2.3.2.1}Overview}{5}{subsubsubsection.2.3.2.1}%
-\contentsline {subsubsubsection}{\numberline {2.3.2.2}Security analysis}{7}{subsubsubsection.2.3.2.2}%
-\contentsline {paragraph}{MAC address randomisation}{7}{section*.6}%
-\contentsline {paragraph}{Frame sequence number randomisation}{7}{section*.7}%
-\contentsline {subsection}{\numberline {2.4}Software analysis}{8}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Hardware analysis}{9}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Security Analysis}{10}{subsection.2.6}%
-\contentsline {subsubsection}{\numberline {2.6.1}Vulnerabilities}{10}{subsubsection.2.6.1}%
-\contentsline {paragraph}{Exploitable voltage levels}{10}{section*.9}%
-\contentsline {paragraph}{Insecure Storage}{11}{section*.10}%
-\contentsline {paragraph}{Unathenticated transmission}{11}{section*.11}%
-\contentsline {subsubsection}{\numberline {2.6.2}Anti-stalking countermeasures}{11}{subsubsection.2.6.2}%
-\contentsline {section}{\numberline {3}FindMy network}{13}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Overview}{13}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Functioning}{14}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Security analysis}{16}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Preliminars definitions}{16}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Workflow}{16}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Cryptography}{16}{subsubsection.3.3.3}%
-\contentsline {paragraph}{Advertisement keys}{17}{section*.16}%
-\contentsline {paragraph}{Key synchronization}{17}{section*.17}%
-\contentsline {paragraph}{Encryption}{18}{section*.18}%
-\contentsline {paragraph}{Decryption}{18}{section*.19}%
-\contentsline {section}{\numberline {4}Useful applications}{18}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Mods}{21}{subsection.4.1}%
-\contentsline {section}{\numberline {5}Conclusion}{21}{section.5}%
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {section}{\numberline {2}AirTag}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Overview}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}History}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Protocols}{4}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Bluetooth}{4}{subsubsection.2.3.1}%
+\contentsline {subsubsubsection}{\numberline {2.3.1.1}Overview}{4}{subsubsubsection.2.3.1.1}%
+\contentsline {subsubsubsection}{\numberline {2.3.1.2}Security analysis}{5}{subsubsubsection.2.3.1.2}%
+\contentsline {paragraph}{Address Randomisation}{6}{section*.3}%
+\contentsline {paragraph}{Cross-Transport Key Derivation}{6}{section*.4}%
+\contentsline {subsubsection}{\numberline {2.3.2}UWB}{6}{subsubsection.2.3.2}%
+\contentsline {subsubsubsection}{\numberline {2.3.2.1}Overview}{6}{subsubsubsection.2.3.2.1}%
+\contentsline {subsubsubsection}{\numberline {2.3.2.2}Security analysis}{8}{subsubsubsection.2.3.2.2}%
+\contentsline {paragraph}{MAC address randomisation}{8}{section*.6}%
+\contentsline {paragraph}{Frame sequence number randomisation}{8}{section*.7}%
+\contentsline {subsection}{\numberline {2.4}Software analysis}{9}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Hardware analysis}{10}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Security Analysis}{11}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Vulnerabilities}{11}{subsubsection.2.6.1}%
+\contentsline {paragraph}{Exploitable voltage levels}{11}{section*.9}%
+\contentsline {paragraph}{Insecure Storage}{12}{section*.10}%
+\contentsline {paragraph}{Unathenticated transmission}{12}{section*.11}%
+\contentsline {subsubsection}{\numberline {2.6.2}Anti-stalking countermeasures}{12}{subsubsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.7}Patents}{14}{subsection.2.7}%
+\contentsline {section}{\numberline {3}FindMy network}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Overview}{14}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Functioning}{15}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Security analysis}{17}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Preliminars definitions}{17}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Workflow}{17}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Cryptography}{18}{subsubsection.3.3.3}%
+\contentsline {paragraph}{Advertisement keys}{18}{section*.16}%
+\contentsline {paragraph}{Key synchronization}{18}{section*.17}%
+\contentsline {paragraph}{Encryption}{19}{section*.18}%
+\contentsline {paragraph}{Decryption}{19}{section*.19}%
+\contentsline {subsection}{\numberline {3.4}Support for non-Apple accesories}{20}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Useful applications}{20}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Mods}{22}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Conclusion}{23}{section.5}%
