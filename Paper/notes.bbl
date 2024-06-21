@@ -1118,6 +1118,128 @@
       \verb https://research.kudelskisecurity.com/2019/05/16/swd-arms-alternative-to-jtag/
       \endverb
     \endentry
+    \entry{Perkins_Sano_Walton_Wang_Werner_Ashcroft_De_Hunter_Kim_Crosby_Jung_Schaevitz_Avendal_Da_Di_Nath_Papantonis_Graham_Thompson_Copeland_Ely_2022}{misc}{}
+      \name{author}{21}{}{%
+        {{hash=c9f4b9a49b5f06c6d772e7c4ebe109c9}{%
+           family={Perkins},
+           familyi={P\bibinitperiod},
+           given={Ryan\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=8959798eb0276d482a9177d5b2840611}{%
+           family={Sano},
+           familyi={S\bibinitperiod},
+           given={Tatsuya},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4da9d1d1adccd86598a04031a52e6c09}{%
+           family={Walton},
+           familyi={W\bibinitperiod},
+           given={Christopher\bibnamedelima J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=d1b02fb0eccdb3486bfc14ad7fc78159}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Erik\bibnamedelima L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=8cb1543b946819932e710c1d4714ed92}{%
+           family={Werner},
+           familyi={W\bibinitperiod},
+           given={Christopher\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c92d629da7ead0cbc08509f56235d4fc}{%
+           family={Ashcroft},
+           familyi={A\bibinitperiod},
+           given={Anthony\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=51e422bebee20ffc2d271a080da11355}{%
+           family={De},
+           familyi={D\bibinitperiod},
+           given={Jong\bibnamedelimb Erik\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=4f0f2100f5c6060d99a85f7efca0640a}{%
+           family={Hunter},
+           familyi={H\bibinitperiod},
+           given={Tirshathah\bibnamedelima A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=f477b73d956740d8b2e6109aea7ccb97}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Seul\bibnamedelima Bi},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=1b13be565a2be62bab75f4805e131bdf}{%
+           family={Crosby},
+           familyi={C\bibinitperiod},
+           given={Justin\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=f7355694729708333d198d593cd04bfd}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={Woojin},
+           giveni={W\bibinitperiod}}}%
+        {{hash=e951c85d4332c8d59479318ab6166284}{%
+           family={Schaevitz},
+           familyi={S\bibinitperiod},
+           given={Samuel\bibnamedelima B.},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=64a9fe21a1cc961132208b3719b5fd8f}{%
+           family={Avendal},
+           familyi={A\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ce800c8d8d77f7b8d5f89f015d28a34c}{%
+           family={Da},
+           familyi={D\bibinitperiod},
+           given={Costa\bibnamedelimb Bras\bibnamedelimb Lima\bibnamedelimb Eduardo\bibnamedelima Jorge},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=fb5b945cc6ce709b0ea6b5aaf5a2042e}{%
+           family={Di},
+           familyi={D\bibinitperiod},
+           given={Nallo\bibnamedelima Carlo},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=b9aa1e246ed5336bd3a606645037acaa}{%
+           family={Nath},
+           familyi={N\bibinitperiod},
+           given={Jayesh},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4e05c8dde4df2735c7eded4e2c7009a8}{%
+           family={Papantonis},
+           familyi={P\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e0d0ca821e14aa9bb1b4ff1364c284e0}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={Christopher\bibnamedelima S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=11d9cd96483a609d7620dea640d27c6d}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={Paul\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=70711cf39f2c4e272f37922a4e6c4c1c}{%
+           family={Copeland},
+           familyi={C\bibinitperiod},
+           given={Devon\bibnamedelima K.},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=a8cf74ea986a448301ce1de63277cea3}{%
+           family={Ely},
+           familyi={E\bibinitperiod},
+           given={Colin\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf0b34d8680a3e74b90f7027c7b30167}
+      \strng{fullhash}{d98329662000473339b69e818a676aa5}
+      \strng{bibnamehash}{bf0b34d8680a3e74b90f7027c7b30167}
+      \strng{authorbibnamehash}{bf0b34d8680a3e74b90f7027c7b30167}
+      \strng{authornamehash}{bf0b34d8680a3e74b90f7027c7b30167}
+      \strng{authorfullhash}{d98329662000473339b69e818a676aa5}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{WIRELESSLY LOCATABLE TAG}
+      \field{year}{2022}
+    \endentry
     \entry{Peterson_2022}{misc}{}
       \name{author}{1}{}{%
         {{hash=9e607cd6437d9c9d932fc5cf8426dfb7}{%
