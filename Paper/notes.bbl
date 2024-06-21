@@ -1118,6 +1118,123 @@
       \verb https://research.kudelskisecurity.com/2019/05/16/swd-arms-alternative-to-jtag/
       \endverb
     \endentry
+    \entry{Perkins_De_Hunter_2020}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=c9f4b9a49b5f06c6d772e7c4ebe109c9}{%
+           family={Perkins},
+           familyi={P\bibinitperiod},
+           given={Ryan\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=51e422bebee20ffc2d271a080da11355}{%
+           family={De},
+           familyi={D\bibinitperiod},
+           given={Jong\bibnamedelimb Erik\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=4f0f2100f5c6060d99a85f7efca0640a}{%
+           family={Hunter},
+           familyi={H\bibinitperiod},
+           given={Tirshathah\bibnamedelima A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe498c4c09bcbbe16df4c2066112227f}
+      \strng{fullhash}{fe498c4c09bcbbe16df4c2066112227f}
+      \strng{bibnamehash}{fe498c4c09bcbbe16df4c2066112227f}
+      \strng{authorbibnamehash}{fe498c4c09bcbbe16df4c2066112227f}
+      \strng{authornamehash}{fe498c4c09bcbbe16df4c2066112227f}
+      \strng{authorfullhash}{fe498c4c09bcbbe16df4c2066112227f}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{FASTENER WITH A CONSTRAINED RETENTION RING}
+      \field{year}{2020}
+    \endentry
+    \entry{Perkins_Thompson_2023}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=c9f4b9a49b5f06c6d772e7c4ebe109c9}{%
+           family={Perkins},
+           familyi={P\bibinitperiod},
+           given={Ryan\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=11d9cd96483a609d7620dea640d27c6d}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={Paul\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{725f807016e8c9e5b2d0568f140c777d}
+      \strng{fullhash}{725f807016e8c9e5b2d0568f140c777d}
+      \strng{bibnamehash}{725f807016e8c9e5b2d0568f140c777d}
+      \strng{authorbibnamehash}{725f807016e8c9e5b2d0568f140c777d}
+      \strng{authornamehash}{725f807016e8c9e5b2d0568f140c777d}
+      \strng{authorfullhash}{725f807016e8c9e5b2d0568f140c777d}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Mounting base for a wirelessly locatable tag}
+      \field{year}{2023}
+    \endentry
+    \entry{Perkins_Avendal_Da_Di_Nath_Papantonis_Schaevitz_Werner_2022}{misc}{}
+      \name{author}{8}{}{%
+        {{hash=c9f4b9a49b5f06c6d772e7c4ebe109c9}{%
+           family={Perkins},
+           familyi={P\bibinitperiod},
+           given={Ryan\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=64a9fe21a1cc961132208b3719b5fd8f}{%
+           family={Avendal},
+           familyi={A\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ce800c8d8d77f7b8d5f89f015d28a34c}{%
+           family={Da},
+           familyi={D\bibinitperiod},
+           given={Costa\bibnamedelimb Bras\bibnamedelimb Lima\bibnamedelimb Eduardo\bibnamedelima Jorge},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=fb5b945cc6ce709b0ea6b5aaf5a2042e}{%
+           family={Di},
+           familyi={D\bibinitperiod},
+           given={Nallo\bibnamedelima Carlo},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=b9aa1e246ed5336bd3a606645037acaa}{%
+           family={Nath},
+           familyi={N\bibinitperiod},
+           given={Jayesh},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4e05c8dde4df2735c7eded4e2c7009a8}{%
+           family={Papantonis},
+           familyi={P\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e951c85d4332c8d59479318ab6166284}{%
+           family={Schaevitz},
+           familyi={S\bibinitperiod},
+           given={Samuel\bibnamedelima B.},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=8cb1543b946819932e710c1d4714ed92}{%
+           family={Werner},
+           familyi={W\bibinitperiod},
+           given={Christopher\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf0b34d8680a3e74b90f7027c7b30167}
+      \strng{fullhash}{49b45d88a330d312efef40e0d763a6df}
+      \strng{bibnamehash}{bf0b34d8680a3e74b90f7027c7b30167}
+      \strng{authorbibnamehash}{bf0b34d8680a3e74b90f7027c7b30167}
+      \strng{authornamehash}{bf0b34d8680a3e74b90f7027c7b30167}
+      \strng{authorfullhash}{49b45d88a330d312efef40e0d763a6df}
+      \field{extraname}{1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{ANTENNA ASSEMBLY FOR A WIRELESSLY LOCATABLE TAG}
+      \field{year}{2022}
+    \endentry
     \entry{Perkins_Sano_Walton_Wang_Werner_Ashcroft_De_Hunter_Kim_Crosby_Jung_Schaevitz_Avendal_Da_Di_Nath_Papantonis_Graham_Thompson_Copeland_Ely_2022}{misc}{}
       \name{author}{21}{}{%
         {{hash=c9f4b9a49b5f06c6d772e7c4ebe109c9}{%
@@ -1232,6 +1349,7 @@
       \strng{authorbibnamehash}{bf0b34d8680a3e74b90f7027c7b30167}
       \strng{authornamehash}{bf0b34d8680a3e74b90f7027c7b30167}
       \strng{authorfullhash}{d98329662000473339b69e818a676aa5}
+      \field{extraname}{2}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
