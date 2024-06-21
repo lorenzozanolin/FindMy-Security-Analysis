@@ -99,14 +99,11 @@
 \newpage
 
 % manca:
-%% 
-%%  Bluetooth
 %% Applications and mods
 %% brevetti
 %% accessori compatibili con findmy
 %% diagramma algo
 %% correggere inglese
-%% riformulare alcune frasi citate
 
 \begin{abstract}
   The main goal of this project is to dig into how Apple AirTags work, including their setup, security measures, and uses; since everything is tied to the FindMy network, the UWB technology and Bluetooth, we will also look into the security methods used in all of them. The idea is to get a clear picture of how Apple AirTags are put together, how secure they are, and the different ways they're used in the FindMy network.
@@ -182,9 +179,9 @@ Secondly, Apple, in \cite{aps}, defines the enhancements made to provide greater
 \end{itemize}
 Additionally, Apple has added two features for BLE: Address Randomisation and Cross-Transport Key Derivation.
 
-\paragraph{Address Randomisation}\label{random} According to \cite{aps}, to ensure that an Apple device is not trackable, its BLE address is frequently changed to prevent traffic analysis. This is achieved through a technique called \textit{Address Randomisation}, which allows the device to frequently change its \textit{public} BLE address. Only known devices can resolve the \textit{private} BLE address, as it requires possession of the resolving key, which is exchanged between the two devices during the pairing phase.
+\paragraph{Address Randomisation.}\label{random} According to \cite{aps}, to ensure that an Apple device is not trackable, its BLE address is frequently changed to prevent traffic analysis. This is achieved through a technique called \textit{Address Randomisation}, which allows the device to frequently change its \textit{public} BLE address. Only known devices can resolve the \textit{private} BLE address, as it requires possession of the resolving key, which is exchanged between the two devices during the pairing phase.
 
-\paragraph{Cross-Transport Key Derivation}
+\paragraph{Cross-Transport Key Derivation.}
 Initially, the link keys of BLE and Bluetooth were independent of each other; with this functionality (introduced in the Bluetooth standard), it is possible to derive a BLE link key from a Bluetooth link key and vice versa. This reduces the number of pairings required between two devices, thereby enhancing convenience and security, according to \cite{antonioli2022blurtooth}.
 
 \subsubsection{UWB}\label{sec:uwb}
@@ -222,10 +219,10 @@ Another important aspect to consider is the resistance to Relay Attacks, which i
 
 The implemented security measures, taken by Apple, are the following: MAC address randomisation and frame sequence number randomisation \cite{aps}.
 
-\paragraph{MAC address randomisation}
+\paragraph{MAC address randomisation.}
 This functionality is very similar to that discussed in \ref{random}, with the objective of concealing the MAC address of the device. In \cite{aps}, it is explained that the randomization procedure used for UWB is the same as that used for Wi-Fi. During a scanning procedure, the device randomizes its MAC address to prevent situations where someone might sniff the traffic to analyze the device's behavior. Once connected to a network, it will consistently show the same (randomized) MAC address, which will change once the session ends. This provides protection against visibility from malicious individuals attempting to sniff the traffic for malicious purposes.
 
-\paragraph{Frame sequence number randomisation}
+\paragraph{Frame sequence number randomisation.}
 This functionality stipulates that each time the device randomizes its MAC address (following a scan or disconnection), the sequence number of its packets is also randomized; as before, this addition increases the privacy and also avoids the possibility of replay attacks.
 
 
@@ -286,13 +283,13 @@ If motion is detected, the speaker will loudly beep for up to 20 seconds after b
 Security-wise, from \cite{reverse} it has emerged that no security checks are performed on the device during its operations; in fact, none of the data in the AirTag is protected from tampering or disclosure.
 \subsubsection{Vulnerabilities}\label{sec:vuln}
 We will present some vulnerabilities that have been found by by Adam Catley in \cite{reverse}; Table \ref{vuln} resumes them.
-\paragraph{Exploitable voltage levels}
+\paragraph{Exploitable voltage levels.}
 The Nordic nRF52832 has the function Access Port Protection \cite{nordicsemi} that it is used to prevent external parties from reading the internal memory and to limit access to the Debug Port via SWD\footnote{From \cite{Oberli_2019}, ``SWD is a standard for debugging and accessing microprocessor registers. This protocol has been in use for many years and is still in use today."}; however, according to \cite{side}, side channel attacks are effective against this mechanism, more specifically voltage glitching. Consequentially, ``it would be possible to disable other privacy features that Apple advertises, extract Bluetooth pairing keys to connect to the owner’s phone, or run completely custom firmware", from \cite{reverse}. In this case, if an attacker is able to use voltage glitching to inject a modified firmware, maybe he can use it to track the owner and it will not be discovered since the anti-stalking countermeasures presented in \ref{countermeasures} do not work with personal objects. 
 To ensure protection against voltage glitching attacks, it is necessary to implement a detector directly on the circuit that can detect when voltage levels are being tampered with. The Voltage Glitch Detector IP from INVIA ``detects positive and negative supply voltage glitches, and has a slope detection range between 100 MV/s and 2 GV/s", according to \cite{voltage}.
 
-\paragraph{Insecure Storage}All the informations saved into the GD25LE32D 32Mbit NOR flash are in clear, as we can see in \cite{tweet}; also, the nRF52832 does not have any encrypting functionality. In this case, we don't know if this is a real vulnerability since we do not know whether the FindMy private key-pair is stored inside the AirTag. However, an attacker can read without problems all the informations that are stored within the device and, in general, this behavior can be exploited (maybe in the future) to inject malicious data into the AirTag or to read sensible informations. To prevent this, we can implement encryption via software or hardware; typically, on small devices, it is better to use dedicated hardware circuitry to encrypt data.
+\paragraph{Insecure Storage.}All the informations saved into the GD25LE32D 32Mbit NOR flash are in clear, as we can see in \cite{tweet}; also, the nRF52832 does not have any encrypting functionality. In this case, we don't know if this is a real vulnerability since we do not know whether the FindMy private key-pair is stored inside the AirTag. However, an attacker can read without problems all the informations that are stored within the device and, in general, this behavior can be exploited (maybe in the future) to inject malicious data into the AirTag or to read sensible informations. To prevent this, we can implement encryption via software or hardware; typically, on small devices, it is better to use dedicated hardware circuitry to encrypt data.
 
-\paragraph{Unathenticated transmission}The only way to identify an AirTag is to use its public key, which is transmitted via BLE advertising packets; this identification does not require authentication. These IDs can be recorded and replayed by any nearby BLE device to mimic the appearance of the real AirTag. Suppose a malicious actor obtains a BLE device and registers the public key of the sender; once power is removed from the AirTag, the attacker can send BLE packets containing the AirTag's public key, thereby falsifying the location of the AirTag without a battery. In this case, the AirTag is exploited to steal personal belongings from the owner (example taken from \cite{reverse}). To avoid this, Apple can use authenticated encryption; for example, we can use GCM, which offers the ability to verify the authenticity and integrity of extra authenticated data (AAD) that is provided in clear text in addition to authenticated encryption (confidentiality and authentication). More details can be found in \cite{gcm}.
+\paragraph{Unathenticated transmission.}The only way to identify an AirTag is to use its public key, which is transmitted via BLE advertising packets; this identification does not require authentication. These IDs can be recorded and replayed by any nearby BLE device to mimic the appearance of the real AirTag. Suppose a malicious actor obtains a BLE device and registers the public key of the sender; once power is removed from the AirTag, the attacker can send BLE packets containing the AirTag's public key, thereby falsifying the location of the AirTag without a battery. In this case, the AirTag is exploited to steal personal belongings from the owner (example taken from \cite{reverse}). To avoid this, Apple can use authenticated encryption; for example, we can use GCM, which offers the ability to verify the authenticity and integrity of extra authenticated data (AAD) that is provided in clear text in addition to authenticated encryption (confidentiality and authentication). More details can be found in \cite{gcm}.
 
 \begin{table}[h] 
   \caption{Vulnerabilities.}
@@ -388,7 +385,7 @@ More specifically, this kind of devices create and upload an encrypted position 
 
 \subsubsection{Cryptography} \label{sec:crypto}
 We will now delve more into the Cryptography protocols used. 
-\paragraph{Advertisement keys}\label{keys}
+\paragraph{Advertisement keys.}\label{keys}
 FindMy utilizes Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind}, ``the process to generate \textit{advertisement keys} is the following:
 \begin{enumerate}
   \item Each owner device generates a private/public key pair
@@ -404,10 +401,10 @@ FindMy utilizes Elliptic Curves \cite{ec}; according to \cite{aps,whocanfind}, `
   where Equation $(1)$ derives a new symmetric key from the last used symmetric key with 32 bytes length. Equation $(2)$ derives the so-called “anti-tracking” keys $u_i$ and $v_i$ from the new symmetric key with a length of $36$ bytes each. Finally, Eqs. $(3)$ and $(4)$ create the advertisement key pair via EC point multiplication using the anti-tracking keys and the master beacon key $d_0$".
 \end{enumerate}
 
-\paragraph{Key synchronization}
+\paragraph{Key synchronization.}
 To download and decode location information, the advertisement keys must be accessed by all owner devices. In order to synchronize the master beacon keys, FindMy uses iCloud to encrypt a property list file in the Galois/Counter mode of the Advanced Encryption Standard (AES-GCM) \cite{gcm}. The file's decryption key is kept in the iCloud keychain underneath the label “Beacon Store”.
 
-\paragraph{Encryption}
+\paragraph{Encryption.}
 Each BLE beacon contains an Elliptic Curve public key $p_i$. When a finder device intercepts a beacon, it saves its location and encrypts it using the $p_i$ key; subsequently, it uploads the packet to Apple's servers.
 OF uses the Elliptic Curve Integrated Encryption Scheme (ECIES), which generates a shared secret that is utilized to encrypt the report through an ephemeral key exchange (Elliptic Curve Diffie-Hellmann (ECDH)). According to \cite{whocanfind}, ``the finder’s encryption algorithm works as follows:
 \begin{enumerate}
@@ -421,7 +418,7 @@ OF uses the Elliptic Curve Integrated Encryption Scheme (ECIES), which generates
 The ephemeral public key $p'$ and the authentication tag of AES-GCM are part of the uploaded message. All location reports are identified by
 an id, which is a SHA-256 hash of $p_i$.", as we can see in Figure \ref{comparison}.
 
-\paragraph{Decryption}
+\paragraph{Decryption.}
 For decryption, the procedure implemented is the reverse of the encryption process. From \cite{whocanfind}, ``An owner device that downloads encrypted location reports follows the inverse of the encryption procedure:
 \begin{enumerate}
   \item The owner device selects the proper advertisement keys $(d_i, p_i)$ based on the hashed $p_i$ of the location report.
