@@ -100,7 +100,6 @@
 
 % manca:
 %% Applications and mods
-%% brevetti
 %% accessori compatibili con findmy
 %% diagramma algo
 %% correggere inglese
@@ -323,6 +322,8 @@ Other patents similar to the one just mentioned include:
 \item US20220004834A1 (Antenna assembly for a wirelessly locatable tag) \cite{Perkins_Avendal_Da_Di_Nath_Papantonis_Schaevitz_Werner_2022}, which provides information on the arrangement of the antenna.
 \item US11659916B2 (Mounting base for a wirelessly locatable tag) \cite{Perkins_Thompson_2023}, which outlines the construction of the mounting base for the tag.
 \item US20200333421A1 (Fastener with a constrained retention ring) \cite{Perkins_De_Hunter_2020}, which describes the design of a generic holder for the tag.
+\item US20200272221A1 (Multi-Interface transponder device - power management) \cite{Foster_Nilsen_Puskarich_2020}, which describes the various state in which a positioning tag can be; they are represented in Figure \ref{img:br3}.
+\item US20240073648A1 (Tracking Systems with Electronic Devices and Tags) \cite{Puskarich_2024}, which describes the need of a communication circuitry to permit the communication between tags and devices.
 \end{itemize}
 Many figures are shared among all the previous patents.
 
@@ -338,6 +339,13 @@ Many figures are shared among all the previous patents.
 	\includegraphics[width=\textwidth]{images/br1 s2.png}
 	\caption{Tag sectional drawing (image from \cite{Perkins_Sano_Walton_Wang_Werner_Ashcroft_De_Hunter_Kim_Crosby_Jung_Schaevitz_Avendal_Da_Di_Nath_Papantonis_Graham_Thompson_Copeland_Ely_2022}). }
 	\label{img:br2}
+\end{figure}
+
+\begin{figure}[]
+	\centering
+	\includegraphics[width=0.8\textwidth]{images/br3.png}
+	\caption{State diagram that represents power modes of a tag (image from \cite{Foster_Nilsen_Puskarich_2020}). }
+	\label{img:br3}
 \end{figure}
 
 
@@ -468,7 +476,8 @@ Some useful applications can be the following:
   \item \textit{Pet Tracking}: While not explicitly designed for pets, some users have found AirTags useful for tracking their pets; by attaching an AirTag to a pet's collar, owners can monitor their pet's location and quickly locate them if they wander off. Some tests were conducted in \cite{KittyCatGO2024} and, as we could expect, it seems that the AirTag doesn’t work quite well when in motion, for example, on a moving cat. In \cite{Src2024}, they conducted a test trying to track a dog. As before, the experiment was delusional; they tried to simulate the dog using a plastic box that contained the AirTag and was dropped near a spot where dog walkers regularly walk past it every day. 
   The test results were unsatisfactory because several hours passed before the AirTag's location was updated; furthermore, there were no more updates after the initial alert.
   \item \textit{Child Safety}: Similarly to pets, AirTags can give an extra degree of protection for monitoring kids in busy or strange places. Parents can hide or attach an AirTag to their child's clothing or belongings to track their real-time location and ensure there are no dangerous situations where the child gets lost or kidnapped. From \cite{Kelly_2023}: ``ethical debates can arise regarding this issue, as experts have long been worried about the impact of more restrictive parenting on children’s mental health and development". We will not go any deeper on this question since it is a technical report.
-  \item \textit{Vehicle Tracking}: AirTags can also be used to track vehicles, such as bicycles, motorcycles or cars, in the same way as the two above. An experiment was done in \cite{Maric2023}, ``an Apple AirTag, a Samsung SmartTag+, and a GPS unit with 3G and 4G compatibility were used to evaluate their performance and determine the most cost-effective solution to track a device; additionally, as a backup measure to these external devices, they used the ConnectedDrive feature on a BMW 3 Series to compare its effectiveness against the other options". Table \ref{vehicles} compares the cost of the used options, data is taken from \cite{Maric2023}. The testing route consists of a 45 km drive and includes four checkpoints; there is no LTE or cell service in close proximity of the last checkpoint. After going back to the starting point, the test ends by evaluating how well each gadget finds the parked automobile once it is in range and idly. The results were as assumed: both aftermarket and built-in GPS units were expected to function properly, transmitting accurate locations via cellular networks, facilitating easy vehicle tracking; however, their main drawback is their cost and the need for ongoing battery monitoring or charging to ensure continuous functionality. In terms of UWB, the AirTag has proven to be a cost-effective solution for vehicle tracking, although it does not have the same update frequency as GPS devices. Interestingly, it was found that the SmartTag+ has a higher update frequency compared to the AirTag.
+  \item \textit{Vehicle Tracking}: AirTags can also be used to track vehicles, such as bicycles, motorcycles or cars, in the same way as the two above. An experiment was done in \cite{Maric2023}, comparing the following devices: Apple AirTag, Samsung SmartTag+, a GPS device with 4G compatibility, and BMW's ConnectionDrive system. The aim was to determine the most cost-effective technology for object tracking.
+  Table \ref{vehicles} compares the cost of the used options, data is taken from \cite{Maric2023}. The testing route consists of a 45 km drive and includes four checkpoints; there is no LTE or cell service in close proximity of the last checkpoint. After going back to the starting point, the test ends by evaluating how well each gadget finds the parked automobile once it is in range and idly. The results were as assumed: both aftermarket and built-in GPS units were expected to function properly, transmitting accurate locations via cellular networks, facilitating easy vehicle tracking; however, their main drawback is their cost and the need for ongoing battery monitoring or charging to ensure continuous functionality. In terms of UWB, the AirTag has proven to be a cost-effective solution for vehicle tracking, although it does not have the same update frequency as GPS devices. Interestingly, it was found that the SmartTag+ has a higher update frequency compared to the AirTag.
   \begin{table}[h] 
     \caption{Solutions cost comparison.}
       \centering

@@ -416,6 +416,38 @@
       \verb 10.1109/ACCESS.2020.3012822
       \endverb
     \endentry
+    \entry{Foster_Nilsen_Puskarich_2020}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=272ae7cbebfc176c1c068f0b73c56f62}{%
+           family={Foster},
+           familyi={F\bibinitperiod},
+           given={James\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=b69ddd17afd2b795c0faf0918eab42fa}{%
+           family={Nilsen},
+           familyi={N\bibinitperiod},
+           given={Marlene},
+           giveni={M\bibinitperiod}}}%
+        {{hash=45ec2824c83ce24d847045b32856602a}{%
+           family={Puskarich},
+           familyi={P\bibinitperiod},
+           given={Paul\bibnamedelima G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ef5955574e34c29fb139b81f1b5a672}
+      \strng{fullhash}{9ef5955574e34c29fb139b81f1b5a672}
+      \strng{bibnamehash}{9ef5955574e34c29fb139b81f1b5a672}
+      \strng{authorbibnamehash}{9ef5955574e34c29fb139b81f1b5a672}
+      \strng{authornamehash}{9ef5955574e34c29fb139b81f1b5a672}
+      \strng{authorfullhash}{9ef5955574e34c29fb139b81f1b5a672}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{title}{Multi-Interface Transponder Device - Power Management}
+      \field{year}{2020}
+    \endentry
     \entry{G_2023}{misc}{}
       \name{author}{1}{}{%
         {{hash=d58a16a77827b556ff2b8a6bf1cad561}{%
@@ -1390,6 +1422,28 @@
       \verb{url}
       \verb https://ios.gadgethacks.com/how-to/20-surprisingly-practical-uses-for-apple-airtags-0384571/
       \endverb
+    \endentry
+    \entry{Puskarich_2024}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=45ec2824c83ce24d847045b32856602a}{%
+           family={Puskarich},
+           familyi={P\bibinitperiod},
+           given={Paul\bibnamedelima G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{45ec2824c83ce24d847045b32856602a}
+      \strng{fullhash}{45ec2824c83ce24d847045b32856602a}
+      \strng{bibnamehash}{45ec2824c83ce24d847045b32856602a}
+      \strng{authorbibnamehash}{45ec2824c83ce24d847045b32856602a}
+      \strng{authornamehash}{45ec2824c83ce24d847045b32856602a}
+      \strng{authorfullhash}{45ec2824c83ce24d847045b32856602a}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{Tracking Systems with Electronic Devices and Tags}
+      \field{year}{2024}
     \endentry
     \entry{Rambo_2019}{misc}{}
       \name{author}{1}{}{%

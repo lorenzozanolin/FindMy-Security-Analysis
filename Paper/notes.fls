@@ -947,6 +947,11 @@ INPUT ./images/br1 s2.png
 INPUT images/br1 s2.png
 INPUT ./images/br1 s2.png
 INPUT ./images/br1 s2.png
+INPUT ./images/br3.png
+INPUT ./images/br3.png
+INPUT images/br3.png
+INPUT ./images/br3.png
+INPUT ./images/br3.png
 INPUT ./images/findmy.jpg
 INPUT ./images/findmy.jpg
 INPUT images/findmy.jpg

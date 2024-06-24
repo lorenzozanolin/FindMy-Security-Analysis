@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber notes"] 1718969605 "notes.bcf" "notes.bbl" "notes" 1718969612
-  "notes.bcf" 1718969612 115162 e1636a145fc4baa0b88cd2a15000b67e "pdflatex"
-  "thud.bib" 1718969151 15270 3bd149d7f25f906dc5fa1b9d453bb6a4 ""
+["biber notes"] 1719219825 "notes.bcf" "notes.bbl" "notes" 1719220622
+  "notes.bcf" 1719220622 115566 b89df3b82bb15e546cef7518eff76fd2 "pdflatex"
+  "thud.bib" 1719219394 15661 892246a2bb8acd7241106fdf27f6758e ""
   (generated)
   "notes.bbl"
   "notes.blg"
-["pdflatex"] 1718969609 "notes.tex" "notes.pdf" "notes" 1718969612
+["pdflatex"] 1719220620 "notes.tex" "notes.pdf" "notes" 1719220622
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcbx1000.tfm" 1136768653 1536 30fde759286ded71559881bfa2623939 ""
@@ -164,6 +164,7 @@
   "images/auth.png" 1718374907 100019 a5fd6ad5730ead8f61197713f4ec7cbf ""
   "images/br1 s2.png" 1718968184 285694 ee2c84237f0cdaa0f0db3b8de08963d5 ""
   "images/br1 struttura.png" 1718967926 208929 5b628cc46c5c68931d4b75040bad2e88 ""
+  "images/br3.png" 1719218100 106965 b2296122558b16e889e10425f51c63a0 ""
   "images/enc.png" 1718374839 109207 bda571db9c8f4d51df0ab8cf4d830b8f ""
   "images/findmy.jpg" 1700168800 443231 e39864d286212de797e300f241c18d24 ""
   "images/findmysec.png" 1700169858 137403 84b3f6a7b26de792f75eb65fb7a5ded1 ""
@@ -171,13 +172,13 @@
   "images/pcb.png" 1708703511 749914 89d0a95a1546f439058cd99a63782641 ""
   "images/process.png" 1700499779 297464 8cbcde6a17ccb098ab04976d0b0dffcf ""
   "images/remote.jpg" 1708877842 909051 58bfa84c6dc33ad5e282d9c73d140e5a ""
-  "notes.aux" 1718969612 21718 26168917e8a2e70caa673bfaa9d8991d "pdflatex"
-  "notes.bbl" 1718969607 72200 9e122c56d020c894047652713263fbb6 "biber notes"
-  "notes.out" 1718969612 5546 7e17a1b6aa9f7f6a054e4188646d4daf "pdflatex"
-  "notes.run.xml" 1718969612 2306 98834386d197c57129649db4740ac82f "pdflatex"
-  "notes.tex" 1718969597 57764 003cd47c3691c8bcf9cc9730c70601de ""
-  "notes.toc" 1718969612 3103 3fa46f08a71d1aeeb1796612cb4560a0 "pdflatex"
-  "thud.bib" 1718969151 15270 3bd149d7f25f906dc5fa1b9d453bb6a4 ""
+  "notes.aux" 1719220622 22653 c98c60f3502d9c79303b8d4314f06263 "pdflatex"
+  "notes.bbl" 1719219827 74554 e62780fc58be3db42a9ba11c2aaf20ba "biber notes"
+  "notes.out" 1719220622 5546 87b80b7c8020f49bdd7bec0ab429a9b3 "pdflatex"
+  "notes.run.xml" 1719220622 2306 98834386d197c57129649db4740ac82f "pdflatex"
+  "notes.tex" 1719220613 58253 f209d7baf15ae0ab1cbcac724eaa7919 ""
+  "notes.toc" 1719220622 3103 3d8813ca00f806ada542c4258439e3c0 "pdflatex"
+  "thud.bib" 1719219394 15661 892246a2bb8acd7241106fdf27f6758e ""
   (generated)
   "notes.aux"
   "notes.bcf"

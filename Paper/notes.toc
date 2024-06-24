@@ -25,16 +25,16 @@
 \contentsline {subsection}{\numberline {2.7}Patents}{14}{subsection.2.7}%
 \contentsline {section}{\numberline {3}FindMy network}{14}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Overview}{14}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Functioning}{17}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Security analysis}{19}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Preliminars definitions}{19}{subsubsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.2}Functioning}{18}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Security analysis}{20}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Preliminars definitions}{20}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Workflow}{20}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Cryptography}{20}{subsubsection.3.3.3}%
-\contentsline {paragraph}{Advertisement keys.}{20}{section*.18}%
-\contentsline {paragraph}{Key synchronization.}{21}{section*.19}%
-\contentsline {paragraph}{Encryption.}{21}{section*.20}%
-\contentsline {paragraph}{Decryption.}{22}{section*.21}%
-\contentsline {subsection}{\numberline {3.4}Support for non-Apple accesories}{22}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Useful applications}{22}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Mods}{24}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {3.3.3}Cryptography}{21}{subsubsection.3.3.3}%
+\contentsline {paragraph}{Advertisement keys.}{21}{section*.19}%
+\contentsline {paragraph}{Key synchronization.}{21}{section*.20}%
+\contentsline {paragraph}{Encryption.}{22}{section*.21}%
+\contentsline {paragraph}{Decryption.}{22}{section*.22}%
+\contentsline {subsection}{\numberline {3.4}Support for non-Apple accesories}{23}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Useful applications}{23}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Mods}{25}{subsection.4.1}%
 \contentsline {section}{\numberline {5}Conclusion}{25}{section.5}%
