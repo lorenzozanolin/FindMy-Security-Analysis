@@ -76,6 +76,19 @@
       \verb https://www.analog.com/en/resources/glossary/time-of-flight.html
       \endverb
     \endentry
+    \entry{MFIprogram}{misc}{}
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://mfi.apple.com/
+      \endverb
+      \verb{url}
+      \verb https://mfi.apple.com/
+      \endverb
+    \endentry
     \entry{antonioli2022blurtooth}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=6541c93d815af2233e6875af3d582bae}{%
@@ -202,6 +215,38 @@
       \endverb
       \verb{url}
       \verb https://www.mokosmart.com/bluetooth-vs-bluetooth-low-energy-a-detailed-comparison/
+      \endverb
+    \endentry
+    \entry{Bowe_2022}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e4ddf5ba7e68601a8f373127690f0722}{%
+           family={Bowe},
+           familyi={B\bibinitperiod},
+           given={Tucker},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \strng{namehash}{e4ddf5ba7e68601a8f373127690f0722}
+      \strng{fullhash}{e4ddf5ba7e68601a8f373127690f0722}
+      \strng{bibnamehash}{e4ddf5ba7e68601a8f373127690f0722}
+      \strng{authorbibnamehash}{e4ddf5ba7e68601a8f373127690f0722}
+      \strng{authornamehash}{e4ddf5ba7e68601a8f373127690f0722}
+      \strng{authorfullhash}{e4ddf5ba7e68601a8f373127690f0722}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Gear Patrol}
+      \field{month}{8}
+      \field{title}{All the Non-Apple Gadgets the “Find My” App Can Find}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.gearpatrol.com/tech/g36063168/apple-find-my-compatible-gadgets/#:~:text=Your%20iPhone's%20Find%20My%20now,Check%20'em%20out%20here.&text=In%20April%202021%2C%20Apple%20officially,Apple%20devices%20%E2%80%94%20no%20AirTag%20required.
+      \endverb
+      \verb{url}
+      \verb https://www.gearpatrol.com/tech/g36063168/apple-find-my-compatible-gadgets/#:~:text=Your%20iPhone's%20Find%20My%20now,Check%20'em%20out%20here.&text=In%20April%202021%2C%20Apple%20officially,Apple%20devices%20%E2%80%94%20no%20AirTag%20required.
       \endverb
     \endentry
     \entry{reverse}{misc}{}
