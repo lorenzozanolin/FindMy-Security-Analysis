@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  25 JUN 2024 11:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  25 JUN 2024 20:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -794,34 +794,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]
-Overfull \hbox (2.44511pt too wide) in paragraph at lines 113--114
-\OT1/cmr/m/n/10 In the rapidly evolv-ing land-scape of tech-no-log-i-cal ad-van
-ce-ments, Ap-ple's AirTags
- []
-
-[3] [4]
+[2] [3] [4]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 166.
 
-<images/enc.png, id=235, 654.445pt x 379.4175pt>
+<images/enc.png, id=236, 654.445pt x 379.4175pt>
 File: images/enc.png Graphic file (type png)
 <use images/enc.png>
 Package pdftex.def Info: images/enc.png  used on input line 168.
 (pdftex.def)             Requested size: 172.5pt x 100.00673pt.
-<images/auth.png, id=237, 647.41875pt x 378.41376pt>
+<images/auth.png, id=238, 647.41875pt x 378.41376pt>
 File: images/auth.png Graphic file (type png)
 <use images/auth.png>
 Package pdftex.def Info: images/auth.png  used on input line 169.
 (pdftex.def)             Requested size: 172.5pt x 100.82193pt.
 [5] [6 <./images/enc.png> <./images/auth.png>] [7] [8]
-<images/pcb.png, id=311, 962.59625pt x 744.7825pt>
+<images/pcb.png, id=313, 962.59625pt x 744.7825pt>
 File: images/pcb.png Graphic file (type png)
 <use images/pcb.png>
 Package pdftex.def Info: images/pcb.png  used on input line 241.
 (pdftex.def)             Requested size: 345.0pt x 266.92822pt.
- [9] [10 <./images/pcb.png>]
+ [9 <./images/pcb.png>]
+[10]
 Overfull \hbox (11.99689pt too wide) in paragraph at lines 271--273
 \OT1/cmtt/m/n/10 found . apple . com / airtag ? pid = 5500 & b = 00 & pt = 004c
  & fv = 00100e10 & dg = 00 & z = 00 &
@@ -837,12 +832,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 307--307
 []|\OT1/cmr/m/n/10 Implement au-then-ti-
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [12] [13]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 335.
 
-<images/br1 struttura.png, id=383, 295.1025pt x 1061.9675pt>
+<images/br1 struttura.png, id=385, 295.1025pt x 1061.9675pt>
 File: images/br1 struttura.png Graphic file (type png)
 <use images/br1 struttura.png>
 Package pdftex.def Info: images/br1 struttura.png  used on input line 337.
@@ -854,7 +852,7 @@ LaTeX Warning: Float too large for page by 92.77046pt on input line 340.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 342.
 
-<images/br1 s2.png, id=386, 789.95125pt x 834.11626pt>
+<images/br1 s2.png, id=388, 789.95125pt x 834.11626pt>
 File: images/br1 s2.png Graphic file (type png)
 <use images/br1 s2.png>
 Package pdftex.def Info: images/br1 s2.png  used on input line 344.
@@ -863,178 +861,175 @@ Package pdftex.def Info: images/br1 s2.png  used on input line 344.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 349.
 
-<images/br3.png, id=389, 607.26875pt x 472.76625pt>
+<images/br3.png, id=391, 607.26875pt x 472.76625pt>
 File: images/br3.png Graphic file (type png)
 <use images/br3.png>
 Package pdftex.def Info: images/br3.png  used on input line 351.
 (pdftex.def)             Requested size: 276.00105pt x 214.87091pt.
 [14] [15 <./images/br1 struttura.png>] [16 <./images/br1 s2.png>] [17 <./images
 /br3.png>]
-<images/findmy.jpg, id=426, 2055.68pt x 1329.96875pt>
+<images/findmy.jpg, id=428, 2055.68pt x 1329.96875pt>
 File: images/findmy.jpg Graphic file (type jpg)
 <use images/findmy.jpg>
-Package pdftex.def Info: images/findmy.jpg  used on input line 377.
+Package pdftex.def Info: images/findmy.jpg  used on input line 376.
 (pdftex.def)             Requested size: 310.4979pt x 200.86667pt.
-<images/airtag-precision-finding-2.jpg, id=431, 803.0pt x 789.95125pt>
+ [18 <./images/findmy.jpg>]
+<images/airtag-precision-finding-2.jpg, id=439, 803.0pt x 789.95125pt>
 File: images/airtag-precision-finding-2.jpg Graphic file (type jpg)
 <use images/airtag-precision-finding-2.jpg>
 Package pdftex.def Info: images/airtag-precision-finding-2.jpg  used on input l
-ine 390.
+ine 389.
 (pdftex.def)             Requested size: 207.0021pt x 203.63469pt.
- [18] [19 <./images/findmy.jpg>]
+ [19 <./images/airtag-precision-finding-2.jpg>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 414.
+               Default added (so using `tbp') on input line 413.
 
 <images/process.png, id=453, 871.255pt x 582.175pt>
 File: images/process.png Graphic file (type png)
 <use images/process.png>
-Package pdftex.def Info: images/process.png  used on input line 416.
+Package pdftex.def Info: images/process.png  used on input line 415.
 (pdftex.def)             Requested size: 172.5pt x 115.26035pt.
-[20 <./images/airtag-precision-finding-2.jpg>] [21 <./images/process.png>]
-[22]
-<images/packet.png, id=500, 981.6675pt x 450.68375pt>
+[20] [21 <./images/process.png>]
+<images/packet.png, id=490, 981.6675pt x 450.68375pt>
 File: images/packet.png Graphic file (type png)
 <use images/packet.png>
-Package pdftex.def Info: images/packet.png  used on input line 468.
+Package pdftex.def Info: images/packet.png  used on input line 466.
 (pdftex.def)             Requested size: 172.5pt x 79.19405pt.
-<images/findmysec.png, id=501, 1208.515pt x 836.12375pt>
+<images/findmysec.png, id=491, 1208.515pt x 836.12375pt>
 File: images/findmysec.png Graphic file (type png)
 <use images/findmysec.png>
-Package pdftex.def Info: images/findmysec.png  used on input line 469.
+Package pdftex.def Info: images/findmysec.png  used on input line 467.
 (pdftex.def)             Requested size: 172.5pt x 119.34024pt.
- [23 <./images/packet.png> <./images/findmysec.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+ [22] [23 <./images/packet.png> <./images/findmysec.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 503.
+               Default added (so using `tbp') on input line 500.
 
-<images/AirT-Blk-Sm.jpg, id=525, 216.81pt x 144.54pt>
+<images/AirT-Blk-Sm.jpg, id=529, 216.81pt x 144.54pt>
 File: images/AirT-Blk-Sm.jpg Graphic file (type jpg)
 <use images/AirT-Blk-Sm.jpg>
-Package pdftex.def Info: images/AirT-Blk-Sm.jpg  used on input line 505.
+Package pdftex.def Info: images/AirT-Blk-Sm.jpg  used on input line 502.
 (pdftex.def)             Requested size: 120.7521pt x 80.50293pt.
 [24]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 516.
+               Default added (so using `tbp') on input line 513.
 
-<images/remote.jpg, id=539, 2546.01187pt x 630.85687pt>
+<images/remote.jpg, id=543, 2546.01187pt x 630.85687pt>
 File: images/remote.jpg Graphic file (type jpg)
 <use images/remote.jpg>
-Package pdftex.def Info: images/remote.jpg  used on input line 518.
+Package pdftex.def Info: images/remote.jpg  used on input line 515.
 (pdftex.def)             Requested size: 345.0pt x 85.47966pt.
-[25 <./images/AirT-Blk-Sm.jpg>] [26 <./images/remote.jpg>]
-Overfull \hbox (7.6041pt too wide) in paragraph at lines 527--527
+[25 <./images/AirT-Blk-Sm.jpg> <./images/remote.jpg>]
+Overfull \hbox (7.6041pt too wide) in paragraph at lines 524--524
 []\OT1/cmr/m/n/10 en. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\OT1/cmtt/m/n/
 10 https : / / csrc . nist . gov / CSRC / media / Events / Key -[] Management -
 []
  []
 
 
-Overfull \hbox (3.62868pt too wide) in paragraph at lines 527--527
+Overfull \hbox (3.62868pt too wide) in paragraph at lines 524--524
 []\OT1/cmr/m/it/10 Apple ac-ci-den-tally con-firms the ex-is-tence of an un-re-
 leased prod-uct, AirTags\OT1/cmr/m/n/10 .
  []
 
 
-Overfull \hbox (4.80281pt too wide) in paragraph at lines 527--527
+Overfull \hbox (4.80281pt too wide) in paragraph at lines 524--524
 \OT1/cmtt/m/n/10 accidentally -[] confirms -[] the -[] existence -[] of -[] an 
 -[] unreleased -[] product -[]
  []
 
 
-Overfull \hbox (53.30235pt too wide) in paragraph at lines 527--527
+Overfull \hbox (53.30235pt too wide) in paragraph at lines 524--524
 \OT1/cmtt/m/n/10 airtags / ?guccounter = 1 & guce _ referrer = aHR0cHM6Ly9lbi53
 aWtpcGVkaWEub3JnLw &
  []
 
 
-Overfull \hbox (53.80235pt too wide) in paragraph at lines 527--527
+Overfull \hbox (53.80235pt too wide) in paragraph at lines 524--524
 \OT1/cmtt/m/n/10 guce _ referrer _ sig = AQAAAFwBYOWxztTVLDOZqfDxI7FEfhMGWanPQA
 jHHzQDGUmDVInr -[]
  []
 
 
-Overfull \hbox (48.5524pt too wide) in paragraph at lines 527--527
+Overfull \hbox (48.5524pt too wide) in paragraph at lines 524--524
 \OT1/cmtt/m/n/10 WTC670Gr5Q7TJ56qCGlfDdFY52gyoFpCgnF6 -[] 9lAuKJxdf9ujOhjEl1mms
 dH6WhFdKMCR _
  []
 
-
-Overfull \hbox (2.80814pt too wide) in paragraph at lines 527--527
+[26]
+Overfull \hbox (2.80814pt too wide) in paragraph at lines 524--524
 \OT1/cmr/m/n/10 en-US. Aug. 2022. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\O
 T1/cmtt/m/n/10 https : / / www . gearpatrol . com / tech / g36063168 /
  []
 
-[27]
-Overfull \hbox (42.89247pt too wide) in paragraph at lines 527--527
+
+Overfull \hbox (42.89247pt too wide) in paragraph at lines 524--524
 \OT1/cmr/m/it/10 se-cu-rity and au-toma-tion\OT1/cmr/m/n/10 . en-US. Nov. 2020.
  \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\OT1/cmtt/m/n/10 https : / / www . 
 securityindustry .
  []
 
-
-Overfull \hbox (1.82155pt too wide) in paragraph at lines 527--527
+[27]
+Overfull \hbox (1.82155pt too wide) in paragraph at lines 524--524
 []\OT1/cmr/m/n/10 Inpixon. \OT1/cmr/m/it/10 Time Dif-fer-ence of Ar-rival (TDOA
 ) mul-ti-lat-er-a-tion | IN-PIXON\OT1/cmr/m/n/10 .
  []
 
 [28]
-Overfull \hbox (5.80281pt too wide) in paragraph at lines 527--527
+Overfull \hbox (5.80281pt too wide) in paragraph at lines 524--524
 \OT1/cmtt/m/n/10 stolen -[] car -[] these -[] cheap -[] devices -[] will -[] tr
 ack -[] it -[] airtag -[] smarttag -[]
  []
 
 
-Overfull \hbox (4.80281pt too wide) in paragraph at lines 527--527
+Overfull \hbox (4.80281pt too wide) in paragraph at lines 524--524
 \OT1/cmtt/m/n/10 news / apple / 156605 -[] what -[] is -[] precision -[] findin
 g -[] on -[] apple -[] airtags -[]
  []
 
 [29]
-Overfull \hbox (0.26723pt too wide) in paragraph at lines 527--527
+Overfull \hbox (0.26723pt too wide) in paragraph at lines 524--524
 []\OT1/cmr/m/n/10 Limited Re-sults. \OT1/cmr/m/it/10 nRF52 De-bug Res-ur-rec-ti
 on: Ap-pro-tect By-pass\OT1/cmr/m/n/10 . June 2020.
  []
 
 
-Overfull \hbox (19.34721pt too wide) in paragraph at lines 527--527
+Overfull \hbox (19.34721pt too wide) in paragraph at lines 524--524
 \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\OT1/cmtt/m/n/10 https : / / limited
 results . com / 2020 / 06 / nrf52 -[] debug -[] resurrection -[]
  []
 
 
-Overfull \hbox (19.55273pt too wide) in paragraph at lines 527--527
+Overfull \hbox (19.55273pt too wide) in paragraph at lines 524--524
 []\OT1/cmr/m/it/10 Unremovable AirTag\TS1/cmr/m/it/10 ® \OT1/cmr/m/it/10 bracel
 ets\OT1/cmr/m/n/10 . en. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\OT1/cmtt/m
 /n/10 https : / / www . medicalidfashions .
  []
 
-[30]
-Overfull \hbox (13.87181pt too wide) in paragraph at lines 527--527
+
+Overfull \hbox (13.87181pt too wide) in paragraph at lines 524--524
 \OT1/cmr/m/n/10 UWB Spec-trum''. en-US. In: \OT1/cmr/m/it/10 Wc-cftech \OT1/cmr
 /m/n/10 (Nov. 2019). \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\OT1/cmtt/m/n/1
 0 https : / / wccftech .
  []
 
-[31] (./notes.aux)
+[30] (./notes.aux)
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: F2D2A00B1160BA6BCD57BD73D47AA71F;5551.
+(rerunfilecheck)             Checksum: 5F7546D17E632055FC52E34FF378856C;5551.
 Package logreq Info: Writing requests to 'notes.run.xml'.
 \openout1 = `notes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22903 strings out of 478268
- 401473 string characters out of 5846347
- 1112678 words of memory out of 5000000
+ 22902 strings out of 478268
+ 401466 string characters out of 5846347
+ 1111678 words of memory out of 5000000
  40660 multiletter control sequences out of 15000+600000
  480911 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,10n,77p,1360b,1820s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,10n,77p,1395b,1820s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -1056,10 +1051,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texm
 f-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2022/texmf-
 dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-di
 st/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on notes.pdf (31 pages, 3341828 bytes).
+Output written on notes.pdf (30 pages, 3339997 bytes).
 PDF statistics:
- 818 PDF objects out of 1000 (max. 8388607)
- 704 compressed objects within 8 object streams
- 165 named destinations out of 1000 (max. 500000)
+ 815 PDF objects out of 1000 (max. 8388607)
+ 702 compressed objects within 8 object streams
+ 164 named destinations out of 1000 (max. 500000)
  378 words of extra memory for PDF output out of 10000 (max. 10000000)
 
