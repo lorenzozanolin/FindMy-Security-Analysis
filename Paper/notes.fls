@@ -931,12 +931,12 @@ INPUT ./images/auth.png
 INPUT ./images/auth.png
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT ./images/pcb.png
 INPUT ./images/pcb.png
 INPUT images/pcb.png
 INPUT ./images/pcb.png
 INPUT ./images/pcb.png
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT ./images/br1 struttura.png
 INPUT ./images/br1 struttura.png
 INPUT images/br1 struttura.png

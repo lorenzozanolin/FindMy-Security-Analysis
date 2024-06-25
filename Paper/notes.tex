@@ -109,9 +109,14 @@
 \end{abstract}
 
 \section{Introduction}\label{sec:intro}
-In the rapidly evolving landscape of technological advancements, Apple's AirTags have emerged as an innovation, offering a solution to tracking and locating personal belongings. This paper delves into the architecture and security of AirTags, with a particular emphasis on the UWB and Bluetooth standards that underlie their functionality. Moreover, as AirTags operate within the framework of the FindMy network, this exploration extends to an overview of the security measures embedded in both the device and the overarching network; through the examination of the relationship between AirTags, UWB, Bluetooth and FindMy security, this paper seeks to provide insights of the working principles of the ecosystem which enables accurate location tracking, while also addressing concerns related to privacy and data security.
 
-%DA RIFARE We will go over the fundamentals of UWB technology in Section \ref{sec:uwb} and examine its benefits from a security standpoint. In Section \ref{sec:find}, we will delve deeper into the examination of the FindMy network. We will begin with providing a general overview of the architecture, go on to a functioning example and end with a security analysis of the whole thing. Lastly, we will conduct a thorough examination of the AirTag concept in Chapter \ref{sec:at}, concentrating on the architecture (first examining the software component, then the hardware component) and then moving on to the security analysis of this technology.
+In the rapidly evolving landscape of technological advancements, Apple's AirTags have emerged as an innovation, offering a solution to tracking and locating personal belongings. We will begin with the history of these devices, then delve into the architecture and security of AirTags, with a particular emphasis on the UWB and Bluetooth standards that underlie their functionality. Finally, several patents related to this technology will be discussed.
+
+Moreover, as AirTags operate within the framework of the FindMy network, this exploration extends to an overview of the security measures embedded in both the device and the overarching network. Through the examination of the relationship between AirTags, UWB, Bluetooth, and FindMy security, this paper seeks to provide insights into the working principles of the ecosystem that enables accurate location tracking, while also addressing concerns related to privacy and data security.
+
+Additionally, practical applications of using AirTags to track objects or leverage their location-tracking abilities will be presented; this includes a quick overview of non-Apple devices that can also be detected within the FindMy network.
+
+More specifically, we will begin with a comprehensive analysis of AirTags in Section \ref{sec}, including the history of the devices, an analysis of the protocols used within them, and an examination of their hardware and software components. This section will also focus on security aspects and existing patents. Subsequently, we will discuss the FindMy network in Section \ref{sec}, starting with a general overview and an analysis of how the service operates. Following this, we will perform a security analysis of the protocol from a cryptographic perspective, detailing the mathematical processes involved in the communication between devices. Finally, practical applications of this service will be presented in Section \ref{appl}.
 
 \section{AirTag}\label{sec:at}
 An AirTag is a small device from Apple which is intended to assist users in finding and monitoring objects that are easily misplaced or lost, such as wallets, bags, and keys.
@@ -189,7 +194,7 @@ Within the domain of wireless communication technologies, UWB operates by employ
 
 An advantage of UWB technology is its ability to provide accurate and real-time tracking, thanks to techniques such as Time-of-Flight (ToF)\footnote{From \cite{tof}, ``Time of flight is the measurement of time taken to travel a distance in order to determine distance, speed, or properties of the medium".}, Time Difference of Arrival (TDoA)\footnote{From \cite{tdoa}, ``TDoA is a positioning methodology that determines the difference between the time-of-arrival (ToA) of radio signals. TDoA is used in a real-time location system (RTLS) to accurately calculate the location"} and Two-Way Ranging (TWR)\footnote{From \cite{twr}, ``The Two Way Ranging method determines the Time of Flight of the UWB RF signal and then calculates the distance between the nodes by multiplying the time by the speed of light."}. According to \cite{article}, the ranging error can be as low as 58 mm.
 
-Because of its wide spectrum utilization, UWB can coexist peacefully with other wireless technologies and send out massive volumes of data quickly; also, it has a reduced range of operation due to the wide radio bandwidth it uses (according to \cite{Zafar2019}, ``U1 chip can emit data using two frequencies: 6.24 GHz and 8.2368 GHz. The FCC has allocated ultrawideband a spectrum starting from 3.1GHz to 10.6GHz."). To overcome this problem, we can use an antenna of type \textit{MIMO} (multiple-input and multiple-output) to enhance UWB's range; this kind of devices can be embedded into our everyday devices due to their reduced size.
+Because of its wide spectrum utilization, UWB can coexist peacefully with other wireless technologies and send out massive volumes of data quickly; also, it has a reduced range of operation due to the wide radio bandwidth it uses (according to \cite{Zafar2019}, ``U1 chip can emit data using two frequencies: 6.24 GHz and 8.2368 GHz. The FCC has allocated ultrawideband a spectrum starting from 3.1 GHz to 10.6 GHz."). To overcome this problem, we can use an antenna of type \textit{MIMO} (multiple-input and multiple-output) to enhance UWB's range; this kind of devices can be embedded into our everyday devices due to their reduced size.
 
 According to \cite{aps}, ``Apple-designed U1 chip uses UWB technology for spatial awareness, allowing iPhone 11, iPhone 11 Pro and iPhone 11 Pro Max or later iPhone models to precisely locate other U1-equipped Apple devices"; this means that when two U1 devices come close to each other, the two start measuring their exact distance using ToF. According to IEEE 802.15.4a \cite{5394030}, the range of visibility for UWB is approximately 200 meters., which means that we can leverage this technology to track items that are very close to us and those that are relatively distant.
 
@@ -226,6 +231,19 @@ This functionality stipulates that each time the device randomizes its MAC addre
 
 
 Now, we will analyze the architecture of this product; the information has been reverse engineered by Adam Catley in \cite{reverse}. We will cover both the hardware and software aspects of this kind of device.
+
+\subsection{Hardware analysis}\label{hw}
+As for the hardware part, an important aspect comes to light: all of the used components, aside the Apple's U1 UWB chip, are off the shelf, as we can see in Figure \ref{img:pcb}.
+Each AirTag has three antennas: one for BLE that works at 2.4 GHz, one for NFC at 13.56 MHz and one for UWB one at 6.5-8 GHz.
+We have a plastic case that works as a diaphragm and it is adhered to the voice coil. When the coil is energized, the fixed magnet causes it to move back and forth, creating sound and serving as the speaker.
+If motion is detected, the speaker will loudly beep for up to 20 seconds after being away from its owner for three days. After that, it will be silent for the following six hours before watching for movement once more.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{images/pcb.png}
+	\caption{PCB overview (image from \cite{reverse}). }
+	\label{img:pcb}
+\end{figure}
+
 \subsection{Software analysis}\label{sec:beacons}
 As for the software part, we will present informations taken from \cite{reverse}: ``there are various states in which AirTag can be; we will now quickly present all of them.
 \begin{itemize}
@@ -266,17 +284,6 @@ While in this lost mode and detecting movement, the device emits a noise every 6
 To conserve energy while remaining responsive, the accelerometer is sampled every 10 seconds while waiting for motion; upon detecting movement, its sampling frequency increases to every 0.5 seconds for 20 seconds, providing detailed tracking data.
 When it's away from the owner, the device transmits BLE advertisement signals every 2 seconds enhancing its detectability.
 Finally, in close proximity to its proprietor's device, the tag establishes a BLE connection interval of 1 second, ensuring efficient communication and responsiveness.
-\subsection{Hardware analysis}\label{hw}
-As for the hardware part, an important aspect comes to light: all of the used components, aside the Apple's U1 UWB chip, are off the shelf, as we can see in Figure \ref{img:pcb}.
-Each AirTag has three antennas: one for BLE that works at 2.4 GHz, one for NFC at 13.56 MHz and one for UWB one at 6.5-8 GHz.
-We have a plastic case that works as a diaphragm and it is adhered to the voice coil. When the coil is energized, the fixed magnet causes it to move back and forth, creating sound and serving as the speaker.
-If motion is detected, the speaker will loudly beep for up to 20 seconds after being away from its owner for three days. After that, it will be silent for the following six hours before watching for movement once more.
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=\textwidth]{images/pcb.png}
-	\caption{PCB overview (image from \cite{reverse}). }
-	\label{img:pcb}
-\end{figure}
 
 \subsection{Security Analysis}\label{sec}
 Security-wise, from \cite{reverse} it has emerged that no security checks are performed on the device during its operations; in fact, none of the data in the AirTag is protected from tampering or disclosure.
